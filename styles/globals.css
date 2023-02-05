@@ -24,13 +24,13 @@
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
   --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
+    #cbd2e4,
+    #c6ccde,
+    #b4bfd2,
+    #bdc3d5,
+    #b4bfd2,
+    #c6ccde,
+    #cbd2e4
   );
 
   --callout-rgb: 238, 240, 241;
