@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className={styles.center1}>
         <Image
-                src="/images/updoglogo1.jpg"
+                src="/images/upgodlogo1.jpg"
                 alt="Updog Logo"
                 className={styles.center1}
                 width={500}
