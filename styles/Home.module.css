@@ -22,7 +22,7 @@
 .description a {
   display: flex;
   justify-content: top;
-  align-items: center;
+  align-items: right;
   gap: 0.5rem;
 }
 

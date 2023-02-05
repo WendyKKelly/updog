@@ -34,8 +34,8 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <h1>What's Up, Dog?</h1>
-          <h2> — Treats. </h2>
+          <h1 className={grandstander.className}>What's Up, Dog?</h1>
+          <h2 className={grandstander.className}> — Treats. </h2>
         </div>
 
         <div className={styles.grid}>
@@ -45,11 +45,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={grandstander.className}>
-              Docs <span>-&gt;</span>
-            </h2>
+            <h4 className={grandstander.className}>
+              What's in 'em?' <span>-&gt;</span>
+            </h4>
             <p className={grandstander.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+              Spent barley grain, meat (combination of chicken, pork, and beef), liver (beef), chia seeds.
             </p>
           </a>
 
@@ -59,11 +59,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={grandstander.className}>
-              Learn <span>-&gt;</span>
-            </h2>
+            <h4 className={grandstander.className}>
+              What's Spent Grain? <span>-&gt;</span>
+            </h4>
             <p className={grandstander.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              It's the barley grain left after brewers use it to make beer. Yes, it's super healthy for dogs (and humans!)
             </p>
           </a>
 
@@ -73,11 +73,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={grandstander.className}>
-              Templates <span>-&gt;</span>
-            </h2>
+            <h4 className={grandstander.className}>
+              What's Our Story? <span>-&gt;</span>
+            </h4>
             <p className={grandstander.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              We're a couple of dog lovers who wanted to feed our dog healthy, fresh, locally made treats.
             </p>
           </a>
 
@@ -87,12 +87,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={grandstander.className}>
-              Deploy <span>-&gt;</span>
-            </h2>r
+            <h4 className={grandstander.className}>
+              What's Up? <span>-&gt;</span>
+            </h4>r
             <p className={grandstander.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              Uplift & Upcycle — Our aim and vision for this project. 
             </p>
           </a>
         </div>
