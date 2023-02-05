@@ -76,7 +76,7 @@
 .center {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   position: relative;
   padding: 4rem 0;
 }
