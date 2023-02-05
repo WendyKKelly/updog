@@ -32,10 +32,12 @@ export default function Home() {
             
           </div>
         </div>
+        <div className={styles.grid1}>
 
         <div className={styles.center}>
           <h1 className={grandstander.className}>What's Up, Dog?</h1>
           <h2 className={grandstander.className}> Treats! </h2>
+        </div>
         </div>
 
         <div className={styles.grid}>
