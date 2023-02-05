@@ -17,6 +17,7 @@ export default function Home() {
       </Head>
       <main className={myFont.className}>
         <div className={styles.description}>
+          <h1>HELLO</h1>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
