@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className={styles.center1}>
         <Image
-                src="./images/updoglogo.jpg"
+                src="../images/updoglogo.jpg"
                 alt="Updog Logo"
                 className={styles.vercelLogo}
                 width={500}
