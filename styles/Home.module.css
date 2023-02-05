@@ -185,7 +185,13 @@
   .content {
     padding: 4rem;
   }
-
+  
+  .grid1 {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
