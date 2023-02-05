@@ -82,7 +82,7 @@
 .center {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   position: relative;
   padding: 4rem 0;
 }
@@ -185,7 +185,7 @@
   .content {
     padding: 4rem;
   }
-  
+
   .grid1 {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
