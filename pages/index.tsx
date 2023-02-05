@@ -35,8 +35,8 @@ export default function Home() {
         <div className={styles.grid1}>
 
         <div className={styles.center}>
-          <h1 className={grandstander.className}>What's Up, Dog?</h1>
-          <h2 className={grandstander.className}> Treats! </h2>
+          <h1 className={grandstander.className}>What's Up, Dog? (Dog) Treats!</h1>
+         
         </div>
         </div>
 
