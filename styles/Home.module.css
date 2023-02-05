@@ -204,10 +204,19 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    max-width: 320px;
+    padding: 1rem 0;
+  }
+  .center1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 320px;
     padding: 1rem 0;
   }
   .grid1 {
-    grid-template-columns: 0fr;
+    grid-template-columns: 1fr;
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
