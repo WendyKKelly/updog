@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Grandstander } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import localFont from '@next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
-const myFont = localFont({ src: '../fonts/savate-regular-webfont.woff' })
+
+const grandstander = Grandstander({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
@@ -68,10 +67,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={grandstander.className}>
               Docs <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={grandstander.className}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
@@ -82,10 +81,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={grandstander.className}>
               Learn <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={grandstander.className}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
             </p>
           </a>
@@ -96,10 +95,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={grandstander.className}>
               Templates <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p className={grandstander.className}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </a>
@@ -110,10 +109,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={grandstander.className}>
               Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
+            </h2>r
+            <p className={grandstander.className}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
