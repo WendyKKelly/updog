@@ -22,11 +22,11 @@ export default function Home() {
             
               By{' '}
               <Image
-                src="/updoglogo.jpg"
+                src="/images/updoglogo.jpg"
                 alt="Updog Logo"
                 className={styles.vercelLogo}
-                width={100}
-                height={24}
+                width={300}
+                height={800}
                 priority
               />
             
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <h1>What is Up, Dog?</h1>
+          <h1>What's Up, Dog?</h1>
           <h2> — Treats. </h2>
         </div>
 

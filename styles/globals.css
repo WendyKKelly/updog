@@ -102,7 +102,11 @@ a {
 h1 {
   font-family: var(--font-base);
   
-  font-size: 3em;
+  font-size: 7em;
+}
+h2 {
+  font-family: var(--font-base);
+  font-size: 6em;
 }
 
 @media (prefers-color-scheme: dark) {
