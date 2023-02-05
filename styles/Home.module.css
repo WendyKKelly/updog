@@ -9,11 +9,17 @@
 
 .grid1 {
   display: grid;
-  grid-template-columns: repeat(2, minmax(75%, auto));
+  grid-template-columns: repeat(2, minmax(50%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
-
+.center1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+}
 .description {
   display: inherit;
   justify-content: inherit;

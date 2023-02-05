@@ -38,6 +38,16 @@ export default function Home() {
           <h1 className={grandstander.className}>What's Up, Dog? Treats!</h1>
          
         </div>
+        <div className={styles.center1}>
+        <Image
+                src="./images/updoglogo.jpg"
+                alt="Updog Logo"
+                className={styles.vercelLogo}
+                width={500}
+                height={800}
+                priority
+              />
+        </div>
         </div>
 
         <div className={styles.grid}>
