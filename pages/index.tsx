@@ -89,7 +89,7 @@ export default function Home() {
           >
             <h4 className={grandstander.className}>
               What's Up? <span>-&gt;</span>
-            </h4>r
+            </h4>
             <p className={grandstander.className}>
               Uplift & Upcycle — Our aim and vision for this project. 
             </p>
