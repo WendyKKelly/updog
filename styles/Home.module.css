@@ -10,7 +10,7 @@
 
 .description {
   display: inherit;
-  justify-content: top;
+  justify-content: inherit;
   align-items: right;
   
   max-width: var(--max-width);
