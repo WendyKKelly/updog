@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <h1>What's Up, Dog?</h1>
+          <h1>What&rsquo;s Up, Dog?</h1>
           <h2> — Treats. </h2>
         </div>
 
