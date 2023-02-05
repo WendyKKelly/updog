@@ -15,9 +15,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.className}>
+      <main className={styles.main}>
         <div className={styles.description}>
-          <h1 className={styles.description}>HELLO</h1>
+          <h1 className={styles.h1}>HELLO</h1>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
