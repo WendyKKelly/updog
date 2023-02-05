@@ -42,7 +42,7 @@ export default function Home() {
         <Image
                 src="../images/updoglogo.jpg"
                 alt="Updog Logo"
-                className={styles.vercelLogo}
+                className={styles.center1}
                 width={500}
                 height={800}
                 priority
