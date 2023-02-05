@@ -44,7 +44,7 @@ export default function Home() {
                 alt="Updog Logo"
                 className={styles.center1}
                 width={500}
-                height={500}
+                height={600}
                 priority
               />
         </div>
