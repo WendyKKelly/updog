@@ -22,11 +22,11 @@ export default function Home() {
             
               By{' '}
               <Image
-                src="/images/updoglogo.jpg"
+                src=""
                 alt="Updog Logo"
                 className={styles.vercelLogo}
-                width={300}
-                height={800}
+                width={0}
+                height={0}
                 priority
               />
             
