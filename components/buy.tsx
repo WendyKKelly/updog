@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-export default function Home() {
+export default function Buy() {
   return (
     <>
       <Head>

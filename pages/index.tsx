@@ -4,6 +4,8 @@ import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import Buy from '../components/buy'
+import Ingredients from '../components/ingredients'
 
 
 const grandstander = Grandstander({ subsets: ['latin'] })
@@ -53,7 +55,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link
-            href="/ingredients"
+            href="#ingredients"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +97,7 @@ export default function Home() {
           </a>
 
           <Link
-            href="/buy"
+            href="#buy"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -108,6 +110,8 @@ export default function Home() {
             </p>
           </Link>
         </div>
+        < Buy />
+        < Ingredients />
       </main>
     </>
   )
