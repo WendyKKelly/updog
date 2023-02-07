@@ -60,32 +60,7 @@
     position: relative;
     padding: 0rem 0;
   }
-  .description {
-    display: inherit;
-    justify-content: inherit;
-    align-items: right;
-    
-    max-width: var(--max-width);
-    width: 100%;
-    z-index: 2;
-    
-  }
-  
-  .description a {
-    display: flex;
-    justify-content: top;
-    align-items: right;
-    gap: 0.5rem;
-  }
-  
-  .description p {
-    position: relative;
-    margin: 0;
-    padding: 1rem;
-    background-color: rgba(var(--callout-rgb), 0.5);
-    border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-    border-radius: var(--border-radius);
-  }
+
   
   .code {
     font-weight: 700;
@@ -207,11 +182,12 @@
       max-width: 320px;
       text-align: center;
     }
-    .grid {
-      grid-template-columns: 1fr;
-      margin-bottom: 120px;
-      max-width: 320px;
-      text-align: center;
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(100%, auto));
+      width: var(--max-width);
+      max-width: 100%;
+      margin-bottom: 7rem;
     }
   
     .card {
@@ -238,39 +214,7 @@
       height: 300px;
     }
   
-    .description {
-      font-size: 0.8rem;
-    }
-  
-    .description a {
-      padding: 1rem;
-    }
-  
-    .description p,
-    .description div {
-      display: flex;
-      justify-content: center;
-      position: fixed;
-      width: 100%;
-    }
-  
-    .description p {
-      align-items: center;
-      inset: 0 0 auto;
-      padding: 1rem 1rem 1.4rem;
-      border-radius: 0;
-      border: none;
-      
-    }
-  
-    .description div {
-      align-items: flex-end;
-      pointer-events: none;
-      inset: auto 0 0;
-      padding: 1rem;
-      
-      
-    }
+
   }
   
   /* Tablet and Smaller Desktop */

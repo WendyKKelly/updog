@@ -39,7 +39,8 @@ export default function Buy() {
             We are committed to uplifting and upcycling so treats are packaged in upcycled packaging sourced locally.
             We encourage you to purchase an upcycled dog treat bag and refill it.</p>
 
-</div></div>
+</div>
+</div>
 
 
        
