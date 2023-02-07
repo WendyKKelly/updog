@@ -38,6 +38,7 @@
   grid-template-columns: repeat(1, minmax(100%, auto));
   width: var(--max-width);
   max-width: 100%;
+  margin-bottom: 7rem;
 }
 .center2 {
   display: flex;
