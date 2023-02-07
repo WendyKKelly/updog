@@ -1,8 +1,11 @@
 .section {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100%, auto));
+    width: var(--max-width);
     min-height: 25vh;
     background-color: rgb(125, 180, 70);
-    min-width: 100%;
     background: cover;
+    padding: 0;
 }
 
 .main {
