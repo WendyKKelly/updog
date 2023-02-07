@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 
 const grandstander = Grandstander({ subsets: ['latin'] })
@@ -51,8 +52,8 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/ingredients"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -63,7 +64,7 @@ export default function Home() {
             <p className={grandstander.className}>
               Spent barley grain, meat (combination of chicken, pork, and beef), liver (beef), chia seeds.
             </p>
-          </a>
+          </Link>
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -93,8 +94,8 @@ export default function Home() {
             </p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          <Link
+            href="/buy"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -105,7 +106,7 @@ export default function Home() {
             <p className={grandstander.className}>
               $10 for 120 grams of treats. $10 for a handmade, upcycled treat pouch. Buy both and treat refills are $9 for 120 grams. 
             </p>
-          </a>
+          </Link>
         </div>
       </main>
     </>
