@@ -22,15 +22,7 @@ export default function Home() {
           
           <div>
             
-              By{' '}
-              <Image
-                src=""
-                alt="Updog Logo"
-                className={styles.vercelLogo}
-                width={0}
-                height={0}
-                priority
-              />
+            
             
           </div>
         </div>
@@ -108,10 +100,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h4 className={grandstander.className}>
-              What's Up? <span>-&gt;</span>
+              What's The Deal? <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              Uplift & Upcycle — Our aim and vision for this project. 
+              $10 for 120 grams of treats. $10 for a handmade, upcycled treat pouch. Buy both and treat refills are $9 for 120 grams. 
             </p>
           </a>
         </div>
