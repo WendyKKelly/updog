@@ -17,6 +17,7 @@ export default function Ingredients() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <section className='styles.section'>
       <main className={styles.main}>
         <div className={styles.description}>
             
@@ -29,6 +30,7 @@ Spent grain is a great source of protein and fiber, aiding in digestion and prov
 
         </div>
         </main>
+        </section>
         </>
   )
 }

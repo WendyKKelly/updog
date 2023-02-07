@@ -1,11 +1,17 @@
+.section {
+    min-height: 25vh;
+    background-color: rgb(125, 180, 70);
+    min-width: 100%;
+    background: cover;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
-    padding: 0rem;
-    min-height: 25vh;
-    background-color: rgb(125, 180, 70);
+    padding: 6rem;
+    
    
    }
   .grandstander {

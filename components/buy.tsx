@@ -17,6 +17,7 @@ export default function Buy() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <section className='styles.section'>
       <main className={styles.main}>
         
             
@@ -41,6 +42,7 @@ export default function Buy() {
 
        
         </main>
+        </section>
         </>
   )
 }
