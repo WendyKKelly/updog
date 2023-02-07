@@ -149,11 +149,20 @@
     .content {
       padding: 1rem;
     }
+    .section {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(100%, auto));
+      width: var(--max-width);
+      min-height: 25vh;
+      background-color: rgb(125, 180, 70);
+      background: cover;
+      
+    }
     .main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: right;
+      align-items: center;
       padding: 1rem;
       min-height: 100vh;
     }
@@ -192,7 +201,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      padding: 0rem 0;
+      padding-right: 1rem;
     }
   
     .card {
