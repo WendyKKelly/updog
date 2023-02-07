@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Grandstander } from '@next/font/google'
+import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
 
 const grandstander = Grandstander({ subsets: ['latin'] })
+const cormorant = Cormorant({subsets: ['latin']})
 export default function Home() {
   return (
     <>
@@ -49,7 +51,7 @@ export default function Home() {
               />
         </div>
         <div>
-          <h4>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h4>
+          <h4 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h4>
         </div>
         </div>
 

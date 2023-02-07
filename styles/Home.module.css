@@ -9,6 +9,9 @@
 .grandstander {
   color: #1a4e8a;
 }
+.cormorant {
+  color: #fff;
+}
 .grid1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(50%, auto));
