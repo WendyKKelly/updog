@@ -50,6 +50,9 @@ export default function Home() {
                 priority
               />
         </div>
+   
+        </div>
+        <div className={styles.grid2}>
         <div className={styles.center2}>
           <h4 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h4>
         </div>
@@ -62,9 +65,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h4 className={grandstander.className}>
+            <h5 className={grandstander.className}>
               What's in 'em?' <span>-&gt;</span>
-            </h4>
+            </h5>
             <p className={grandstander.className}>
               Spent barley grain, meat (combination of chicken, pork, and beef), liver (beef), chia seeds.
             </p>

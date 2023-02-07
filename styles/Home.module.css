@@ -33,12 +33,18 @@
   position: relative;
   padding: 4rem 0;
 }
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+}
 .center2 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1rem 0;
+  padding: 0rem 0;
 }
 .description {
   display: inherit;
