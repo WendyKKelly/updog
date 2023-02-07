@@ -50,7 +50,7 @@ export default function Home() {
                 priority
               />
         </div>
-        <div>
+        <div className={styles.center2}>
           <h4 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h4>
         </div>
         </div>
