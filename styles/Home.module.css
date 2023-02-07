@@ -6,7 +6,9 @@
   padding: 6rem;
   min-height: 100vh;
 }
-
+.grandstander {
+  color: #1a4e8a;
+}
 .grid1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(50%, auto));
