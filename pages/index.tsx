@@ -110,7 +110,8 @@ export default function Home() {
             </p>
           </Link>
         </div>
-        < Buy />
+        <div id="buy">
+        < Buy  /></div>
         < Ingredients />
       </main>
     </>
