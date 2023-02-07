@@ -48,6 +48,9 @@ export default function Home() {
                 priority
               />
         </div>
+        <div>
+          <h4>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h4>
+        </div>
         </div>
 
         <div className={styles.grid}>
