@@ -19,25 +19,27 @@ export default function Buy() {
       </Head>
       <section className={styles.section}>
       <main className={styles.main}>
-        
-            
-        <h5>
+     
+      <div className={styles.grid2}>
+
+<div className={styles.center2}>
+        <h5 className={cormorant.className}>
             Treats are baked weekly in small batches.</h5>
 
-            <h5>Products:</h5> 
-<ul><li>
+            <h5 className={cormorant.className}>Products:</h5> 
+<ul><li className={cormorant.className}>
             120 grams dog treats: $10</li>
-            <li>upcycled treat pouch: $10</li>
+            <li className={cormorant.className}>upcycled treat pouch: $10</li>
 
-            <li>refills in treat pouch: $9 </li></ul>
- <h5>How To Pay:</h5>
-            <p>For now, simply text Wendy at 236-972-7673. I will deliver your treats to you. You can then etransfer the money to us. </p>
+            <li className={cormorant.className}>refills in treat pouch: $9 </li></ul>
+ <h5 className={cormorant.className}>How To Pay:</h5>
+            <p className={cormorant.className}>For now, simply text Wendy at 236-972-7673. I will deliver your treats to you. You can then etransfer the money to us. </p>
 
-            <p>This is our first iteration. We welcome your feedback!
+            <p className={cormorant.className}>This is our first iteration. We welcome your feedback!
             We are committed to uplifting and upcycling so treats are packaged in upcycled packaging sourced locally.
             We encourage you to purchase an upcycled dog treat bag and refill it.</p>
 
-
+</div></div>
 
 
        
