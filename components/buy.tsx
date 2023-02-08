@@ -36,6 +36,7 @@ export default function Buy() {
                 height={300}
                 priority
               />
+              <div className={styles.desc}>
 <h4 className={grandstander.className}>
               Dog Treats <span>-&gt;</span>
             </h4>
@@ -43,6 +44,7 @@ export default function Buy() {
               120 grams 
               $10
             </p>
+            </div>
             </div>
             <div className={styles.card}>
             <Image
