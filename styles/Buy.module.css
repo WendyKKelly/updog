@@ -186,6 +186,12 @@
       max-height: 420px;
       padding: 1rem 0;
     }
+    .grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 120px;
+      max-width: 320px;
+      text-align: center;
+    }
     .grid1 {
       grid-template-columns: 1fr;
       margin-bottom: 120px;
