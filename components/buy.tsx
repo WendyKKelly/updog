@@ -31,7 +31,7 @@ export default function Buy() {
             <Image
                 src="/images/120-grams.png"
                 alt="Dog Treats"
-                className={styles.center1}
+                
                 width={300}
                 height={300}
                 priority
@@ -48,7 +48,7 @@ export default function Buy() {
             <Image
                 src="/images/120-grams.png"
                 alt="Dog Treats"
-                className={styles.center1}
+                
                 width={300}
                 height={300}
                 priority
@@ -65,7 +65,7 @@ export default function Buy() {
             <Image
                 src="/images/120-grams.png"
                 alt="Dog Treats"
-                className={styles.center1}
+               
                 width={300}
                 height={300}
                 priority
@@ -82,7 +82,7 @@ export default function Buy() {
             <Image
                 src="/images/120-grams.png"
                 alt="Dog Treats"
-                className={styles.center1}
+                
                 width={300}
                 height={300}
                 priority
