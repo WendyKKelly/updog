@@ -27,11 +27,65 @@ export default function Buy() {
             Treats are baked weekly in small batches.</h5>
 
             <h5 className={cormorant.className}>Products:</h5> 
-<ul><li>
-            120 grams dog treats: $10</li>
-            <li >upcycled treat pouch: $10</li>
+            <div className={styles.grid}>
+              <div className={styles.card}>
+          <Image 
+            src="/images/updoglogogold.png"
+            alt="Updog Logo"
+            className={styles.card}
+            width={500}
+                height={600}
+         / >
+            <h4 className={grandstander.className}>
+              Upcylcled Treat Pouch <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              Lightweight, closable, carabiner attached to loop.
+          </p>
+          </div>
 
-            <li >refills in treat pouch: $9 </li></ul>
+          <a
+            href=""
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4 className={grandstander.className}>
+              What's Spent Grain? <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              It's the barley grain left after brewers use it to make beer. Yes, it's super healthy for dogs (and humans!)
+            </p>
+          </a>
+
+          <a
+            href=""
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4 className={grandstander.className}>
+              What's Our Story? <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              We're a couple of dog lovers who wanted to feed our dog healthy, fresh, locally made treats.
+            </p>
+          </a>
+
+          <Link
+            href="#buy"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h4 className={grandstander.className}>
+              What's The Deal? <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              $10 for 120 grams of treats. $10 for a handmade, upcycled treat pouch. Buy both and treat refills are $9 for 120 grams. 
+            </p>
+          </Link>
+        </div>
  <h5 className={cormorant.className}>How To Pay:</h5>
             <p >For now, simply text Wendy at 236-972-7673. I will deliver your treats to you. You can then etransfer the money to us. </p>
 
