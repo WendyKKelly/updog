@@ -23,7 +23,7 @@ export default function Buy() {
 
      <div className={styles.center2}>
         
-            <h5 className={cormorant.className}>Up Dog Treats:</h5>
+            <h5 className={grandstander.className}>Up Dog Treats:</h5>
             </div>
             <div className={styles.grid}>
               <div className={styles.card}>
@@ -115,9 +115,9 @@ export default function Buy() {
          
          
          
- <h5 className={cormorant.className}>How To Get Your Dog Treats:</h5>
-            <p >Simply text Mike at 250-551-0187. We will have your treats ready at a central downtown Nelson location. </p>
-            <p> Cash and E-transfer accepted. </p>
+ <h5 className={grandstander.className}>How To Get Your Dog Treats:</h5>
+            <p className={grandstander.className}>Simply text Mike at 250-551-0187. We will have your treats ready at a central downtown Nelson location. </p>
+            <p className={grandstander.className}> Cash and E-transfer accepted. </p>
 
 </div>
 

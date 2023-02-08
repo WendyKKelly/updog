@@ -23,8 +23,8 @@ export default function Story() {
 
      <div className={styles.center2}>
         
-            <h5 className={cormorant.className}>Humans:</h5>
-            <p>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches!</p>
+            <h5 className={grandstander.className}>Humans:</h5>
+            <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches!</p>
             </div>
             <div className={styles.grid}>
               <div className={styles.card}>
@@ -32,8 +32,8 @@ export default function Story() {
                 src="/images/mike.png"
                 alt="Mike Kelly"
                 
-                width={300}
-                height={300}
+                width={500}
+                height={500}
                 priority
               />
               <div className={styles.desc}>
@@ -41,7 +41,7 @@ export default function Story() {
               Mike Kelly <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              Brewmaster, baker, ultralight camping stove maker.
+              Brewmaster, baker, upcycled dog treat pouch  maker.
             </p>
             
             </div>
@@ -60,8 +60,9 @@ export default function Story() {
               Wendy Kelly <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              Webmaster, baker, healthy dog treat maker.
+              Webmaster*, baker, healthy dog treat maker.
             </p>
+            
             </div>
             </div>
             
