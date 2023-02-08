@@ -29,8 +29,8 @@ export default function Story() {
         
             <div className={styles.card}> <div className={styles.card}>
             <Image
-                src="/images/rocky.png"
-                alt="Mike Kelly"
+                src="/images/rocky2.png"
+                alt="Rocky"
                 
                 width={300}
                 height={350}
@@ -48,7 +48,7 @@ export default function Story() {
             </div>
             <Image
                 src="/images/rosa.png"
-                alt="Mike Kelly"
+                alt="Rosa"
                 
                 width={300}
                 height={350}
@@ -67,7 +67,7 @@ export default function Story() {
             <div className={styles.card}>
             <Image
                 src="/images/spokesdogplaceholder.png"
-                alt="Mike Kelly"
+                alt="Nelson dog"
                 
                 width={300}
                 height={350}
