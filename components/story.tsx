@@ -29,7 +29,7 @@ export default function Story() {
             <div className={styles.grid}>
               <div className={styles.card}>
             <Image
-                src="/images/mike.png"
+                src="/images/mike2.png"
                 alt="Mike Kelly"
                 
                 width={500}
@@ -51,8 +51,8 @@ export default function Story() {
                 src="/images/wendy2.png"
                 alt="Wendy Kelly"
                 
-                width={300}
-                height={300}
+                width={500}
+                height={500}
                 priority
               />
               <div className={styles.desc}>
