@@ -22,9 +22,73 @@ export default function Story() {
       <div className={styles.grid2}>
 
      <div className={styles.center2}>
-        
+     <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
+            <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p>
+            <div className={styles.grid}>
+              
+            <div className={styles.card}>
+            <Image
+                src="/images/spokesdogplaceholder.png"
+                alt="Mike Kelly"
+                
+                width={300}
+                height={350}
+                priority
+              />
+              <div className={styles.desc}>
+<h4 className={grandstander.className}>
+              Your Dog Here <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              send us a picture of your dog begging for Updog Treats and share the love.
+            </p>
+            
+            </div>
+            </div>
+            <div className={styles.card}>
+            <Image
+                src="/images/spokesdogplaceholder.png"
+                alt="Mike Kelly"
+                
+                width={300}
+                height={350}
+                priority
+              />
+              <div className={styles.desc}>
+<h4 className={grandstander.className}>
+              Your Dog Here <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              send us a picture of your dog begging for Updog Treats and share the love.
+            </p>
+            
+            </div>
+            </div>
+            <div className={styles.card}>
+            <Image
+                src="/images/spokesdogplaceholder.png"
+                alt="Mike Kelly"
+                
+                width={300}
+                height={350}
+                priority
+              />
+              <div className={styles.desc}>
+<h4 className={grandstander.className}>
+              Your Dog Here <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              send us a picture of your dog begging for Updog Treats and share the love.
+            </p>
+            
+            </div>
+            </div>
+            
+            </div>
+            
             <h5 className={grandstander.className}>Humans:</h5>
-            <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches!</p>
+            <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
+            
             </div>
             <div className={styles.grid}>
               <div className={styles.card}>
