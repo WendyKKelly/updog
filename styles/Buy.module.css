@@ -210,11 +210,11 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      padding-right: 1rem;
+      padding-right: 0rem;
     }
   
     .card {
-      padding: 1rem 2.5rem;
+      padding: 1rem;
     }
   
     .card h2 {
@@ -228,7 +228,7 @@
       padding: 0rem 0 0rem;
     }
   .h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   
   }
   
