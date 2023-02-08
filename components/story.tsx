@@ -48,11 +48,11 @@ export default function Story() {
             </div>
             <div className={styles.card}>
             <Image
-                src="/images/wendy2.png"
+                src="/images/wendy3.png"
                 alt="Wendy Kelly"
                 
-                width={500}
-                height={500}
+                width={300}
+                height={350}
                 priority
               />
               <div className={styles.desc}>
