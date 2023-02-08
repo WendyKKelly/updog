@@ -49,7 +49,7 @@ export default function Buy() {
             <div className={styles.card}>
             <Image
                 src="/images/treatpouch.png"
-                alt="Dog Treats"
+                alt="Dog Pouch"
                 
                 width={300}
                 height={300}
@@ -57,10 +57,10 @@ export default function Buy() {
               />
               <div className={styles.desc}>
 <h4 className={grandstander.className}>
-              Dog Treats <span>-&gt;</span>
+              Dog Treat Pouch <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              120 grams 
+              upcylced, handmade, carabiner attaches to belt loop. 
               $10
             </p>
             </div>
@@ -68,7 +68,7 @@ export default function Buy() {
             <div className={styles.card}>
             <Image
                 src="/images/samples.png"
-                alt="Dog Treats"
+                alt="Samples"
                
                 width={300}
                 height={300}
@@ -76,11 +76,11 @@ export default function Buy() {
               />
               <div className={styles.desc}>
 <h4 className={grandstander.className}>
-              Dog Treats <span>-&gt;</span>
+              Samples <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              120 grams 
-              $10
+              Curious? Want to check to see if your dog will like 'em? 10 gram samples, approximately 10 treats.
+              $1
             </p>
             </div>
             </div>
@@ -95,11 +95,12 @@ export default function Buy() {
               />
               <div className={styles.desc}>
 <h4 className={grandstander.className}>
-              Dog Treats <span>-&gt;</span>
+              Dog Treat Refills <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
+              With purchase of Dog Treat Pouch, refills are $1 off.
               120 grams 
-              $10
+              $9
             </p>
             </div>
             </div>
