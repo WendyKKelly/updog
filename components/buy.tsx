@@ -48,7 +48,7 @@ export default function Buy() {
             </div>
             <div className={styles.card}>
             <Image
-                src="/images/120-grams.png"
+                src="/images/treatpouch.png"
                 alt="Dog Treats"
                 
                 width={300}
@@ -67,7 +67,7 @@ export default function Buy() {
             </div>
             <div className={styles.card}>
             <Image
-                src="/images/120-grams.png"
+                src="/images/samples.png"
                 alt="Dog Treats"
                
                 width={300}
@@ -86,7 +86,7 @@ export default function Buy() {
             </div>
             <div className={styles.card}>
             <Image
-                src="/images/120-grams.png"
+                src="/images/refills.png"
                 alt="Dog Treats"
                 
                 width={300}
