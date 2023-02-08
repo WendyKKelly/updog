@@ -5,7 +5,7 @@ import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import Buy from '../components/buy'
-import Ingredients from '../components/ingredients'
+import Story from '../components/story'
 
 
 const grandstander = Grandstander({ subsets: ['latin'] })
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <div id="buy">
         < Buy  /></div>
-        < Ingredients />
+        < Story />
       </main>
       </section>
     </>
