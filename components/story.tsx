@@ -24,6 +24,7 @@ export default function Story() {
      <div className={styles.center2}>
         
             <h5 className={cormorant.className}>Humans:</h5>
+            <p>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches!</p>
             </div>
             <div className={styles.grid}>
               <div className={styles.card}>
@@ -37,12 +38,12 @@ export default function Story() {
               />
               <div className={styles.desc}>
 <h4 className={grandstander.className}>
-              Dog Treats <span>-&gt;</span>
+              Mike Kelly <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              120 grams 
-              $10
+              Brewmaster, baker, ultralight camping stove maker.
             </p>
+            
             </div>
             </div>
             <div className={styles.card}>
@@ -56,11 +57,10 @@ export default function Story() {
               />
               <div className={styles.desc}>
 <h4 className={grandstander.className}>
-              Dog Treat Pouch <span>-&gt;</span>
+              Wendy Kelly <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              upcylced, handmade, carabiner attaches to belt loop. 
-              $10
+              Webmaster, baker, healthy dog treat maker.
             </p>
             </div>
             </div>

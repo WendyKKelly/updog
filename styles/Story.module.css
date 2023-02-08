@@ -3,7 +3,7 @@
     grid-template-columns: repeat(1, minmax(100%, auto));
     width: var(--max-width);
     min-height: 25vh;
-    background-color: rgb(125, 180, 70);
+    background-color: rgb(146, 115, 206);
     background: cover;
     margin-right: -10rem;
     margin-left: -10rem;
