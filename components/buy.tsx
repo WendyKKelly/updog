@@ -33,8 +33,8 @@ export default function Buy() {
             src="/images/120-grams.png"
             alt="Dog Treat"
             className={styles.card}
-            width={150}
-                height={150}
+            width={300}
+                height={300}
          / >
             <h4 className={grandstander.className}>
               Upcylcled Treat Pouch <span>-&gt;</span>
