@@ -37,12 +37,14 @@ export default function Buy() {
             height={300}
             
          / >
+          <div className={styles.desc}>
             <h4 className={grandstander.className}>
               Upcylcled Treat Pouch <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
               Lightweight, closable, carabiner attached to loop.
           </p>
+          </div>
           </div>
 
           <a
