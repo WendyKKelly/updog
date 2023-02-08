@@ -30,11 +30,11 @@ export default function Buy() {
             <div className={styles.grid}>
               <div className={styles.card}>
           <Image 
-            src="/images/updoglogogold.png"
-            alt="Updog Logo"
+            src="/images/120-grams.png"
+            alt="Dog Treat"
             className={styles.card}
-            width={500}
-                height={600}
+            width={150}
+                height={150}
          / >
             <h4 className={grandstander.className}>
               Upcylcled Treat Pouch <span>-&gt;</span>
