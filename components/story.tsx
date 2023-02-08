@@ -32,8 +32,8 @@ export default function Story() {
                 src="/images/mike2.png"
                 alt="Mike Kelly"
                 
-                width={500}
-                height={500}
+                width={300}
+                height={350}
                 priority
               />
               <div className={styles.desc}>
