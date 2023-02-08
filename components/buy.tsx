@@ -23,7 +23,7 @@ export default function Buy() {
 
      <div className={styles.center2}>
         
-            <h5 className={cormorant.className}>Dog Treats:</h5>
+            <h5 className={cormorant.className}>Up Dog Treats:</h5>
             </div>
             <div className={styles.grid}>
               <div className={styles.card}>

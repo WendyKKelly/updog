@@ -78,10 +78,7 @@ export default function Story() {
            
          
          
-         
- <h5 className={cormorant.className}>How To Get Your Dog Treats:</h5>
-            <p >Simply text Mike at 250-551-0187. We will have your treats ready at a central downtown Nelson location. </p>
-            <p> Cash and E-transfer accepted. </p>
+    
 
 </div>
 
