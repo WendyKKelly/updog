@@ -118,7 +118,7 @@ export default function Buy() {
  <h5 className={grandstander.className}>How To Get Your Dog Treats:</h5>
             <h6 className={grandstander.className}>Just ask! </h6>
             <div className={styles.button}>
-            <a href={`sms://+2369727673?body=Please%20contact%20me%20about%20Updog%20Treats'}`}>text us</a>  </div>
+            <a href={`sms://+2369727673?body=Please%20contact%20me%20about%20Updog%20Treats'}`}><h5 >TEXT</h5></a>  </div>
             
             
             
