@@ -117,8 +117,8 @@ export default function Buy() {
          
  <h5 className={grandstander.className}>How To Get Your Dog Treats:</h5>
             <h6 className={grandstander.className}>Just ask! </h6>
-            
-            <div className={styles.button}><a href={`mailto:${'updogtreatsplease@gmail.com?Subject=Updog%20Treats%20Please'}`}>Email Updog</a></div> with what you'd like. We will respond, take your order, and have your treats ready at a central downtown Nelson location. 
+
+            <div className={styles.button}><a href={`mailto:${'updogtreatsplease@gmail.com?Subject=Updog%20Treats%20Please'}`}><h6 className={grandstander.className}>Email Updog</h6></a></div> <p className={grandstander.className}>with what you'd like. We will respond, take your order, and have your treats ready at a central downtown Nelson location. </p>
             <p className={grandstander.className}> Cash and E-transfer accepted. </p>
 
 </div>
