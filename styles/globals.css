@@ -111,6 +111,10 @@ h5{
   color: #fff;
   font-size: 4rem;
 }
+h6{
+  color: #1a4e8a;
+  font-size: 3rem;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
