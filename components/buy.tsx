@@ -116,7 +116,9 @@ export default function Buy() {
          
          
  <h5 className={grandstander.className}>How To Get Your Dog Treats:</h5>
-            <p className={grandstander.className}>Simply <a href={`sms://+2369727673?body=Please%20contact%20me%20about%20Updog%20Treats'}`}>text us</a>  
+            <h6 className={grandstander.className}>Just ask! </h6>
+            <div className={styles.button}>
+            <a href={`sms://+2369727673?body=Please%20contact%20me%20about%20Updog%20Treats'}`}><p>text us</p></a>  </div><p>
              or <a href={`mailto:${'wendykkelly@gmail.com?Subject=Updog%20Treats%20Please'}`}>email us</a> with what you'd like. We will respond, take your order, and have your treats ready at a central downtown Nelson location. </p>
             <p className={grandstander.className}> Cash and E-transfer accepted. </p>
 

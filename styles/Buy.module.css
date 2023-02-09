@@ -126,6 +126,11 @@
     transform: translateZ(0);
   }
   
+  .button {
+    color:rgb(125, 180, 70);
+    width: .75rem;
+    height: .25rem;
+  }
   
   
   /* Enable hover only on non-touch devices */
