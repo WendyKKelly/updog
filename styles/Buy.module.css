@@ -249,8 +249,8 @@
     .button {
       display: flex;
       background-color:rgb(18, 176, 213);
-      width: 24rem;
-      height: 6rem;
+      width: 16rem;
+      height: 12rem;
       justify-content: center;
       align-items: center;
       padding: 3rem;
