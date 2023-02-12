@@ -75,10 +75,10 @@ export default function Story() {
               />
               <div className={styles.desc}>
 <h4 className={grandstander.className}>
-              Lampi loves them! - the treats, I mean. And he’s surprisingly discerning when it comes to snacks.<span>-&gt;</span>
+              Lampi <span>-&gt;</span>
             </h4>
             <p className={grandstander.className}>
-              send us a picture of your dog begging for Updog Treats and share the love.
+            Lampi loves them! - the treats, I mean. And he’s surprisingly discerning when it comes to snacks.
             </p>
             
             </div>
