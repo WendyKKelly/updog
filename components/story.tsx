@@ -66,6 +66,25 @@ export default function Story() {
             </div>
             <div className={styles.card}>
             <Image
+                src="/images/lampi.png"
+                alt="Lampi"
+                
+                width={300}
+                height={350}
+                priority
+              />
+              <div className={styles.desc}>
+<h4 className={grandstander.className}>
+              Lampi loves them! - the treats, I mean. And he’s surprisingly discerning when it comes to snacks.<span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+              send us a picture of your dog begging for Updog Treats and share the love.
+            </p>
+            
+            </div>
+            </div>
+            <div className={styles.card}>
+            <Image
                 src="/images/spokesdogplaceholder.png"
                 alt="Nelson dog"
                 
