@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { FaShoppingCart } from 'react-icons/fa';
 
-import Layout from '../../components/Layout';
-import Container from '../../components/Container';
+import Layout from '../../../components/Layout';
+import Container from '../../../components/Container';
 
 import styles from '../../styles/Product.module.css'
 
-import products from '../../products.json';
+import products from '../../../products.json';
 
 export default function Product({ product }) {
   return (
