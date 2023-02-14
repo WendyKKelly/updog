@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Layout from '../components/Layout';
+import Container from '../components/Container';
 
+import products from '../products.json';
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+
 import Link from 'next/link'
 import Buy from '../components/buy'
 import Story from '../components/story'
@@ -13,8 +17,8 @@ const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
 export default function Home() {
   return (
-    <>
-    
+   
+    <Layout>
       <Head>
         <title>Updog Treats</title>
         
@@ -31,6 +35,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <section className={styles.section}>
       <main className={styles.main}>
         <div className={styles.description}>
@@ -125,9 +130,40 @@ export default function Home() {
         </div>
         <div id="buy">
         < Buy  /></div>
+        <Container className={styles.homeContainer}>
+        <div className={styles.grid4}>
+          {products.map(product => {
+            return (
+              <div key={product.id} className={styles.card4}>
+                <Link href={`/products/${product.id}`}>
+                  <a>
+                    <img src={product.image} alt={`Preview of ${product.title}`} />
+                    <h3>{ product.title }</h3>
+                    <p className={styles.cardDescription}>{ product.description }</p>
+                    <p>${ product.price }</p>
+                  </a>
+                </Link>
+                <p>
+                  <button className="snipcart-add-item"
+                    data-item-id={product.id}
+                    data-item-image={product.image}
+                    data-item-name={product.title}
+                    data-item-price={product.price}
+                  >
+                    Add to Cart
+                  </button>
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </Container>
         < Story />
       </main>
       </section>
-    </>
+    
+    
+    </Layout>
   )
 }
+
