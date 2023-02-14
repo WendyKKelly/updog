@@ -5,10 +5,10 @@ import {IProduct} from "../components/Product";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
 import Image from 'next/image'
-import updogSample from "../public/samples.png"
-import updogTreat from "../public/120-grams.png"
-import updogPouch from "../public/treatpouch.png"
-import updogRefill from "../public/refills.png"
+import updogSample from "../public/images/samples.png"
+import updogTreat from "../public/images/120-grams.png"
+import updogPouch from "../public/images/treatpouch.png"
+import updogRefill from "../public/images/refills.png"
 import Layout from '../components/Layout';
 
 
