@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Script from 'next/script'
+
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -17,9 +17,7 @@ export default function Home() {
     
       <Head>
         <title>Updog Treats</title>
-        <link rel="preconnect" href="<https://app.snipcart.com>"/>
-    <link rel="preconnect" href="<https://cdn.snipcart.com>"/>
-    <link rel="stylesheet" href="<https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css>"/>
+        
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
         <meta
