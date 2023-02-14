@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 
-import styles from '@styles/Shop.module.css';
+import styles from '../styles/Shop.module.css';
 
 import products from '../products.json';
 
