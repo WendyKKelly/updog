@@ -1,9 +1,18 @@
+
+import Script from 'next/script';
+import ProductList from "../components/ProductList";
+import {IProduct} from "../components/Product";
+import {GetStaticProps} from "next";
 import Head from 'next/head'
 import Image from 'next/image'
+import updogSample from "../public/samples.png"
+import updogTreat from "../public/120-grams.png"
+import updogPouch from "../public/treatpouch.png"
+import updogRefill from "../public/refills.png"
 import Layout from '../components/Layout';
-import Container from '../components/Container';
 
-import products from '../products.json';
+
+
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -15,15 +24,24 @@ import Story from '../components/story'
 
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-export default function Home() {
+
+interface IProductListProps {
+  products: IProduct[]
+}
+
+export default function Home({products}: IProductListProps) {
   return (
-   
+   <>
     <Layout>
       <Head>
         <title>Updog Treats</title>
         
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
+        <link rel="preconnect" href="https://app.snipcart.com"/>
+                <link rel="preconnect" href="https://cdn.snipcart.com"/>
+                <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"/>
+                <link rel="shortcut icon" href="../public/favicon.ico" />
         <meta
           property="og:description"
           content="Fresh, healthy, locally made in Nelson BC — Updog Treats"
@@ -130,40 +148,60 @@ export default function Home() {
         </div>
         <div id="buy">
         < Buy  /></div>
-        <Container className={styles.homeContainer}>
-        <div className={styles.grid4}>
-          {products.map(product => {
-            return (
-              <div key={product.id} className={styles.card4}>
-                <Link href={`/products/${product.id}`}>
-                  <a>
-                    <img src={product.image} alt={`Preview of ${product.title}`} />
-                    <h3>{ product.title }</h3>
-                    <p className={styles.cardDescription}>{ product.description }</p>
-                    <p>${ product.price }</p>
-                  </a>
-                </Link>
-                <p>
-                  <button className="snipcart-add-item"
-                    data-item-id={product.id}
-                    data-item-image={product.image}
-                    data-item-name={product.title}
-                    data-item-price={product.price}
-                  >
-                    Add to Cart
-                  </button>
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </Container>
+        <ProductList products={products}/>
         < Story />
       </main>
       </section>
     
     
     </Layout>
+    <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>
+            <div hidden id="snipcart" data-api-key="OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1
+"></div>
+    </>
   )
 }
 
+export const products: IProduct[] = [
+  {
+      id: "halfmoon",
+      name: "Halfmoon Betta",
+      price: 25.00,
+      image: updogSample,
+      description: "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.",
+      url: '/api/products/halfmoon'
+  },
+  {
+      id: "dragonscale",
+      name: "Dragon Scale Betta",
+      price: 35,
+      image: updogTreat,
+      description: "The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor.",
+      url: '/api/products/dragonscale'
+  },
+  {
+      id: "crowntail",
+      name: "Crowntail Betta",
+      price: 7.50,
+      image: updogPouch,
+      description: "The crowntail is pretty common, but interesting none the less. It's recognized by the shape of its tail that has an appearance of a comb.",
+      url: '/api/products/crowntail'
+  },
+  {
+      id: "veiltail",
+      name: "Veiltail Betta",
+      price: 5.00,
+      image: updogRefill,
+      description: "By far the most common betta fish. You can recognize it by its long tail aiming downwards.",
+      url: '/api/products/veiltail'
+  }
+]
+
+export const getStaticProps: GetStaticProps = async (context) => {
+
+  return {
+      props: {
+          products
+      }
+  }
+}
