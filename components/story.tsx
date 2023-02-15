@@ -107,7 +107,7 @@ export default function Story() {
             
             <div className={styles.grid2}>
         <div className={styles.center2}>
-          <div className={cormorant.className}>
+          <div className={grandstander.className}>
           <h5 className={styles.overflow}>Humans:</h5>
           <p className={styles.overflow}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
           </div>
