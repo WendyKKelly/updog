@@ -146,8 +146,7 @@ export default function Home({products}: IProductListProps) {
             </p>
           </Link>
         </div>
-        <div id="buy">
-        < Buy  /></div>
+       
         <ProductList products={products}/>
         < Story />
       </main>
