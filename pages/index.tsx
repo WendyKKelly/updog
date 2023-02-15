@@ -162,7 +162,17 @@ export default function Home({products}: IProductListProps) {
 }
 
 export const products: IProduct[] = [
+  
+  
   {
+    id: "treats",
+    name: "Updog Treat Bag",
+    price: 10.00,
+    image: updogTreat,
+    description: "120 grams of treats that will make your dog love you (even more)",
+    url: '/api/products/treats'
+},
+{
       id: "sample",
       name: "Updog Scoobie Snack",
       price: 1.00,
@@ -170,14 +180,7 @@ export const products: IProduct[] = [
       description: "Curious? Order a small 10 gram sample of our delicious treats.",
       url: '/api/products/sample'
   },
-  {
-      id: "treats",
-      name: "Updog Treat Bag",
-      price: 10.00,
-      image: updogTreat,
-      description: "120 grams of treats that will make your dog love you (even more)",
-      url: '/api/products/treats'
-  },
+
   {
       id: "pouch",
       name: "Updog Pouch - Large",
