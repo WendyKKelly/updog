@@ -181,6 +181,7 @@
   }
   .overflow {
     max-width: 310px;
+    margin-left: 5rem;
   }
   .main {
     display: flex;
