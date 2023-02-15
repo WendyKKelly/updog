@@ -22,7 +22,7 @@ const Nav = ({ children }) => {
       <Container className={styles.navContainer}>
         
         <Image
-                src="/images/Updog2.png"
+                src="/images/Updog3.png"
                 alt="Updog Logo"
                 className={styles.logo}
                 width={500}
