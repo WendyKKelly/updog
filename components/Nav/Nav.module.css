@@ -1,5 +1,6 @@
 .nav {
-    padding: 1rem 0;
+    padding: 0rem 0;
+    background-color: rgb(125, 180, 70);
   }
   
   @media (max-width: 600px) {
@@ -12,8 +13,9 @@
   .navContainer {
     display: flex;
     width: 100%;
+    padding: 1rem 0;
     justify-content: space-between;
-    background-color: rgb(125, 180, 70);
+   
   }
   
   .title {
@@ -49,3 +51,43 @@
   .description svg {
     margin-right: .4em;
   }
+
+ /* Mobile */
+@media (max-width: 700px) {
+    
+    .title {
+        font-weight: bold;
+      }
+      
+      .title a {
+        text-decoration: none;
+      }
+      
+      .title {
+        margin-left: 3rem;
+        line-height: 1.15;
+        font-family:Grandstander;
+        font-size: 2rem;
+      }
+      
+      .title,
+      .description {
+        text-align: center;
+      }
+      
+      .description {
+        line-height: 1.5;
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        
+      }
+      
+      .description a {
+        display: flex;
+        align-items: center;
+      }
+      
+      .description svg {
+        margin-right: .4em;
+      }
+    }
