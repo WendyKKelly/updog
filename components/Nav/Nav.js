@@ -1,5 +1,6 @@
 import { Grandstander } from "@next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { FaShoppingCart } from "react-icons/fa";
@@ -19,11 +20,16 @@ const Nav = ({ children }) => {
   return (
     <nav className={styles.nav}>
       <Container className={styles.navContainer}>
-        <p className={styles.title}>
-          <Link href="/">
-            <a className={grandstander.className}>Updog Treats</a>
-          </Link>
-        </p>
+        
+        <Image
+                src="/images/Updog2.png"
+                alt="Updog Logo"
+                className={styles.logo}
+                width={500}
+                height={600}
+                priority
+              />
+        
         <p className={styles.description}>
           <a
             className="snipcart-checkout snipcart-summary"

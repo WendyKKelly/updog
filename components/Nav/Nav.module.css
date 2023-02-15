@@ -18,21 +18,16 @@
    
   }
   
-  .title {
-    font-weight: bold;
+  .logo {
+    max-width:fit-content;
   }
+ 
   
-  .title a {
-    text-decoration: none;
-  }
+
   
-  .title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 2rem;
-  }
+
   
-  .title,
+  .logo,
   .description {
     text-align: center;
   }
@@ -55,22 +50,14 @@
  /* Mobile */
 @media (max-width: 700px) {
     
-    .title {
-        font-weight: bold;
-      }
+   
       
-      .title a {
-        text-decoration: none;
-      }
-      
-      .title {
+      .logo {
         margin-left: 3rem;
-        line-height: 1.15;
-        font-family:Grandstander;
-        font-size: 2rem;
+       
       }
       
-      .title,
+      .logo,
       .description {
         text-align: center;
       }
