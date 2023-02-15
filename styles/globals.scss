@@ -28,6 +28,11 @@
   margin-bottom: 100px;
   margin-top: 25px;
   text-align: center;
+  h2 {
+    font-family: var(--font-base);
+    font-size: 6em;
+    color: #1a4e8a;
+  }
 
   h3 {
     font-size: 20px;
@@ -37,8 +42,7 @@
     text-transform: uppercase;
     margin: 0;
   }
-
-
+}
 
 .product__price-button-container {
   display: flex;
