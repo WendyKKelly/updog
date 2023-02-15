@@ -2,6 +2,7 @@
 .product {
   display: grid;
   width: 100%;
+  background-color: rgb(125, 180, 70);
 
   grid-template-areas:
   "title        title         image"
@@ -40,12 +41,15 @@
   &__title {
     margin: 0;
     grid-area: title;
+    font-family: Grandstander;
     font-size: 32px;
     font-weight: bold;
   }
 
   &__description {
     grid-area: description;
+    font-family: Cormorant;
+    font-size: 24;
     line-height: 1.75rem;
     min-height: 175px;
     @include mixins.mobile {
@@ -55,6 +59,7 @@
 
   &__price {
     grid-area: price;
+    font-family: Cormorant;
     font-size: 28px;
     font-weight: bold;
   }
