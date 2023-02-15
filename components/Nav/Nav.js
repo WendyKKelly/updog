@@ -20,7 +20,7 @@ const Nav = ({ children }) => {
       <Container className={styles.navContainer}>
         <p className={styles.title}>
           <Link href="/">
-            <a>Snipcart Store</a>
+            <a>Updog Treats</a>
           </Link>
         </p>
         <p className={styles.description}>
