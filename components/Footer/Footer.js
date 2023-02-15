@@ -1,7 +1,10 @@
 import Container from '../Container';
 import { FaInstagram } from 'react-icons/fa';
+import { Grandstander } from '@next/font/google'
+import {Cormorant} from '@next/font/google'
 import styles from './Footer.module.css';
-
+const grandstander = Grandstander({ subsets: ['latin'] })
+const cormorant = Cormorant({subsets: ['latin']})
 const Footer = ({ children }) => {
   return (
     <footer className={styles.footer}>
