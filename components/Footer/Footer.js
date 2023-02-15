@@ -11,7 +11,7 @@ const Footer = ({ children }) => {
       <Container className={styles.footerContainer}>
         <div className={styles.grid}>
             <div className={styles.card}>
-        <h6>&copy; Updog Treats</h6>
+        <h4>&copy; Updog Treats</h4>
         </div>
         <div className={styles.card}>
         <h4 className={grandstander.className}>
@@ -32,7 +32,7 @@ const Footer = ({ children }) => {
             
         </div>
         <div className={styles.card}>
-        <h4 className={grandstander.className}>
+        <h4 className={styles.insta}>
               <FaInstagram /> <span>-&gt;</span>
             </h4>
            

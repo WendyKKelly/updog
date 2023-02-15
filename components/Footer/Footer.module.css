@@ -17,7 +17,9 @@
     width: var(--max-width);
     max-width: 100%;
   }
-  
+  .insta {
+    size: 10rem;
+  }
   .card {
     padding: 1rem 1.2rem;
     border-radius: var(--border-radius);
