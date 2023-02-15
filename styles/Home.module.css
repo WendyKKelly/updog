@@ -192,7 +192,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    max-width: 320px;
     padding: 1rem 0;
   }
   .center1 {
@@ -204,6 +204,15 @@
     
     padding: 1rem 0;
   }
+  .center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    max-width: 320px;
+  
   .grid1 {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -225,12 +234,7 @@
     margin-bottom: 0.5rem;
   }
 
-  .center {
-    padding: 0rem 0 0rem;
-  }
-  .center1 {
-    padding: 0rem 0 0rem;
-  }
+  
 .h1 {
   font-size: 5rem;
 
@@ -243,6 +247,7 @@
 
   .description {
     font-size: 0.8rem;
+    max-width: 320px;
   }
 
   .description a {
