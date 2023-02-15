@@ -179,6 +179,9 @@
   .content {
     padding: 1rem;
   }
+  .overflow {
+    max-width: 310px;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -235,25 +238,7 @@
   }
 
   
-  h1 {
-    font-family: var(--font-base);
-    color: #1a4e8a;
-    font-size: 3rem;
-  }
-  h2 {
-    font-family: var(--font-base);
-    font-size: 2em;
-    color: #1a4e8a;
-  }
   
-  h5{
-    color: #fff;
-    font-size: 4rem;
-  }
-  h6{
-    color: #1a4e8a;
-    font-size: 3rem;
-  }
 
   .center::before {
     transform: none;
