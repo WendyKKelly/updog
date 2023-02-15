@@ -10,9 +10,7 @@ const Footer = ({ children }) => {
     <footer className={styles.footer}>
       <Container className={styles.footerContainer}>
         <div className={styles.grid}>
-            <div className={styles.card}>
-        <h4>&copy; Updog Treats</h4>
-        </div>
+            
         <div className={styles.card}>
         <h4 className={grandstander.className}>
               About Us <span>-&gt;</span>
