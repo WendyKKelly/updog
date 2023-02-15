@@ -1,3 +1,4 @@
+import { Grandstander } from "@next/font/google";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -6,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import Container from "../Container";
 
 import styles from "./Nav.module.css";
-
+const grandstander = Grandstander({ subsets: ['latin'] })
 const Nav = ({ children }) => {
   const [total, setTotal] = useState(0);
   useEffect(() => {
@@ -20,7 +21,7 @@ const Nav = ({ children }) => {
       <Container className={styles.navContainer}>
         <p className={styles.title}>
           <Link href="/">
-            <a>Updog Treats</a>
+            <a className={grandstander.className}>Updog Treats</a>
           </Link>
         </p>
         <p className={styles.description}>
@@ -34,7 +35,7 @@ const Nav = ({ children }) => {
             <span className="snipcart-total-price">
               {new Intl.NumberFormat("en-US", {
                 style: "currency",
-                currency: "USD",
+                currency: "CAD",
               }).format(total)}
             </span>
           </a>

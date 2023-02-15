@@ -56,11 +56,7 @@ export default function Home({products}: IProductListProps) {
       
       <section className={styles.section}>
       <main className={styles.main}>
-        <div className={styles.description}>
-          
-          
-          
-        </div>
+        
         <div className={styles.grid1}>
 
         <div className={styles.center}>
