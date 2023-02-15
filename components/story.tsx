@@ -27,7 +27,7 @@ export default function Story() {
             <div className={styles.grid}>
               
         
-            <div className={styles.card}> <div className={styles.card}>
+             <div className={styles.card}>
             <Image
                 src="/images/rocky2.png"
                 alt="Rocky"
@@ -43,9 +43,9 @@ export default function Story() {
             <p className={grandstander.className}>
               Happy dog!
             </p>
-            
             </div>
             </div>
+            <div className={styles.card}>
             <Image
                 src="/images/rosa.png"
                 alt="Rosa"
@@ -102,13 +102,20 @@ export default function Story() {
             
             </div>
             </div>
+            </div>
 
-            </div>
             
-            <h5 className={grandstander.className}>Humans:</h5>
-            <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
+            <div className={styles.grid2}>
+        <div className={styles.center2}>
+          <div className={cormorant.className}>
+          <h5 className={styles.overflow}>Humans:</h5>
+          <p className={styles.overflow}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
+          </div>
+        </div>
+        </div>
+         
             
-            </div>
+            
             <div className={styles.grid}>
               <div className={styles.card}>
             <Image
@@ -149,7 +156,7 @@ export default function Story() {
             </div>
             </div>
             
-            
+            </div>
    
 
 

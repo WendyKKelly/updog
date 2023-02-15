@@ -153,6 +153,10 @@
       .content {
         padding: 1rem;
       }
+      .overflow {
+        max-width: 310px;
+        margin-left: 5rem;
+      }
       .section {
         display: grid;
         grid-template-columns: repeat(1, minmax(100%, auto));
@@ -212,6 +216,7 @@
         margin-bottom: 120px;
         max-width: 320px;
         text-align: center;
+        margin-right: 10rem;
       }
       .grid2 {
         display: grid;
