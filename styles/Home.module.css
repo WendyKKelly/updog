@@ -212,7 +212,7 @@
     white-space: pre-line;
     overflow-wrap: break-word;
     max-width: 320px;
-  
+  }
   .grid1 {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
