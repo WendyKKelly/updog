@@ -1,4 +1,4 @@
-@use 'mixins';
+
 .section {
   display: grid;
   grid-template-columns: repeat(1, minmax(100%, auto));
@@ -23,8 +23,6 @@
     grid-template-columns: repeat(2, minmax(50%, auto));
     width: var(--max-width);
     max-width: 100%;
-  
-
   grid-template-areas:
   "title        title         image"
   "description  description  image"
@@ -36,7 +34,7 @@
 
 
 
-    @include mixins.mobile {
+  @media (max-width: 700px) {
       grid-template-areas:
       "image        image      "
       "title         title     "
@@ -48,7 +46,7 @@
     }
   }
 
-  __title {
+  .title {
     margin: 0;
     grid-area: title;
     font-family: grandstander;
@@ -56,32 +54,30 @@
     font-weight: bold;
   }
 
-  __description {
+  .description {
     grid-area: description;
     font-family: cormorant;
     font-size: 24;
     line-height: 1.75rem;
     min-height: 175px;
-    @include mixins.mobile {
-      min-height: 0;
-    }
+   
   }
 
-  __price {
+  .price {
     grid-area: price;
     font-family: cormorant;
     font-size: 28px;
     font-weight: bold;
   }
 
-  __image {
+  .image {
     grid-area: image;
     width: 80%;
     max-height: 70%;
     object-fit: fill;
     ;
 
-    @include mixins.mobile {
+    @media (max-width: 700px) {
       height: 300px;
       max-height: 300px;
       object-fit: contain;
@@ -90,12 +86,12 @@
     }
   }
 
-  __price-button-container {
+  .price-button-container {
     display: flex;
     grid-area: button;
   }
 
-  __button {
+  .button {
     margin-left: 30px;
     font-size: 14px;
     font-weight: bold;
@@ -129,17 +125,4 @@
     }
   }
   // TODO move mixins in colors
-  @include mixins.mobile {
-    grid-template-areas:
-    "image        image      "
-    "title         title     "
-    "description  description"
-    "button       button     ";
-    grid-template-columns: 1fr 1fr;
-
-    .product__image {
-      height: 300px;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  }
+  

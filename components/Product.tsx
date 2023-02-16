@@ -16,10 +16,11 @@ interface IProductProps {
 
 const Product = (props: IProductProps) => {
     return (
+        <section>
         <div className={styles.product}>
-            <h5 className={styles.product__title}>{props.product.name}</h5>
-            <p className={styles.product__description}>{props.product.description}</p>
-            <div className={styles.product__image}>
+            <h5 className={styles.title}>{props.product.name}</h5>
+            <p className={styles.description}>{props.product.description}</p>
+            <div className={styles.image}>
             <Image 
             src={props.product.image} 
             alt={props.product.image.src}
@@ -28,9 +29,9 @@ const Product = (props: IProductProps) => {
             priority />
             </div>
             <div className="product__price-button-container">
-                <div className={styles.product__price}>${props.product.price.toFixed(2)}</div>
+                <div className={styles.price}>${props.product.price.toFixed(2)}</div>
                 <button
-                    className={`snipcart-add-item ${styles.product__button}`}
+                    className={`snipcart-add-item ${styles.button}`}
                     data-item-id={props.product.id}
                     data-item-name={props.product.name}
                     data-item-price={props.product.price}
@@ -40,6 +41,7 @@ const Product = (props: IProductProps) => {
                 </button>
             </div>
         </div>
+        </section>
     )
 }
 
