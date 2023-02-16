@@ -285,7 +285,13 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
-    grid-template-columns: repeat(2, 25%, 75%);
+    grid-template-columns: repeat(2, 50%);
+  }
+  .grid1 {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
   }
 }
 
