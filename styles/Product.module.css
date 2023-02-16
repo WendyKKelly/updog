@@ -36,11 +36,11 @@
 
   @media (max-width: 700px) {
       grid-template-areas:
-      "image        image      "
-      "title         title     "
-      "description  description"
-      "button       button     ";
-      grid-template-columns: 1fr 1fr 1fr;
+      "image             "
+      "title            "
+      "description  "
+      "button           ";
+      grid-template-columns:  1fr ;
 
       
     }
