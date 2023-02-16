@@ -22,7 +22,7 @@ const Product = (props: IProductProps) => {
         <section>
         <div className={styles.product}>
             <div className={grandstander.className}>
-            <h5 className={styles.title}>{props.product.name}</h5></div>
+            <h2 className={styles.title}>{props.product.name}</h2></div>
             <div className={cormorant.className}>
             <p className={styles.description}>{props.product.description}</p></div>
             <div className={styles.image}>
