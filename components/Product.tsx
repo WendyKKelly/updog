@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/Product.module.scss';
+import styles from '../styles/Product.module.css';
 
 export interface IProduct {
     id: string
