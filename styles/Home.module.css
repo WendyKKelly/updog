@@ -222,12 +222,12 @@
     "title" 
     "image";
     margin-bottom: 100px;
-    
+    margin-left: 0rem;
     grid-column-gap: 0;
     text-align: center;
   }
   .title {
-    margin-left: -8.5rem;
+    margin-left: -7rem;
   }
   .image {
     margin-left: -4.5rem;
