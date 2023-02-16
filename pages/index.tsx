@@ -141,7 +141,10 @@ export default function Home({products}: IProductListProps) {
             </p>
           </Link>
         </div>
-       
+        <div className={styles.grid1}>
+         <h5 className={grandstander.className}>
+        Get Updog Treats:
+    </h5></div>
         <ProductList products={products}/>
         < Story />
       </main>

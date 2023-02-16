@@ -19,9 +19,7 @@ interface IProductProps {
 
 const Product = (props: IProductProps) => {
     return (
-        <section> <h5 className={grandstander.className}>
-        Get Updog Treats:
-    </h5>
+        <section> 
         <div className={styles.product}>
            
             <div className={grandstander.className}>
