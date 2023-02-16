@@ -293,6 +293,15 @@
     max-width: 320px;
     text-align: center;
   }
+  .center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    max-width: 320px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
