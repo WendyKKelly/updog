@@ -231,6 +231,7 @@
   }
   .image {
     margin-left: -4.5rem;
+    padding: 2rem, 0;
   }
   .desc {
     margin-left: -25rem;
@@ -301,7 +302,7 @@
   }
   .grid1 {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
+    margin-bottom: 0px;
     max-width: 320px;
     text-align: center;
   }
