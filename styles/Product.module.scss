@@ -56,7 +56,7 @@
     font-weight: bold;
   }
 
-  &__description {
+  __description {
     grid-area: description;
     font-family: cormorant;
     font-size: 24;
@@ -67,14 +67,14 @@
     }
   }
 
-  &__price {
+  __price {
     grid-area: price;
     font-family: cormorant;
     font-size: 28px;
     font-weight: bold;
   }
 
-  &__image {
+  __image {
     grid-area: image;
     width: 80%;
     max-height: 70%;
@@ -90,12 +90,12 @@
     }
   }
 
-  &__price-button-container {
+  __price-button-container {
     display: flex;
     grid-area: button;
   }
 
-  &__button {
+  __button {
     margin-left: 30px;
     font-size: 14px;
     font-weight: bold;
