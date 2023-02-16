@@ -109,6 +109,16 @@
         
          
           }
+
+          .description {
+            grid-area: description;
+            font-family: cormorant;
+            font-size: 24;
+            line-height: 1.75rem;
+            min-height: 175px;
+            max-width: 320px;
+           
+          }
         
       }
     
