@@ -64,16 +64,16 @@ export default function Home({products}: IProductListProps) {
           <h1 className={styles.overflow}>What's Up, Dog? Treats!</h1>
           </div>
         </div>
-        <div className={styles.center1}>
+      
         <Image
                 src="/images/updoglogogold.png"
                 alt="Updog Logo"
-                className={styles.center1}
+                className={styles.center}
                 width={500}
                 height={600}
                 priority
               />
-        </div>
+     
    
         </div>
         <div className={styles.grid2}>
