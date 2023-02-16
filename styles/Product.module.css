@@ -122,8 +122,38 @@
         
       }
     
+      @media (min-width: 701px) and (max-width: 1280px) {
+      .product {
+        display: grid;
+          grid-template-columns: repeat(2, minmax(50%, auto));
+          width: var(--max-width);
+          max-width: 100%;
+        grid-template-areas:
+        "title   title     "  
+        "image  image"      
+        "description  description" 
+        "button     button  "      
+        ;
+        grid-template-columns: 1fr  1fr;
+        margin-bottom: 100px;
+        grid-column-gap: 100px;
+      
+      
+      
+       
+        }
 
- 
+        .description {
+          grid-area: description;
+          font-family: cormorant;
+          font-size: 24;
+          line-height: 1.75rem;
+          min-height: 175px;
+          max-width: 680px;
+         
+        }
+      
+      }
   
  
   

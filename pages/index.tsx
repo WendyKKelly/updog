@@ -55,11 +55,11 @@ export default function Home({products}: IProductListProps) {
       </Head>
       
       <section className={styles.section}>
-      <main className={styles.main}>
-        
+      
+        <main className={styles.main}>
         <div className={styles.grid1}>
 
-        <div className={styles.center}>
+        <div className={styles.title}>
           <div className={grandstander.className}>
           <h1 className={styles.overflow}>What's Up, Dog? Treats!</h1>
           </div>
@@ -68,7 +68,7 @@ export default function Home({products}: IProductListProps) {
         <Image
                 src="/images/updoglogogold.png"
                 alt="Updog Logo"
-                className={styles.center}
+                className={styles.image}
                 width={500}
                 height={600}
                 priority
@@ -76,12 +76,12 @@ export default function Home({products}: IProductListProps) {
      
    
         </div>
-        <div className={styles.grid2}>
-        <div className={styles.center2}>
+        
+        <div className={styles.desc}>
           <div className={cormorant.className}>
           <h5 className={styles.overflow}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
           </div>
-        </div>
+       
         </div>
 
         <div className={styles.grid}>
