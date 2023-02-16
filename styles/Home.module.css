@@ -215,20 +215,25 @@
   }
   .grid1 {
     display: grid;
-    grid-template-columns: repeat(1, minmax(100%, auto));
+    grid-template-columns: 1fr;
     width: var(--max-width);
-    max-width: 100%;
+    max-width: 320px;
     grid-template-areas:
-    "title        "
-    "image "   
-    
-    
-    ".            .     .       image";
-    
+    "title" 
+    "image";
     margin-bottom: 100px;
-    margin-left: 5rem;
-    grid-column-gap: 100px;
-  
+    margin-left: -5.75rem;
+    grid-column-gap: 0;
+    text-align: center;
+  }
+  .title {
+    margin-left: -8.5;
+  }
+  .image {
+    margin-left: -5.75rem;
+  }
+  .desc {
+    margin-left: -25rem;
   }
   .grid {
     grid-template-columns: 1fr;
