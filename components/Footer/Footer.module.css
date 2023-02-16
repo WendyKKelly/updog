@@ -53,9 +53,16 @@
     width: var(--max-width);
     max-width: 320px;
     
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     margin-left: 0rem;
     grid-column-gap: 0;
-    text-align: center;
+    text-align: left;
+  }
+  .footerContainer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100%;
+    background-color: rgb(18, 176, 213);
   }
 }
