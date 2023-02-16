@@ -17,10 +17,15 @@ interface IProductProps {
 const Product = (props: IProductProps) => {
     return (
         <div className={styles.product}>
-            <h2 className={styles.product__title}>{props.product.name}</h2>
+            <h5 className={styles.product__title}>{props.product.name}</h5>
             <p className={styles.product__description}>{props.product.description}</p>
             <div className={styles.product__image}>
-            <Image src={props.product.image} alt={props.product.image.src} />
+            <Image 
+            src={props.product.image} 
+            alt={props.product.image.src}
+            width={300}
+            height={300}
+            priority />
             </div>
             <div className="product__price-button-container">
                 <div className={styles.product__price}>${props.product.price.toFixed(2)}</div>
