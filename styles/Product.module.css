@@ -40,14 +40,14 @@
   .title {
     margin: 0;
     grid-area: title;
-    font-family: grandstander;
+   
     font-size: 32px;
     font-weight: bold;
   }
 
   .description {
     grid-area: description;
-    font-family: cormorant;
+   
     font-size: 24;
     line-height: 1.75rem;
     min-height: 175px;
@@ -56,7 +56,7 @@
 
   .price {
     grid-area: price;
-    font-family: cormorant;
+   
     font-size: 28px;
     font-weight: bold;
   }
@@ -112,7 +112,7 @@
 
           .description {
             grid-area: description;
-            font-family: cormorant;
+            
             font-size: 24;
             line-height: 1.75rem;
             min-height: 175px;
@@ -145,7 +145,7 @@
 
         .description {
           grid-area: description;
-          font-family: cormorant;
+         
           font-size: 24;
           line-height: 1.75rem;
           min-height: 175px;
