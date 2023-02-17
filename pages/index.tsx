@@ -56,12 +56,12 @@ export default function Home({products}: IProductListProps) {
       
       <section className={styles.section}>
       
-        <main className={styles.main}>
+        
         <div className={styles.grid1}>
 
         <div className={styles.title}>
           <div className={grandstander.className}>
-          <h1 className={styles.overflow}>What's Up, Dog? Treats!</h1>
+          <h1 >What's Up, Dog? Treats!</h1>
           </div>
         </div>
       
@@ -79,7 +79,7 @@ export default function Home({products}: IProductListProps) {
         
         <div className={styles.desc}>
           <div className={cormorant.className}>
-          <h5 className={styles.overflow}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
+          <h5>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
           </div>
        
         </div>
@@ -147,7 +147,7 @@ export default function Home({products}: IProductListProps) {
     </h5></div>
         <ProductList products={products}/>
         < Story />
-      </main>
+      
       </section>
     
     
