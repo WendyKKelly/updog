@@ -20,9 +20,7 @@
   max-width: 100%;
   grid-template-areas:
   "title        title   image      image"
-  "desc desc desc desc"
-  
-  ;
+  "desc desc desc desc";
   
   margin-bottom: 100px;
   
@@ -30,17 +28,17 @@
 
 }
 .title {
-
+ grid-area: title;
   padding: 2rem 4rem;
 }
 .image {
-  
+  grid-area: image;
   
   padding: 2rem 0rem;
 }
 
 .desc {
-  
+  grid-area:desc;
   padding: 3rem 4rem;
 }
 
