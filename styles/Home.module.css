@@ -192,12 +192,34 @@
     grid-template-columns: repeat(2, 50%);
   }
   .grid1 {
-    grid-template-columns: 1fr;
-    margin-bottom: 0px;
-    max-width: 320px;
+    
+    grid-template-areas:
+     "title title"
+     " image image" 
+     " desc desc ";
+    grid-template-rows: auto;
+    margin-bottom: 100px;
     text-align: center;
   }
-  
+  .title {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem 0rem;
+  }
+  .image {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    
+    padding: 2rem 0rem;
+  }
+  .desc {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem 0rem;
+  }
 }
 
 
