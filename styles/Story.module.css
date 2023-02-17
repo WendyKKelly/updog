@@ -19,14 +19,19 @@
       margin-bottom: 7rem;
     }
 
-    .code {
-      font-weight: 700;
-      font-family: var(--font-mono);
+    .title {
+      grid-area: title;
+  padding: 7rem 4rem;
     }
     
     .grid {
+      grid-area: grid;
       display: grid;
-      grid-template-columns: repeat(2, minmax(50%, auto));
+      grid-template-columns: repeat(4, minmax(25%, auto));
+      grid-template-areas: 
+      "title title title title"
+      "grid grid grid grid"
+      "humans humans humans humans";
       width: var(--max-width);
       max-width: 90%;
     }
@@ -60,7 +65,27 @@
       line-height: 1.5;
       max-width: 30ch;
     }
-    
+    .humans {
+      grid-area: humans;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(50%, auto));
+      grid-template-areas: 
+      "overflow overflow"
+      "image image"
+      "humans humans humans humans";
+      width: var(--max-width);
+      max-width: 90%;
+
+    }
+    .image {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(50%, auto));
+      grid-template-areas: 
+      "card desc"
+      "card desc";
+      width: var(--max-width);
+      max-width: 90%;
+    }
     
     /* Enable hover only on non-touch devices */
     @media (hover: hover) and (pointer: fine) {
@@ -130,17 +155,7 @@
       .grid {
         grid-template-columns: repeat(2, 50%);
       }
-      .section {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(100%, auto));
-        width: var(--max-width);
-        min-height: 25vh;
-        background-color: rgb(146, 115, 206);
-        background: cover;
-        margin-right: 2rem;
-        margin-left: -15rem;
-        
-      }
+ 
     }
     
     @media (prefers-color-scheme: dark) {

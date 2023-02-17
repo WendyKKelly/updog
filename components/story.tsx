@@ -18,10 +18,8 @@ export default function Story() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.section}>
-      
       <div className={styles.grid2}>
-
-     <div className={styles.title}>
+      <div className={styles.title}>
      <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
             <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p>
             <div className={styles.grid}>
@@ -124,7 +122,7 @@ export default function Story() {
             </div>
 
             
-            <div className={styles.grid2}>
+            <div className={styles.humans}>
         
           <div className={grandstander.className}>
           <h5 className={styles.overflow}>Humans:</h5>
@@ -135,7 +133,7 @@ export default function Story() {
          
             
             
-            <div className={styles.grid}>
+            <div className={styles.image}>
               <div className={styles.card}>
             <Image
                 src="/images/mike2.png"
