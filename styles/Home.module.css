@@ -132,22 +132,31 @@
   .grid1 {
     grid-template-columns: repeat(1, minmax(100%, auto));
     grid-template-areas:
-     "title"
-     "image" 
-     "desc";
+     ". title ."
+     " . image ." 
+     " . desc . ";
     grid-template-rows: auto;
     margin-bottom: 100px;
     text-align: center;
   }
   .title {
-    padding: 1;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem, 0rem;
   }
   .image {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
     
-    padding: 2rem, 0;
+    padding: 2rem, 0rem;
   }
   .desc {
-    padding: 1rem;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem, 0rem;
   }
   .grid {
     grid-template-columns: 1fr;
