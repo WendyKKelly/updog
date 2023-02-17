@@ -192,11 +192,6 @@
     grid-template-columns: repeat(2, 50%);
   }
   .grid1 {
-    
-    grid-template-areas:
-     "title title"
-     " image image" 
-     " desc desc ";
     grid-template-rows: auto;
     margin-bottom: 100px;
     text-align: center;
