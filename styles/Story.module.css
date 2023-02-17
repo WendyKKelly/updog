@@ -11,9 +11,13 @@
       color: #fff;
     }
     
-    .grid2 {
+    .top {
       display: grid;
       grid-template-columns: repeat(4, minmax(25%, auto));
+      grid-template-areas: 
+      "title title title title"
+      "grid grid grid grid"
+      "humans humans humans humans";
       width: var(--max-width);
       max-width: 100%;
       margin-bottom: 7rem;
@@ -27,19 +31,20 @@
     .grid {
       grid-area: grid;
       display: grid;
-      grid-template-columns: repeat(4, minmax(25%, auto));
+      grid-template-columns: repeat(2, minmax(50%, auto));
       grid-template-areas: 
-      "title title title title"
-      "grid grid grid grid"
-      "humans humans humans humans";
+      "card card"
+      "desc desc";
       width: var(--max-width);
       max-width: 90%;
     }
     
     .desc {
+      grid-area: desc;
       margin-left: 2rem;
     }
     .card {
+      grid-area: card;
       padding: 1rem 1.2rem;
       border-radius: var(--border-radius);
       background: rgba(var(--card-rgb), 0);
@@ -77,7 +82,11 @@
       max-width: 90%;
 
     }
+    .overflow {
+      grid-area: overflow;
+    }
     .image {
+      grid-area: image;
       display: grid;
       grid-template-columns: repeat(2, minmax(50%, auto));
       grid-template-areas: 

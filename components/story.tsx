@@ -18,7 +18,7 @@ export default function Story() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.section}>
-      <div className={styles.grid2}>
+      <div className={styles.top}>
       <div className={styles.title}>
      <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
             <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p>
