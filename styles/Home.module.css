@@ -30,28 +30,17 @@
 
 }
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  white-space: pre-line;
+
   padding: 2rem 0;
 }
 .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  
   
   padding: 2rem 0;
 }
 
 .desc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  white-space: pre-line;
+  
   padding: 3rem 0;
 }
 
@@ -172,28 +161,20 @@
     padding: 1rem;
   }
   .grid1 {
-    display: grid;
     grid-template-columns: 1fr;
-    width: var(--max-width);
     max-width: 320px;
-    grid-template-areas:
-    "title" 
-    "image"
-    "desc";
     margin-bottom: 100px;
-    margin-left: 0rem;
-    grid-column-gap: 0;
     text-align: center;
   }
   .title {
-    padding: 0;
+    padding: 1;
   }
   .image {
     
     padding: 2rem, 0;
   }
   .desc {
-    padding: 0rem;
+    padding: 1rem;
   }
   .grid {
     grid-template-columns: 1fr;
