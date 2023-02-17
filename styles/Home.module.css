@@ -19,10 +19,10 @@
   width: var(--max-width);
   max-width: 100%;
   grid-template-areas:
-  "title        title   title      image"
-  "desc desc desc desc"
+  "title        title   image      image"
+  "desc desc image  image"
   
-  ".            .     .       image";
+  ;
   
   margin-bottom: 100px;
   
