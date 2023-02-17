@@ -171,19 +171,6 @@
   .content {
     padding: 1rem;
   }
-  
-
- 
-
-  .center2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    white-space: pre-line;
-    overflow-wrap: break-word;
-    max-width: 320px;
-  }
   .grid1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -191,21 +178,22 @@
     max-width: 320px;
     grid-template-areas:
     "title" 
-    "image";
+    "image"
+    "desc";
     margin-bottom: 100px;
     margin-left: 0rem;
     grid-column-gap: 0;
     text-align: center;
   }
   .title {
-    margin-left: 0rem;
+    padding: 0;
   }
   .image {
-    margin-left: 0rem;
+    
     padding: 2rem, 0;
   }
   .desc {
-    margin-left: 0rem;
+    padding: 0rem;
   }
   .grid {
     grid-template-columns: 1fr;
