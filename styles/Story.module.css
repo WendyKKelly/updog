@@ -30,21 +30,21 @@
     
     .grid {
       grid-area: grid;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(50%, auto));
-      grid-template-areas: 
-      "card card"
-      "desc desc";
-      width: var(--max-width);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem 2rem;
       max-width: 90%;
     }
     
     .desc {
-      grid-area: desc;
+      
       margin-left: 2rem;
     }
     .card {
-      grid-area: card;
+     
       padding: 1rem 1.2rem;
       border-radius: var(--border-radius);
       background: rgba(var(--card-rgb), 0);
