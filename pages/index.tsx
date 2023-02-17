@@ -75,7 +75,7 @@ export default function Home({products}: IProductListProps) {
               />
      
    
-        </div>
+        
         
         <div className={styles.desc}>
           <div className={cormorant.className}>
@@ -83,7 +83,7 @@ export default function Home({products}: IProductListProps) {
           </div>
        
         </div>
-
+        </div>
         <div className={styles.grid}>
           <Link
             href="#ingredients"
