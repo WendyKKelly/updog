@@ -85,6 +85,25 @@ export default function Story() {
             </div>
             <div className={styles.card}>
             <Image
+                src="/images/morley.png"
+                alt="Morley"
+                
+                width={300}
+                height={350}
+                priority
+              />
+              <div className={styles.desc}>
+<h4 className={grandstander.className}>
+             Morley <span>-&gt;</span>
+            </h4>
+            <p className={grandstander.className}>
+            It was harder than I expected to get a good photo! She kept gobbling them before I could get a good shot! If you let me buy some more, I’ll try again. She loves them!
+            </p>
+            
+            </div>
+            </div>
+            <div className={styles.card}>
+            <Image
                 src="/images/spokesdogplaceholder.png"
                 alt="Nelson dog"
                 
