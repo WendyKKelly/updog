@@ -11,6 +11,10 @@ export interface IProduct {
     url: string
     description: string
     image: StaticImageData
+    weight: number
+    length: number
+    width: number
+    height: number
 }
 
 interface IProductProps {
@@ -42,7 +46,11 @@ const Product = (props: IProductProps) => {
                     data-item-name={props.product.name}
                     data-item-price={props.product.price}
                     data-item-url={props.product.url}
-                    data-item-image={props.product.image.src}>
+                    data-item-image={props.product.image.src}
+                    data-item-weight={props.product.weight}
+                        data-item-length={props.product.length}
+                        data-item-width={props.product.width}
+                        data-item-height={props.product.height}>
                     Add to cart
                 </button>
                 </div>
