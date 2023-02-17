@@ -32,7 +32,7 @@ const Footer = ({ children }) => {
         </div>
         <Link
             href="https://www.instagram.com/updogtreats/"
-            className={styles.card}
+            
             target="_blank"
             rel="noopener noreferrer"
           >
