@@ -230,7 +230,7 @@
     padding: 2rem, 0;
   }
   .desc {
-    margin-left: -25rem;
+    margin-left: 0rem;
   }
   .grid {
     grid-template-columns: 1fr;
