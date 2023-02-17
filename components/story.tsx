@@ -18,10 +18,10 @@ export default function Story() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.section}>
-      <main className={styles.main}>
+      
       <div className={styles.grid2}>
 
-     <div className={styles.center2}>
+     <div className={styles.title}>
      <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
             <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p>
             <div className={styles.grid}>
@@ -125,7 +125,7 @@ export default function Story() {
 
             
             <div className={styles.grid2}>
-        <div className={styles.center2}>
+        
           <div className={grandstander.className}>
           <h5 className={styles.overflow}>Humans:</h5>
           <p className={styles.overflow}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
@@ -190,9 +190,9 @@ export default function Story() {
          
     
 
-</div>
 
-        </main>
+
+        
         </section>
         </>
   )
