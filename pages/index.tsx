@@ -142,9 +142,10 @@ export default function Home({products}: IProductListProps) {
           </Link>
         </div>
         <div className={styles.grid1}>
+          <div className={styles.desc}>
          <h5 className={grandstander.className}>
         Get Updog Treats:
-    </h5></div>
+    </h5></div></div>
         <ProductList products={products}/>
         < Story />
       
