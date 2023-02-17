@@ -159,7 +159,7 @@
     padding: 1rem;
   }
   .grid1 {
-    grid-template-columns: 1fr;
+    grid-template-areas: "title" "image" "desc";
     max-width: 320px;
     margin-bottom: 100px;
     text-align: center;
