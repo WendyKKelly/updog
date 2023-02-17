@@ -160,6 +160,7 @@
   }
   .grid1 {
     grid-template-areas: "title" "image" "desc";
+    grid-template-columns: 1fr;
     max-width: 320px;
     margin-bottom: 100px;
     text-align: center;
