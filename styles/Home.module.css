@@ -20,7 +20,7 @@
   max-width: 100%;
   grid-template-areas:
   "title        title   image      image"
-  "desc desc image  image"
+  "desc desc desc desc"
   
   ;
   
