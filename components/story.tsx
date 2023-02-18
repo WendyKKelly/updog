@@ -120,7 +120,7 @@ export default function Story() {
           <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
           </div>
           <div className={styles.humans}>
-            <div className={styles.h_image}>
+            
               <div className={styles.h_card}>
             <Image
                 src="/images/mike2.png"
@@ -159,7 +159,7 @@ export default function Story() {
             </div>
             </div>
             </div>
-            </div>
+           
    
               
         </section>

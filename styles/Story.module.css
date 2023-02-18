@@ -81,11 +81,11 @@
     }
     .humans {
       grid-area: humans;
-      display: grid;
-      grid-template-columns: 3fr;
-      grid-template-areas: 
-      " . h_title . "
-      "h_image h_image h_image";
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       gap: 3rem 2rem;
       max-width: 90%;
     }
@@ -99,11 +99,8 @@
       transition: background 200ms, border 200ms;
       width: fit-content;
     }
-    .h_image {
-      
-      grid-area: h_image;
-    }
-    .h_image span {
+  
+    .h_card span {
       display: inline-block;
       transition: transform 200ms;
     }
@@ -156,7 +153,6 @@
         grid-area: humans;
         display: flex;
         flex-direction: row;
-        
         justify-content: center;
         align-items: center;
         gap: 3rem 2rem;
