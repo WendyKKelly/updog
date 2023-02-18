@@ -76,24 +76,16 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(50%, auto));
       grid-template-areas: 
-      "overflow overflow"
-      "image image"
-      "humans humans humans humans";
+      "card card";
       width: var(--max-width);
       max-width: 90%;
 
     }
-    .overflow {
-      grid-area: overflow;
+    .h_card {
+      grid-area: card;
     }
     .h_image {
-      grid-area: image;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(50%, auto));
-      grid-template-areas: 
-      "h_card h_desc"
-      "h_card h_desc";
-      width: var(--max-width);
+      
       max-width: 90%;
     }
     
@@ -138,10 +130,7 @@
         grid-area: story_title;
     padding: 0rem 0rem;
       }
-      .overflow {
-        max-width: 310px;
-        margin-left: 0rem;
-      }
+      
   
  
       .dogs {
