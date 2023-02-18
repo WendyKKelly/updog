@@ -56,7 +56,7 @@ export default function Home({products}: IProductListProps) {
       
       <section className={styles.section}>
       
-        
+        <main className={styles.main}>
         <div className={styles.grid1}>
 
         <div className={styles.title}>
@@ -84,6 +84,7 @@ export default function Home({products}: IProductListProps) {
        
         </div>
         </div>
+        </main>
         <div className={styles.grid}>
           <Link
             href="#ingredients"
