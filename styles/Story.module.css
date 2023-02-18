@@ -16,8 +16,10 @@
       grid-template-columns: repeat(4, minmax(25%, auto));
       grid-template-areas: 
       "story_title story_title story_title story_title"
-      "grid grid grid grid"
-      "humans humans humans humans";
+      "dogs dogs dogs dogs"
+      "h_title h_title h_title h_title"
+      "humans humans humans humans"
+      ;
       width: var(--max-width);
       max-width: 100%;
       margin-bottom: 7rem;
@@ -28,9 +30,12 @@
       grid-area: story_title;
       padding: 7rem 4rem;
     }
+    story_title p {
+      padding-top:5rem;
+    }
     
     .dogs {
-      grid-area: grid;
+      grid-area: dogs;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -70,6 +75,10 @@
       line-height: 1.5;
       max-width: 30ch;
     }
+    .h_title {
+      grid-area: h_title;
+      padding: 7rem 4rem;
+    }
     .humans {
       grid-area: humans;
       display: grid;
@@ -80,10 +89,7 @@
       gap: 3rem 2rem;
       max-width: 90%;
     }
-    .h_title {
-      grid-area: h_title;
-      padding: 7rem 4rem;
-    }
+   
     .h_card {
       
       padding: 1rem 1.2rem;

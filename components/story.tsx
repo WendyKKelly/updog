@@ -113,14 +113,13 @@ export default function Story() {
             </div>
             
             </div>
-            <div className={styles.humans}>
+            
         
           <div className={styles.h_title}>
           <h5 className={grandstander.className}>Humans:</h5>
           <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
           </div>
-        
-        
+          <div className={styles.humans}>
             <div className={styles.h_image}>
               <div className={styles.h_card}>
             <Image
