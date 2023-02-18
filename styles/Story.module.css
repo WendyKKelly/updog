@@ -17,8 +17,7 @@
       grid-template-areas: 
       "story_title story_title story_title story_title"
       "grid grid grid grid"
-      "humans humans humans humans"
-      ;
+      "humans humans humans humans";
       width: var(--max-width);
       max-width: 100%;
       margin-bottom: 7rem;
@@ -27,7 +26,7 @@
 
     .story_title {
       grid-area: story_title;
-  padding: 7rem 4rem;
+      padding: 7rem 4rem;
     }
     
     .dogs {
@@ -73,6 +72,29 @@
     }
     .humans {
       grid-area: humans;
+      display: grid;
+      grid-template-columns: 3fr;
+      grid-template-areas: 
+      " . h_title . "
+      "h_card h_card h_card";
+      gap: 3rem 2rem;
+      max-width: 90%;
+    }
+    .h_title {
+      grid-area: h_title;
+      padding: 7rem 4rem;
+    }
+    .h_card {
+      grid-area: h_card;
+      padding: 1rem 1.2rem;
+      border-radius: var(--border-radius);
+      background: rgba(var(--card-rgb), 0);
+      border: 1px solid rgba(var(--card-border-rgb), 0);
+      transition: background 200ms, border 200ms;
+      width: fit-content;
+    }
+    .h_image {
+      
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -80,17 +102,6 @@
       align-items: center;
       gap: 3rem 2rem;
       max-width: 90%;
-    }
-    .h_card {
-      grid-area: h_card;
-    }
-    .h_image {
-      padding: 1rem 1.2rem;
-      border-radius: var(--border-radius);
-      background: rgba(var(--card-rgb), 0);
-      border: 1px solid rgba(var(--card-border-rgb), 0);
-      transition: background 200ms, border 200ms;
-      width: fit-content;
     }
     .h_image span {
       display: inline-block;

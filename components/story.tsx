@@ -43,7 +43,6 @@ export default function Story() {
             <Image
                 src="/images/rosa.png"
                 alt="Rosa"
-                
                 width={300}
                 height={350}
                 priority
@@ -62,7 +61,6 @@ export default function Story() {
             <Image
                 src="/images/lampi.png"
                 alt="Lampi"
-                
                 width={300}
                 height={350}
                 priority
@@ -81,7 +79,6 @@ export default function Story() {
             <Image
                 src="/images/morley.png"
                 alt="Morley"
-                
                 width={300}
                 height={350}
                 priority
@@ -100,7 +97,6 @@ export default function Story() {
             <Image
                 src="/images/spokesdogplaceholder.png"
                 alt="Nelson dog"
-                
                 width={300}
                 height={350}
                 priority
@@ -116,13 +112,12 @@ export default function Story() {
             </div>
             </div>
             
-            
             </div>
             <div className={styles.humans}>
         
-          <div className={grandstander.className}>
-          <h5 className={styles.overflow}>Humans:</h5>
-          <p className={styles.overflow}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
+          <div className={styles.h_title}>
+          <h5 className={grandstander.className}>Humans:</h5>
+          <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
           </div>
         
         
@@ -131,7 +126,6 @@ export default function Story() {
             <Image
                 src="/images/mike2.png"
                 alt="Mike Kelly"
-                
                 width={300}
                 height={350}
                 priority
@@ -150,7 +144,6 @@ export default function Story() {
             <Image
                 src="/images/wendy3.png"
                 alt="Wendy Kelly"
-                
                 width={300}
                 height={350}
                 priority
