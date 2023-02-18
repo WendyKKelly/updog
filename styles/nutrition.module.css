@@ -145,6 +145,25 @@
       grid-area:desc;
       padding: 3rem 4rem;
     }
+    .title_2 {
+      grid-area: title_2;
+       padding: 7rem 4rem;
+     }
+   
+    .desc_2 {
+      grid-area:desc_2;
+      padding: 3rem 4rem;
+    }
+    .desc_2 ul li::marker {
+      content: "✅";
+      display: inline-block;
+       margin-right: 0.2rem;
+    }
+    .desc_2 li {
+      font-size: 32px;
+      color: #1a4e8a;
+      font-weight: 700;
+    }
 }
 @media (min-width: 701px) and (max-width: 1120px) {
     .grid {
