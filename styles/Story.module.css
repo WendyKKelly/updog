@@ -89,7 +89,9 @@
       
       max-width: 90%;
     }
-    
+    .h_desc {
+      margin-left: 2rem;
+    }
     /* Enable hover only on non-touch devices */
     @media (hover: hover) and (pointer: fine) {
       .card:hover {
@@ -125,6 +127,7 @@
         max-width: 400px;
         text-align: center;
         margin-bottom: 7rem;
+        margin-left: -.25rem;
       }
   
       .story_title {
