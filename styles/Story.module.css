@@ -134,6 +134,7 @@
         grid-template-areas: 
         "story_title" 
         "dogs"
+        "h_title" 
         "humans" ;
         width: var(--max-width);
         max-width: 400px;
