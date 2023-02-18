@@ -128,13 +128,62 @@
 /* Mobile */
 @media (max-width: 400px) {
 
+  .grid1 {
+    grid-template-columns: 300px;
+    grid-template-areas:
+     "title"
+     " image" 
+     " desc";
+    grid-template-rows: auto;
+    justify-items: center;
+    
+    max-width: min-content;
+    
+  }
 .title {
   padding-top: 3rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .title h1 {
   font-size: 6rem;
+}
+.image {
+   
+  margin-left: 4.25rem;
+}
+.desc {
+  min-width: 0;
+  max-width: 100%;
+  
+  padding-left: 2rem;
+}
+.grid {
+  grid-template-columns: 1fr;
+  margin-bottom: 120px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.card {
+  padding: 1rem 2.5rem;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+.center::before {
+  transform: none;
+  height: 300px;
+}
+
+
+
+
 }
 }
 @media (min-width: 401px) and (max-width: 700px) {
