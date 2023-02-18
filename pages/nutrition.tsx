@@ -37,7 +37,7 @@ export default function Nutrition() {
             ...and are they good (tasty & nutritious)
           </h5>
           </div>
-        </div>
+        
         </div>
         
           <div className={styles.desc}>
@@ -58,7 +58,7 @@ export default function Nutrition() {
         <li>Get Updog Treats:</li>
     </ul>
     </div>
-
+    </div>
 
       
       </section>
