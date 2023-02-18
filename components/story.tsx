@@ -21,10 +21,8 @@ export default function Story() {
       <div className={styles.top}>
       <div className={styles.story_title}>
      <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
-            <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p>
+            <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p></div>
             <div className={styles.dogs}>
-              
-        
              <div className={styles.d_image}>
             <Image
                 src="/images/rocky2.png"
@@ -119,8 +117,8 @@ export default function Story() {
             
             </div>
             </div>
+            
             </div>
-
             
             <div className={styles.humans}>
         
@@ -128,11 +126,8 @@ export default function Story() {
           <h5 className={styles.overflow}>Humans:</h5>
           <p className={styles.overflow}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
           </div>
-        </div>
-        </div>
-         
-            
-            
+        
+        
             <div className={styles.h_image}>
               <div className={styles.h_card}>
             <Image
@@ -172,7 +167,7 @@ export default function Story() {
             
             </div>
             </div>
-            
+            </div>
             </div>
    
 

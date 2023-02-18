@@ -17,7 +17,7 @@
       grid-template-areas: 
       "story_title story_title story_title story_title"
       "grid grid grid grid"
-      "humans humans humans humans";
+      ;
       width: var(--max-width);
       max-width: 100%;
       margin-bottom: 7rem;
@@ -72,7 +72,7 @@
       max-width: 30ch;
     }
     .humans {
-      grid-area: humans;
+      
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -120,7 +120,7 @@
         grid-template-areas: 
         "story_title" 
         "dogs" 
-        "humans" ;
+         ;
         width: var(--max-width);
         max-width: 100%;
         text-align: center;
@@ -137,10 +137,10 @@
      
    
       .humans {
-        grid-area: humans;
+        
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        
         justify-content: center;
         align-items: center;
         gap: 3rem 2rem;
