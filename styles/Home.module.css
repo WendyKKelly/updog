@@ -149,11 +149,8 @@
     padding: .5rem .5rem;
   }
   .image {
-    min-width: 0;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0rem 2rem;
-    margin-left: -4.25;
+   
+    margin-left: 4.25;
   }
   .desc {
     min-width: 0;
