@@ -3,6 +3,7 @@
   background-color: rgb(18, 176, 213);
   background: cover;
   padding: 0;
+  
 }
 
 
@@ -129,6 +130,9 @@
   .content {
     padding: 1rem;
   }
+  .section {
+    max-width: 380px;
+  }
   .grid1 {
     grid-template-columns: 300px;
     grid-template-areas:
@@ -138,7 +142,7 @@
     grid-template-rows: auto;
     justify-items: center;
     margin-bottom: 100px;
-    text-align: center;
+    
   }
   .title {
     min-width: 0;
