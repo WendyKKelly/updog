@@ -73,12 +73,12 @@
     }
     .humans {
       grid-area: humans;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(50%, auto));
-      grid-template-areas: 
-      "h_card h_card"
-      "h_card h_card";
-      width: var(--max-width);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem 2rem;
       max-width: 90%;
 
     }
@@ -134,21 +134,16 @@
       
   
  
-      .dogs {
-        grid-template-columns: 1fr;
-        margin-bottom: 120px;
-        max-width: 320px;
-        text-align: center;
-      }
+     
    
       .humans {
         grid-area: humans;
-        display: grid;
-        grid-template-columns: repeat(1, minmax(100%, auto));
-        grid-template-areas: 
-        "h_card "
-        "h_card ";
-        width: var(--max-width);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem 2rem;
         max-width: 90%;
   
       }
