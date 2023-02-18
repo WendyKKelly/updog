@@ -84,7 +84,7 @@ export default function Home({products}: IProductListProps) {
         </main>
         <div className={styles.grid}>
           <Link
-            href="#ingredients"
+            href="./nutrition"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
