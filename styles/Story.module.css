@@ -116,7 +116,7 @@
       }
       .top {
         display: grid;
-        grid-template-columns: repeat(4, minmax(25%, auto));
+        grid-template-columns: repeat(1, minmax(100%, auto));
         grid-template-areas: 
         "story_title" 
         "dogs" 
