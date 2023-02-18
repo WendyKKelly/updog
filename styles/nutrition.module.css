@@ -44,6 +44,11 @@
     color: #1a4e8a;
     font-weight: 700;
   }
+  .desc li p {
+    font-size: 20px;
+    color: #000;
+    font-weight: normal;
+  }
   
   @media (max-width: 400px) {
 
