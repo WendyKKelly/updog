@@ -73,10 +73,7 @@ export default function Home({products}: IProductListProps) {
                 height={600}
                 priority
               />
-     
-   
-        
-        
+
         <div className={styles.desc}>
           <div className={cormorant.className}>
           <h5 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
