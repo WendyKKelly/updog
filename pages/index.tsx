@@ -61,7 +61,7 @@ export default function Home({products}: IProductListProps) {
 
         <div className={styles.title}>
           <div className={grandstander.className}>
-          <h1 >What's Up, Dog? Treats!</h1>
+          <h1 className={grandstander.className} >What's Up, Dog? Treats!</h1>
           </div>
         </div>
       
@@ -79,7 +79,7 @@ export default function Home({products}: IProductListProps) {
         
         <div className={styles.desc}>
           <div className={cormorant.className}>
-          <h5>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
+          <h5 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
           </div>
        
         </div>
