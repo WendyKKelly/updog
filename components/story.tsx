@@ -119,7 +119,7 @@ export default function Story() {
             </div>
             
             </div>
-            
+            </div>
             <div className={styles.humans}>
         
           <div className={grandstander.className}>
@@ -170,22 +170,7 @@ export default function Story() {
             </div>
             </div>
    
-
-
-
               
-              </div>
-              
-            
-          
-           
-         
-         
-    
-
-
-
-        
         </section>
         </>
   )
