@@ -48,7 +48,7 @@ export default function Nutrition() {
     </ul>
 
     <h5 className={cormorant.className}>
-            Better <span className={styles.pink}>(?)</span> than nutrition, these treats taste <span className={styles.pink}>GOOD</span>. Dogs love them and have been known to wait paitiently for <span className={styles.pink}>minutes</span> just to get another. Think of all the training gains...think of all the love ...
+            ...And these treats taste <span className={styles.pink}>GOOD</span>. Dogs love them and have been known to wait paitiently for <span className={styles.pink}>minutes</span> just to get another. Think of all the training gains...think of all the <span className={styles.pink}>love</span>...
           </h5>
     </div>
     
