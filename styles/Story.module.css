@@ -30,7 +30,7 @@
       grid-area: story_title;
       padding: 7rem 4rem;
     }
-    story_title p {
+    .story_title p {
       padding-top:5rem;
     }
     
