@@ -21,9 +21,7 @@
     max-width: 100%;
     grid-template-areas:
     "title title title title"
-    "desc desc desc desc"
-    "title_2 title_2 title_2 title_2"
-    "desc_2 desc_2 desc_2 desc_2";
+    "desc desc desc desc";
     
   }
   .title {
@@ -40,44 +38,21 @@
     grid-area:desc;
     padding: 3rem 4rem;
   }
-  .desc ul li::marker {
-    content: "✅";
-    display: inline-block;
-     margin-right: 0.2rem;
-  }
+ 
   .desc li {
     font-size: 32px;
     color: #1a4e8a;
     font-weight: 700;
   }
-  .title_2 {
-    grid-area: title_2;
-     padding: 7rem 4rem;
-   }
- 
-  .desc_2 {
-    grid-area:desc_2;
-    padding: 3rem 4rem;
-  }
-  .desc_2 ul li::marker {
-    content: "✅";
-    display: inline-block;
-     margin-right: 0.2rem;
-  }
-  .desc_2 li {
-    font-size: 32px;
-    color: #1a4e8a;
-    font-weight: 700;
-  }
+  
   @media (max-width: 400px) {
 
     .grid1 {
       grid-template-columns: 380px;
       grid-template-areas:
        "title" 
-       "desc"
-       "title_2" 
-       "desc_2";
+       "desc";
+       
       grid-template-rows: auto;
       justify-items: center;
       
@@ -96,26 +71,7 @@
     grid-area:desc;
     padding: 3rem 4rem;
   }
-  .title_2 {
-    grid-area: title_2;
-    padding-top: 3rem;
-    margin-left: 0rem;
-   }
- 
-  .desc_2 {
-    grid-area:desc_2;
-    padding: 3rem 4rem;
-  }
-  .desc_2 ul li::marker {
-    content: "✅";
-    display: inline-block;
-     margin-right: 0.2rem;
-  }
-  .desc_2 li {
-    font-size: 32px;
-    color: #1a4e8a;
-    font-weight: 700;
-  }
+  
 }
   @media (min-width: 401px) and (max-width: 700px) {
     .content {
@@ -129,8 +85,7 @@
       grid-template-areas:
        "title"
         "desc"
-        "title_2"
-        "desc_2";
+        ;
       grid-template-rows: auto;
       justify-items: center;
       
@@ -146,27 +101,7 @@
       grid-area:desc;
       padding: 3rem 4rem;
     }
-    .title_2 {
-      grid-area: title_2;
-      min-width: 0;
-      padding: .5rem .5rem;
-      margin-left: 6rem;
-     }
-   
-    .desc_2 {
-      grid-area:desc_2;
-      padding: 3rem 4rem;
-    }
-    .desc_2 ul li::marker {
-      content: "✅";
-      display: inline-block;
-       margin-right: 0.2rem;
-    }
-    .desc_2 li {
-      font-size: 32px;
-      color: #1a4e8a;
-      font-weight: 700;
-    }
+    
 }
 @media (min-width: 701px) and (max-width: 1120px) {
     .grid {

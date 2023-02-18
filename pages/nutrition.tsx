@@ -42,22 +42,12 @@ export default function Nutrition() {
         
           <div className={styles.desc}>
          <ul className={grandstander.className}>
-        <li>Get Updog Treats:</li>
-        <li>Get Updog Treats:</li>
-        <li>Get Updog Treats:</li>
+        <li>Spent Brewer's Grain: Spent grain is high in fiber, protein and polyphenols (antioxidant, anti inflammation), and has been shown to provide numerous health benefits. Want to know more about spent grain? Luckily,one of Updog human workers, Mike, has been an award winning Master Brewer for decades. Read more here.</li>
+        <li>Ground Meat: We source grass fed and/or organic meat from local butchers, using mainly pork (but also beef and possibly chicken as well) that is perfect for dogs — we can't guarantee exactly the combination of meat we use in each batch but we can guarantee that it is healthy, fresh, and delicious.</li>
+        <li>Chia Seeds: Black chia seeds provide an excellent source of B vitamins and they’re rich in omega fatty acids, antioxidants, fiber, and minerals like calcium, magnesium and phosphorus. Because they are paired with meat in our treats, the omegas from chia seeds are balanced with the omegas from the meat, providing a good healthy balance for your dog.  </li>
     </ul>
     </div>
-    <div className={styles.title_2}>
-    <h5 className={cormorant.className}>
-            ...and here are a few ingredients that we have been playing around with...feedback welcome!
-          </h5></div>
-          <div className={styles.desc_2}>
-         <ul className={grandstander.className}>
-        <li>Get Updog Treats:</li>
-        <li>Get Updog Treats:</li>
-        <li>Get Updog Treats:</li>
-    </ul>
-    </div>
+    
     </div>
 
       
