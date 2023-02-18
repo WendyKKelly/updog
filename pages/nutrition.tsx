@@ -43,9 +43,13 @@ export default function Nutrition() {
           <div className={styles.desc}>
          <ul className={grandstander.className}>
         <li>Spent Brewer's Grain: <p>Spent grain is high in fiber, protein and polyphenols (antioxidant, anti inflammation), and has been shown to provide numerous health benefits. Want to know more about spent grain? Luckily,one of Updog human workers, Mike, has been an award winning Master Brewer for decades. Read more here.</p></li>
-        <li>Ground Meat: We source grass fed and/or organic meat from local butchers, using mainly pork (but also beef and possibly chicken as well) that is perfect for dogs — we can't guarantee exactly the combination of meat we use in each batch but we can guarantee that it is healthy, fresh, and delicious.</li>
-        <li>Chia Seeds: Black chia seeds provide an excellent source of B vitamins and they’re rich in omega fatty acids, antioxidants, fiber, and minerals like calcium, magnesium and phosphorus. Because they are paired with meat in our treats, the omegas from chia seeds are balanced with the omegas from the meat, providing a good healthy balance for your dog.  </li>
+        <li>Ground Meat: <p>We source grass fed and/or organic meat from local butchers, using mainly pork (but also beef and possibly chicken as well) that is perfect for dogs — we can't guarantee exactly the combination of meat we use in each batch but we can guarantee that it is healthy, fresh, and delicious.</p></li>
+        <li>Chia Seeds: <p>Black chia seeds provide an excellent source of B vitamins and they’re rich in omega fatty acids, antioxidants, fiber, and minerals like calcium, magnesium and phosphorus. Because they are paired with meat in our treats, the omegas from chia seeds are balanced with the omegas from the meat, providing a good healthy balance for your dog. </p> </li>
     </ul>
+
+    <h5 className={cormorant.className}>
+            The thing is, though, that these treats taste <span className={styles.pink}>GOOD</span>. Dogs love them and have been known to wait paitiently for <span className={styles.pink}>minutes</span>just to get another. Think of all the training gains...think of all the love ...
+          </h5>
     </div>
     
     </div>

@@ -28,7 +28,9 @@
    grid-area: title;
     padding: 7rem 4rem;
   }
-
+ .pink {
+  color: #ff44cc;
+ }
   .desc ul li::marker {
     content: "✅";
     display: inline-block;
