@@ -144,8 +144,9 @@
       }
       .story_title {
         grid-area: story_title;
-    padding: 0rem 0rem;
+    padding: 4rem;
       }
+
       .dogs {
         grid-area: dogs;
         padding: 0;
