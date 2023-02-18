@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout';
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
-import styles from '@/styles/Nutirtion.module.css'
+import styles from '@/styles/nutrition.module.css'
 import Link from 'next/link'
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
