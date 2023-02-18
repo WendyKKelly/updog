@@ -129,7 +129,7 @@
 @media (max-width: 400px) {
 
   .grid1 {
-    grid-template-columns: 300px;
+    grid-template-columns: 380px;
     grid-template-areas:
      "title"
      " image" 
@@ -142,7 +142,7 @@
   }
 .title {
   padding-top: 3rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
 
 .title h1 {
@@ -150,7 +150,7 @@
 }
 .image {
    
-  margin-left: 4.25rem;
+  margin-left: -.75rem;
 }
 .desc {
   min-width: 0;
