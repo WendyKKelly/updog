@@ -21,12 +21,20 @@
     max-width: 100%;
     grid-template-areas:
     "title title title title"
+    "desc desc desc desc"
+    "title title title title"
     "desc desc desc desc";
     
   }
   .title {
    grid-area: title;
     padding: 7rem 4rem;
+  }
+
+  .desc ul li::marker {
+    content: "✅";
+    display: inline-block;
+     margin-right: 0.2rem;
   }
   .desc {
     grid-area:desc;
@@ -37,8 +45,9 @@
     .grid1 {
       grid-template-columns: 380px;
       grid-template-areas:
-       "title"
-       " image" 
+       "title" 
+       " desc"
+       "title" 
        " desc";
       grid-template-rows: auto;
       justify-items: center;

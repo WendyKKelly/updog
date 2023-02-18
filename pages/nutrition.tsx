@@ -34,22 +34,32 @@ export default function Nutrition() {
           <div className={grandstander.className}>
           <h1 className={grandstander.className} >What's in Updog Treats?</h1>
           <h5 className={cormorant.className}>
-            ...and are they good (tasty &nutritious)
+            ...and are they good (tasty & nutritious)
           </h5>
           </div>
         </div>
         </div>
         
-        
-        
-
-          
-        <div className={styles.grid1}>
           <div className={styles.desc}>
-         <p className={grandstander.className}>
-        Get Updog Treats:
-    </p></div></div>
-   
+         <ul className={grandstander.className}>
+        <li>Get Updog Treats:</li>
+        <li>Get Updog Treats:</li>
+        <li>Get Updog Treats:</li>
+    </ul>
+    </div>
+    <div className={styles.title}>
+    <h5 className={cormorant.className}>
+            ...and here are a few ingredients that we have been playing around with...feedback welcome!
+          </h5></div>
+          <div className={styles.desc}>
+         <ul className={grandstander.className}>
+        <li>Get Updog Treats:</li>
+        <li>Get Updog Treats:</li>
+        <li>Get Updog Treats:</li>
+    </ul>
+    </div>
+
+
       
       </section>
     
