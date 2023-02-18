@@ -98,7 +98,8 @@
   }
   .title_2 {
     grid-area: title_2;
-     padding: 7rem 4rem;
+    padding-top: 3rem;
+    margin-left: 0rem;
    }
  
   .desc_2 {
@@ -147,7 +148,9 @@
     }
     .title_2 {
       grid-area: title_2;
-       padding: 7rem 4rem;
+      min-width: 0;
+      padding: .5rem .5rem;
+      margin-left: 6rem;
      }
    
     .desc_2 {
