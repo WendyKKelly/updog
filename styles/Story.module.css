@@ -76,7 +76,7 @@
       grid-template-columns: 3fr;
       grid-template-areas: 
       " . h_title . "
-      "h_card h_card h_card";
+      "h_image h_image h_image";
       gap: 3rem 2rem;
       max-width: 90%;
     }
@@ -85,7 +85,7 @@
       padding: 7rem 4rem;
     }
     .h_card {
-      grid-area: h_card;
+      
       padding: 1rem 1.2rem;
       border-radius: var(--border-radius);
       background: rgba(var(--card-rgb), 0);
@@ -95,13 +95,7 @@
     }
     .h_image {
       
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem 2rem;
-      max-width: 90%;
+      grid-area: h_image;
     }
     .h_image span {
       display: inline-block;
