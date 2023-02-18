@@ -46,9 +46,9 @@ export default function Nutrition() {
           
         <div className={styles.grid1}>
           <div className={styles.desc}>
-         <h5 className={grandstander.className}>
+         <p className={grandstander.className}>
         Get Updog Treats:
-    </h5></div></div>
+    </p></div></div>
    
       
       </section>
