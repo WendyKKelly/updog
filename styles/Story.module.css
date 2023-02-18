@@ -122,7 +122,7 @@
         "dogs" 
          ;
         width: var(--max-width);
-        max-width: 100%;
+        max-width: 400px;
         text-align: center;
         margin-bottom: 7rem;
       }
@@ -130,6 +130,10 @@
       .story_title {
         grid-area: story_title;
     padding: 0rem 0rem;
+      }
+      .dogs {
+        grid-area: dogs;
+        padding: 0;
       }
       
   
