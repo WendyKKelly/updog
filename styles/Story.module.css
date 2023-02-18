@@ -76,13 +76,14 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(50%, auto));
       grid-template-areas: 
-      "card card";
+      "h_card h_card"
+      "h_card h_card";
       width: var(--max-width);
       max-width: 90%;
 
     }
     .h_card {
-      grid-area: card;
+      grid-area: h_card;
     }
     .h_image {
       
@@ -140,7 +141,17 @@
         text-align: center;
       }
    
-    
+      .humans {
+        grid-area: humans;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100%, auto));
+        grid-template-areas: 
+        "h_card "
+        "h_card ";
+        width: var(--max-width);
+        max-width: 90%;
+  
+      }
       
     
    
