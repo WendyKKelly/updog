@@ -19,13 +19,13 @@ export default function Story() {
       </Head>
       <section className={styles.section}>
       <div className={styles.top}>
-      <div className={styles.title}>
+      <div className={styles.story_title}>
      <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
             <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p>
-            <div className={styles.grid}>
+            <div className={styles.dogs}>
               
         
-             <div className={styles.card}>
+             <div className={styles.d_image}>
             <Image
                 src="/images/rocky2.png"
                 alt="Rocky"
@@ -34,7 +34,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.d_desc}>
 <h4 className={grandstander.className}>
               Rocky <span>-&gt;</span>
             </h4>
@@ -43,7 +43,7 @@ export default function Story() {
             </p>
             </div>
             </div>
-            <div className={styles.card}>
+            <div className={styles.d_image}>
             <Image
                 src="/images/rosa.png"
                 alt="Rosa"
@@ -52,7 +52,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.d_desc}>
 <h4 className={grandstander.className}>
               Rosa <span>-&gt;</span>
             </h4>
@@ -62,7 +62,7 @@ export default function Story() {
             
             </div>
             </div>
-            <div className={styles.card}>
+            <div className={styles.d_image}>
             <Image
                 src="/images/lampi.png"
                 alt="Lampi"
@@ -71,7 +71,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.d_desc}>
 <h4 className={grandstander.className}>
               Lampi <span>-&gt;</span>
             </h4>
@@ -81,7 +81,7 @@ export default function Story() {
             
             </div>
             </div>
-            <div className={styles.card}>
+            <div className={styles.d_image}>
             <Image
                 src="/images/morley.png"
                 alt="Morley"
@@ -90,7 +90,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.d_desc}>
 <h4 className={grandstander.className}>
              Morley <span>-&gt;</span>
             </h4>
@@ -100,7 +100,7 @@ export default function Story() {
             
             </div>
             </div>
-            <div className={styles.card}>
+            <div className={styles.d_image}>
             <Image
                 src="/images/spokesdogplaceholder.png"
                 alt="Nelson dog"
@@ -109,7 +109,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.d_desc}>
 <h4 className={grandstander.className}>
               Your Dog Here <span>-&gt;</span>
             </h4>
@@ -133,8 +133,8 @@ export default function Story() {
          
             
             
-            <div className={styles.image}>
-              <div className={styles.card}>
+            <div className={styles.h_image}>
+              <div className={styles.h_card}>
             <Image
                 src="/images/mike2.png"
                 alt="Mike Kelly"
@@ -143,7 +143,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.h_desc}>
 <h4 className={grandstander.className}>
               Mike Kelly <span>-&gt;</span>
             </h4>
@@ -153,7 +153,7 @@ export default function Story() {
             
             </div>
             </div>
-            <div className={styles.card}>
+            <div className={styles.h_card}>
             <Image
                 src="/images/wendy3.png"
                 alt="Wendy Kelly"
@@ -162,7 +162,7 @@ export default function Story() {
                 height={350}
                 priority
               />
-              <div className={styles.desc}>
+              <div className={styles.h_desc}>
 <h4 className={grandstander.className}>
               Wendy Kelly <span>-&gt;</span>
             </h4>

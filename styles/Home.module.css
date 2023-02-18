@@ -130,12 +130,13 @@
     padding: 1rem;
   }
   .grid1 {
-    
+    grid-template-columns: auto;
     grid-template-areas:
      "title"
      " image" 
      " desc";
     grid-template-rows: auto;
+    justify-items: center;
     margin-bottom: 100px;
     text-align: center;
   }
@@ -153,7 +154,7 @@
   .desc {
     min-width: 0;
     max-width: 100%;
-    overflow: hidden;
+    
     padding-left: 2rem;
   }
   .grid {

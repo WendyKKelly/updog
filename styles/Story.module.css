@@ -15,7 +15,7 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(25%, auto));
       grid-template-areas: 
-      "title title title title"
+      "story_title story_title story_title story_title"
       "grid grid grid grid"
       "humans humans humans humans";
       width: var(--max-width);
@@ -23,12 +23,12 @@
       margin-bottom: 7rem;
     }
 
-    .title {
-      grid-area: title;
+    .story_title {
+      grid-area: story_title;
   padding: 7rem 4rem;
     }
     
-    .grid {
+    .dogs {
       grid-area: grid;
       display: flex;
       flex-direction: row;
@@ -39,11 +39,11 @@
       max-width: 90%;
     }
     
-    .desc {
+    .d_desc {
       
       margin-left: 2rem;
     }
-    .card {
+    .d_image {
      
       padding: 1rem 1.2rem;
       border-radius: var(--border-radius);
@@ -53,17 +53,17 @@
       width: fit-content;
     }
     
-    .card span {
+    .d_image span {
       display: inline-block;
       transition: transform 200ms;
     }
     
-    .card h2 {
+    .d_image h2 {
       font-weight: 600;
       margin-bottom: 0.7rem;
     }
     
-    .card p {
+    .d_image p {
       margin: 0;
       opacity: 0.6;
       font-size: 0.9rem;
@@ -85,13 +85,13 @@
     .overflow {
       grid-area: overflow;
     }
-    .image {
+    .h_image {
       grid-area: image;
       display: grid;
       grid-template-columns: repeat(2, minmax(50%, auto));
       grid-template-areas: 
-      "card desc"
-      "card desc";
+      "h_card h_desc"
+      "h_card h_desc";
       width: var(--max-width);
       max-width: 90%;
     }
@@ -124,8 +124,8 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(25%, auto));
         grid-template-areas: 
-        "title" 
-        "grid" 
+        "story_title" 
+        "dogs" 
         "humans" ;
         width: var(--max-width);
         max-width: 100%;
@@ -133,8 +133,8 @@
         margin-bottom: 7rem;
       }
   
-      .title {
-        grid-area: title;
+      .story_title {
+        grid-area: story_title;
     padding: 0rem 0rem;
       }
       .overflow {
@@ -143,28 +143,18 @@
       }
   
  
-      .grid {
+      .dogs {
         grid-template-columns: 1fr;
         margin-bottom: 120px;
         max-width: 320px;
         text-align: center;
       }
    
-      .grid2 {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(100%, auto));
-        width: var(--max-width);
-        max-width: 320px;
-        text-align: center;
-        margin-bottom: 7rem;
-      }
+    
       
     
    
     
-      .card h2 {
-        margin-bottom: 0.5rem;
-      }
     
     
     .h1 {
@@ -178,7 +168,7 @@
     
     /* Tablet and Smaller Desktop */
     @media (min-width: 701px) and (max-width: 1120px) {
-      .grid {
+      .dogs {
         grid-template-columns: repeat(2, 50%);
       }
  
