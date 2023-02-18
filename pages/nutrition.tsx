@@ -47,11 +47,11 @@ export default function Nutrition() {
         <li>Get Updog Treats:</li>
     </ul>
     </div>
-    <div className={styles.title}>
+    <div className={styles.title_2}>
     <h5 className={cormorant.className}>
             ...and here are a few ingredients that we have been playing around with...feedback welcome!
           </h5></div>
-          <div className={styles.desc}>
+          <div className={styles.desc_2}>
          <ul className={grandstander.className}>
         <li>Get Updog Treats:</li>
         <li>Get Updog Treats:</li>

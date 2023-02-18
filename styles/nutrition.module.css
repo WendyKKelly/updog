@@ -22,8 +22,8 @@
     grid-template-areas:
     "title title title title"
     "desc desc desc desc"
-    "title title title title"
-    "desc desc desc desc";
+    "title_2 title_2 title_2 title_2"
+    "desc_2 desc_2 desc_2 desc_2";
     
   }
   .title {
@@ -40,15 +40,29 @@
     grid-area:desc;
     padding: 3rem 4rem;
   }
+  .desc ul li::marker {
+    content: "✅";
+    display: inline-block;
+     margin-right: 0.2rem;
+  }
+  .title_2 {
+    grid-area: title_2;
+     padding: 7rem 4rem;
+   }
+ 
+  .desc {
+    grid-area:desc_2;
+    padding: 3rem 4rem;
+  }
   @media (max-width: 400px) {
 
     .grid1 {
       grid-template-columns: 380px;
       grid-template-areas:
        "title" 
-       " desc"
-       "title" 
-       " desc";
+       "desc"
+       "title_2" 
+       "desc_2";
       grid-template-rows: auto;
       justify-items: center;
       
@@ -79,8 +93,9 @@
       grid-template-columns: 300px;
       grid-template-areas:
        "title"
-       " image" 
-       " desc";
+        "desc"
+        "title_2"
+        "desc_2";
       grid-template-rows: auto;
       justify-items: center;
       
