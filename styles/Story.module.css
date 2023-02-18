@@ -46,7 +46,6 @@
       margin-left: 2rem;
     }
     .d_image {
-     
       padding: 1rem 1.2rem;
       border-radius: var(--border-radius);
       background: rgba(var(--card-rgb), 0);
@@ -81,14 +80,21 @@
       align-items: center;
       gap: 3rem 2rem;
       max-width: 90%;
-
     }
     .h_card {
       grid-area: h_card;
     }
     .h_image {
-      
-      max-width: 90%;
+      padding: 1rem 1.2rem;
+      border-radius: var(--border-radius);
+      background: rgba(var(--card-rgb), 0);
+      border: 1px solid rgba(var(--card-border-rgb), 0);
+      transition: background 200ms, border 200ms;
+      width: fit-content;
+    }
+    .h_image span {
+      display: inline-block;
+      transition: transform 200ms;
     }
     .h_desc {
       margin-left: 2rem;
@@ -99,14 +105,11 @@
         background: rgba(var(--card-rgb), 0.1);
         border: 1px solid rgba(var(--card-border-rgb), 0.15);
       }
-    
       .card:hover span {
         transform: translateX(4px);
       }
     }
-    
     @media (prefers-reduced-motion) {
-     
       .card:hover span {
         transform: none;
       }
@@ -123,15 +126,13 @@
         grid-template-areas: 
         "story_title" 
         "dogs"
-        "humans" 
-         ;
+        "humans" ;
         width: var(--max-width);
         max-width: 400px;
         text-align: center;
         margin-bottom: 7rem;
         margin-left: -.25rem;
       }
-  
       .story_title {
         grid-area: story_title;
     padding: 0rem 0rem;
@@ -140,11 +141,6 @@
         grid-area: dogs;
         padding: 0;
       }
-      
-  
- 
-     
-   
       .humans {
         grid-area: humans;
         display: flex;
@@ -154,8 +150,6 @@
         align-items: center;
         gap: 3rem 2rem;
         max-width: 90%;
-        
-  
       }
       
     
