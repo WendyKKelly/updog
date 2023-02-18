@@ -5,7 +5,6 @@ import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Story.module.css'
 import Link from 'next/link'
 
-
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
 export default function Story() {
@@ -27,7 +26,6 @@ export default function Story() {
             <Image
                 src="/images/rocky2.png"
                 alt="Rocky"
-                
                 width={300}
                 height={350}
                 priority
@@ -118,7 +116,7 @@ export default function Story() {
             </div>
             </div>
             
-            </div>
+            
             </div>
             <div className={styles.humans}>
         
@@ -165,6 +163,7 @@ export default function Story() {
               Webmaster*, baker, healthy dog treat maker.
             </p>
             
+            </div>
             </div>
             </div>
             </div>
