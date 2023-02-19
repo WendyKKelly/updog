@@ -49,28 +49,28 @@ const Nelson: NextPage = () => {
 
     return (
         <Layout >
-        <main className="bg-gray-100 min-h-screen">
-            <div className="max-w-5xl mx-auto py-16">
+        <main className={styles.section}>
+            <div className={styles.main}>
                 <h5>Hello!</h5>
-                <form className="styles.section" onSubmit={handleSubmit}>
-                    <div className="styles.grid1">
-                        <label htmlFor="name" className="styles.card">Name</label>
-                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="styles.desc" placeholder="Your Name" />
+                <form className={styles.grid1} onSubmit={handleSubmit}>
+                    <div className={styles.title}>
+                        <label htmlFor="name" className={styles.title}>Name</label>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className={styles.desc} placeholder="Your Name" />
                     </div>
-                    <div className="styles.grid">
-                        <label htmlFor="email" className="styles.desc">Email</label>
-                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="styles.desc" placeholder="Your Email" />
+                    <div className={styles.grid}>
+                        <label htmlFor="email" className={styles.card}>Email</label>
+                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className={styles.card} placeholder="Your Email" />
                     </div>
-                    <div className="styles.card">
-                        <label htmlFor="phone" className="styles.card">Phone</label>
-                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="styles.desc" placeholder="Your Phone" />
+                    <div className={styles.card}>
+                        <label htmlFor="phone" className={styles.card}>Phone</label>
+                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className={styles.card} placeholder="Your Phone" />
                     </div>
-                    <div className="styles.grid">
-                        <label htmlFor="message" className="styles.card">Message</label>
+                    <div className={styles.card}>
+                        <label htmlFor="message" className={styles.card}>Message</label>
                         <textarea value={message} onChange={e => setMessage(e.target.value)} id="styles.desc" placeholder="Your Message" />
                     </div>
-                    <div className="styles.grid">
-                        <button type="submit" className="styles.desc">Save</button>
+                    <div className={styles.card}>
+                        <button type="submit" className={styles.card}>Save</button>
                     </div>
                 </form>
             </div>
