@@ -146,8 +146,12 @@ export default function Home({products}: IProductListProps) {
     </h5>
     </div>
     <div className={styles.list}>
-      <ul>
-      <li>Local to Nelson? Order Direct Here</li>
+      <ul><Link href=""
+      className={styles.link}
+      target="blank"
+      rel="noopener noreferrer"
+      >
+      <li>Local to Nelson? Order Direct Here</li></Link>
       <li>Order Online: (Free Shipping on orders over $50)</li>
       </ul>
       </div>

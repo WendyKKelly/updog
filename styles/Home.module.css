@@ -57,7 +57,13 @@
   font-size: 2rem;
   color: #1a4e8a;
 }
+.link {
+  color: #1a4e8a;
+}
 
+.link:hover {
+  color: #ff44cc;
+}
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -306,6 +312,7 @@
     transform: rotate(0deg);
   }
 }
+
 
 
 
