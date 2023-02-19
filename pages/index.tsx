@@ -145,16 +145,16 @@ export default function Home({products}: IProductListProps) {
         Get Updog Treats:
     </h5>
     </div>
-   
+   <div className={styles.list}>
       <ul><Link href=""
       className={styles.link}
       target="blank"
       rel="noopener noreferrer"
       >
-      <li ><span className={styles.list}>Local to Nelson? Order Direct Here</span></li></Link>
+      <li ><span className={styles.link}>Local to Nelson? Order Direct Here</span></li></Link>
       <li>Order Online: (Free Shipping on orders over $50)</li>
       </ul>
-     
+      </div>
       </div>
         <ProductList products={products}/>
         < Story />
