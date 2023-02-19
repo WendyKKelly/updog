@@ -146,7 +146,7 @@ export default function Home({products}: IProductListProps) {
     </h5>
     </div>
    <div className={styles.list}>
-      <ul><Link href=""
+      <ul><Link href="./nelson"
       className={styles.link}
       target="blank"
       rel="noopener noreferrer"
