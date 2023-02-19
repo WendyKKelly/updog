@@ -58,11 +58,19 @@
   color: #1a4e8a;
 }
 .link {
-  color: #1a4e8a;
+ 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  background: #fff;
+  transition: background-position 275ms ease;
 }
 
 .link:hover {
   color: #ff44cc;
+  background-position: 0 100%;
 }
 .code {
   font-weight: 700;
