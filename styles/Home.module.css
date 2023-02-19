@@ -49,7 +49,7 @@
 .list ul li::marker {
   content: "✅";
   display: inline-block;
-   margin-right: 0.8rem;
+   margin-right: 2rem;
 }
 
 .list li {
