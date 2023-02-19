@@ -164,7 +164,8 @@
     grid-template-areas:
      "title"
      " image" 
-     " desc";
+     " desc"
+     "list";
     grid-template-rows: auto;
     justify-items: center;
     
@@ -229,7 +230,8 @@
     grid-template-areas:
      "title"
      " image" 
-     " desc";
+     " desc"
+     "list";
     grid-template-rows: auto;
     justify-items: center;
     
