@@ -47,7 +47,7 @@
   padding-left: 4rem;
 }
 .list ul li::marker {
-  content: "✅";
+  content: "🐶";
   display: inline-block;
    margin-right: 2rem;
 }
