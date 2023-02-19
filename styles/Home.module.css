@@ -42,11 +42,16 @@
 .list {
   grid-area: list;
 }
+.list ul li::marker {
+  content: "🐶";
+  display: inline-block;
+     margin-right: 0.8rem;
+}
 .list ul {
   list-style: none;
 }
 .list li {
-  display: inline;
+  padding: 3rem 4rem;
   font-size: 2rem;
   color: #1a4e8a;
 }

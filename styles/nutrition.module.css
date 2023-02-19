@@ -34,7 +34,7 @@
   .desc ul li::marker {
     content: "✅";
     display: inline-block;
-     margin-right: 0.2rem;
+     margin-right: 0.8rem;
   }
   .desc {
     grid-area:desc;
