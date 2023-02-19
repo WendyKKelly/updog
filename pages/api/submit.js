@@ -9,7 +9,7 @@ async function handler(req, res) {
       credentials: {
         client_email: process.env.CLIENT_EMAIL,
         client_id: process.env.CLIENT_ID,
-        private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'),
+        private_key: process.env.PRIVATE_KEY?.replace(/\\n/g, '\n'),
       },
       scopes: [
         'https://www.googleapis.com/auth/drive',
@@ -25,7 +25,7 @@ async function handler(req, res) {
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.DATABASE_ID,
-      range: 'Sheet1!A2:C',
+      range: 'Sheet1!A1:B1',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [[name, message]],
@@ -38,4 +38,4 @@ async function handler(req, res) {
 }
 
 export default handler;
-Footer
+
