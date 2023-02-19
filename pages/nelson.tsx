@@ -5,61 +5,75 @@ import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/nutrition.module.css'
 import Link from 'next/link'
+import type { NextPage } from 'next'
+import {FormEvent, useState} from "react";
+
+
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-export default function Nelson() {
-  return (
-   <>
-    <Layout>
-      <Head>
-        <title>Updog Treats: Nelson Delivery</title>
-        <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
-        <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
-        <link rel="shortcut icon" href="../public/favicon.ico" />
-        <meta
-          property="og:description"
-          content="Fresh, healthy, locally made in Nelson BC — Updog Treats"
-        />
-        <meta
-          property="og:image"
-          content="/images/updoglogogold.png"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      
-      <section className={styles.section}>
-        <div className={styles.grid1}>
-        <div className={styles.title}>
-          <div className={grandstander.className}>
-          <h1 className={grandstander.className} >Updog Treats: Delivered to Your Door</h1>
-          <h5 className={cormorant.className}>
-            ...or in stores (coming soon)
-          </h5>
-          </div>
-        
-        </div>
-        
-          <div className={styles.desc}>
-         <ul className={grandstander.className}>
-        <li>Spent Brewer's Grain: <p>Spent grain is high in fiber, protein and polyphenols (antioxidant, anti inflammation), and has been shown to provide numerous health benefits. Want to know more about spent grain? Luckily,one of Updog human workers, Mike, has been an award winning Master Brewer for decades. Read more here.</p></li>
-        <li>Ground Meat: <p>We source grass fed and/or organic meat from local butchers, using mainly pork (but also beef and possibly chicken as well) that is perfect for dogs — we can't guarantee exactly the combination of meat we use in each batch but we can guarantee that it is healthy, fresh, and delicious.</p></li>
-        <li>Chia Seeds: <p>Black chia seeds provide an excellent source of B vitamins and they’re rich in omega fatty acids, antioxidants, fiber, and minerals like calcium, magnesium and phosphorus. Because they are paired with meat in our treats, the omegas from chia seeds are balanced with the omegas from the meat, providing a good healthy balance for your dog. </p> </li>
-    </ul>
+const Nelson: NextPage = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
 
-    <h5 className={cormorant.className}>
-            ...And these treats taste <span className={styles.pink}>GOOD</span>. Dogs love them and have been known to wait paitiently for <span className={styles.pink}>minutes</span> just to get another. Think of all the training gains...think of all the <span className={styles.pink}>love</span>...
-          </h5>
-    </div>
-    
-    </div>
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
 
-      
-      </section>
-    
-    
-    </Layout>
-    
-    </>
-  )
+        let form = {
+            name,
+            email,
+            phone,
+            message
+        }
+
+        const rawResponse = await fetch('/api/submit', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(form)
+        });
+        const content = await rawResponse.json();
+
+        // print to screen
+        alert(content.data.tableRange)
+
+        // Reset the form fields
+        setMessage('')
+        setPhone('')
+        setName('')
+        setEmail('')
+    }
+
+    return (
+        <main className="bg-gray-100 min-h-screen">
+            <div className="max-w-5xl mx-auto py-16">
+                <form className="py-4 space-y-4" onSubmit={handleSubmit}>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="name" className="sr-only">Name</label>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="email" className="sr-only">Email</label>
+                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Email" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="phone" className="sr-only">Phone</label>
+                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Phone" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="message" className="sr-only">Message</label>
+                        <textarea value={message} onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Message" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-md shadow py-3 px-2 text-white bg-indigo-600">Save</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    )
 }
+
+export default Nelson
