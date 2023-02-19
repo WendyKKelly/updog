@@ -7,7 +7,7 @@ import styles from '@/styles/nutrition.module.css'
 import Link from 'next/link'
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-export default function Nutrition() {
+export default function Nelson() {
   return (
    <>
     <Layout>
