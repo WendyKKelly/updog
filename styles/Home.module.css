@@ -58,19 +58,19 @@
   color: #1a4e8a;
 }
 .link {
- 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  background: #fff;
-  transition: background-position 275ms ease;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
 }
 
 .link:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  
   color: #ff44cc;
-  background-position: 0 100%;
+ 
 }
 .code {
   font-weight: 700;
