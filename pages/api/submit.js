@@ -24,15 +24,15 @@ async function handler(req, res) {
     });
 
     const response = await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.DATABASE_ID,
-      range: 'Sheet1!A1:B1',
+      spreadsheetId: process.env.SPREADSHEET_ID,
+      range: 'Sheet1!A2:B12',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [[name, message]],
       },
     });
 
-    res.status(201).json({ message: 'It works!', response });
+    res.status(201).json({response, result: "Feedback posted to spreadsheet!"})
   }
   res.status(200).json({ message: 'Hey!' });
 }
