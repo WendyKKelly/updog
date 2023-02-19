@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout';
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
-import styles from '@/styles/nutrition.module.css'
+import styles from '@/styles/Contact.module.css'
 import Link from 'next/link'
 import type { NextPage } from 'next'
 import {FormEvent, useState} from "react";
@@ -48,6 +48,7 @@ const Nelson: NextPage = () => {
     }
 
     return (
+        <Layout >
         <main className="bg-gray-100 min-h-screen">
             <div className="max-w-5xl mx-auto py-16">
                 <h5>Hello!</h5>
@@ -74,6 +75,7 @@ const Nelson: NextPage = () => {
                 </form>
             </div>
         </main>
+        </Layout>
     )
 }
 
