@@ -51,25 +51,25 @@ const Nelson: NextPage = () => {
         <main className="bg-gray-100 min-h-screen">
             <div className="max-w-5xl mx-auto py-16">
                 <h5>Hello!</h5>
-                <form className="py-4 space-y-4" onSubmit={handleSubmit}>
-                    <div className="flex items-center justify-center">
-                        <label htmlFor="name" className="sr-only">Name</label>
-                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
+                <form className="styles.section" onSubmit={handleSubmit}>
+                    <div className="styles.grid1">
+                        <label htmlFor="name" className="styles.card">Name</label>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="styles.desc" placeholder="Your Name" />
                     </div>
-                    <div className="flex items-center justify-center">
-                        <label htmlFor="email" className="sr-only">Email</label>
-                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Email" />
+                    <div className="styles.grid">
+                        <label htmlFor="email" className="styles.desc">Email</label>
+                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="styles.desc" placeholder="Your Email" />
                     </div>
-                    <div className="flex items-center justify-center">
-                        <label htmlFor="phone" className="sr-only">Phone</label>
-                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Phone" />
+                    <div className="styles.card">
+                        <label htmlFor="phone" className="styles.card">Phone</label>
+                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="styles.desc" placeholder="Your Phone" />
                     </div>
-                    <div className="flex items-center justify-center">
-                        <label htmlFor="message" className="sr-only">Message</label>
-                        <textarea value={message} onChange={e => setMessage(e.target.value)} id="message" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Message" />
+                    <div className="styles.grid">
+                        <label htmlFor="message" className="styles.card">Message</label>
+                        <textarea value={message} onChange={e => setMessage(e.target.value)} id="styles.desc" placeholder="Your Message" />
                     </div>
-                    <div className="flex items-center justify-center">
-                        <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-md shadow py-3 px-2 text-white bg-indigo-600">Save</button>
+                    <div className="styles.grid">
+                        <button type="submit" className="styles.desc">Save</button>
                     </div>
                 </form>
             </div>

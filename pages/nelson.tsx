@@ -127,7 +127,7 @@ export const products: IProduct[] = [
       price: 1.00,
       image: updogSample,
       description: "Curious? Order a small 10 gram sample of our delicious treats. So far, every dog we have given samples to has begged us for more :) but we fully understand that you might want to try them out first. All our packaging is made inhouse with upcycled materials and we plan to keep it that way. Our current samples packaging uses books — including the very appropriate for Nelson Cyrano de Bergerac :) ",
-      url: '/api/products/sample',
+      url: '/api/products/localSample',
       weight: 120,
       length: 10,
       width: 5,
