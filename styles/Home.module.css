@@ -43,9 +43,9 @@
   grid-area: list;
 }
 .list ul li::marker {
-  content: "🐶";
+  content: "✅";
   display: inline-block;
-     margin-right: 0.8rem;
+   margin-right: 0.8rem;
 }
 .list ul {
   list-style: none;
