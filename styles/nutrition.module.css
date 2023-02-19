@@ -26,7 +26,7 @@
   }
   .title {
    grid-area: title;
-    padding: 7rem 4rem;
+    padding: 3rem 4rem;
   }
  .pink {
   color: #ff44cc;
@@ -76,7 +76,7 @@
   }
   .desc {
     grid-area:desc;
-    padding: 3rem 4rem;
+    padding: 0rem 4rem;
   }
   
 }
@@ -106,7 +106,7 @@
     }
     .desc {
       grid-area:desc;
-      padding: 3rem 4rem;
+      padding: 0rem 4rem;
     }
     
 }
