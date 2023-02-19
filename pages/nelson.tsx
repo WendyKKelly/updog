@@ -29,7 +29,7 @@ interface IProductListProps {
   products: IProduct[]
 }
 
-export default function Home({products}: IProductListProps) {
+export default function Nelson({products}: IProductListProps) {
   return (
    <>
     <Layout>
