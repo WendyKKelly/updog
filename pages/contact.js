@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Contact.module.css';
 
 import { VStack, Stack, Text, Input, Button, Flex } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
@@ -13,7 +13,7 @@ export default function Contact() {
   } = useForm();
 
   function submitHandler(data) {
-    fetch('/api/sheet', {
+    fetch('/api/submit', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
