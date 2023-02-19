@@ -28,7 +28,7 @@ export default function Contact() {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <h5>Hello!</h5>
+      <h5>Hello! Try Again</h5>
 
       <main className={styles.main}>
         <VStack spacing="1px" width="70%" align="center">
