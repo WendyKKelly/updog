@@ -150,7 +150,9 @@ export default function Home({products}: IProductListProps) {
       <li>Subscribe to Our List / Know When We Bake</li>
       <li>Local to Nelson? Order Direct Here:</li>
       <li>Order Online: (Free Shipping on orders over $50)</li>
-      </ul></div></div>
+      </ul>
+      </div>
+      </div>
         <ProductList products={products}/>
         < Story />
       

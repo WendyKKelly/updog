@@ -39,6 +39,9 @@
   grid-area:desc;
   padding: 3rem 4rem;
 }
+.list {
+  grid-area: list;
+}
 .list ul {
   list-style: none;
 }
