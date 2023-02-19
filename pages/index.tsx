@@ -143,7 +143,14 @@ export default function Home({products}: IProductListProps) {
           <div className={styles.desc}>
          <h5 className={grandstander.className}>
         Get Updog Treats:
-    </h5></div></div>
+    </h5>
+    </div>
+    <div className={styles.list}>
+      <ul>
+      <li>Subscribe to Our List / Know When We Bake</li>
+      <li>Local to Nelson? Order Direct Here:</li>
+      <li>Order Online: (Free Shipping on orders over $50)</li>
+      </ul></div></div>
         <ProductList products={products}/>
         < Story />
       
