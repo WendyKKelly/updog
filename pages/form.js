@@ -1,9 +1,10 @@
-async function submitHandler (data) {
-	const response = await fetch("/api/sheet", {
-    		method: "POST",
-        	body: JSON.stringify(data),
-        	headers: {
-        		'Content-Type': 'application/json',
-      		},
-    	})
+import {google} from "googleapis"
+
+async function handler (req, res) {
+    if (req.method === "POST"){
+    		const {name, message} = req.body;
+		res.json({message: "It works!"});
+    }
 }
+
+export default handler;
