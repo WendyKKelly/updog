@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Updog Contact</title>
       </Head>
 
       <main className={styles.main}>
