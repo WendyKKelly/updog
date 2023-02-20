@@ -1,11 +1,11 @@
-import { GoogleApis } from "googleapis";
+import { google } from "googleapis";
 
 async function handler (req, res) {
     if (req.method === "POST"){
     		const name = "Wendy";
 		res.json({message: "It still works!"});
+    
     }
-
 const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: process.env.CLIENT_EMAIL,
@@ -30,6 +30,7 @@ const auth = new google.auth.GoogleAuth({
       values: [["name"]],
     },
   });
-}
+
   res.status(201).json({response, result: "Feedback posted to spreadsheet!"})
+}
 export default handler;
