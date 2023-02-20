@@ -14,7 +14,7 @@ export default function Contact() {
     const JSONdata = JSON.stringify(data)
 
     // API endpoint where we send form data.
-    const endpoint = '/api/sheets/form'
+    const endpoint = '/api/sheet'
 
     // Form the request for sending data to the server.
     const options = {
@@ -40,11 +40,11 @@ export default function Contact() {
   return (
     // We pass the event to the handleSubmit() function on submit.
     <form onSubmit={handleSubmit}>
-      <label htmlFor="first">First Name</label>
-      <input type="text" id="first" name="first" required />
+      <label htmlFor="name">Name</label>
+      <input type="text" id="name" name="name" required />
 
-      <label htmlFor="last">Last Name</label>
-      <input type="text" id="last" name="last" required />
+      <label htmlFor="message">Message</label>
+      <input type="text" id="message" name="message" required />
 
       <button type="submit">Submit</button>
     </form>
