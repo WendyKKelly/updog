@@ -43,7 +43,7 @@ export default function Contact() {
                 mt={2}
                 {...register('Phone', { required: 'Please enter your phone' })}
               />
-              {errorsPhone && errors.Phone.message}
+              {errors.Phone && errors.Phone.message}
               <Input
                 placeholder="Enter Message"
                 variant="filled"
