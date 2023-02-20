@@ -1,41 +1,23 @@
-import {google} from "googleapis"
+export default function handler(req, res) {
+  // Get data submitted in request's body.
+  const body = req.body
 
+  // Optional logging to see the responses
+  // in the command line where next.js app is running.
+  console.log('body: ', body)
 
-async function handler (req, res) {
-  if (req.method === "POST"){
-      const {phone, message} = req.body;
-      console.log(phone, message);
-  
-const auth = new google.auth.GoogleAuth({
-  credentials: {
-    client_email: process.env.CLIENT_EMAIL,
-    client_id: process.env.CLIENT_ID,
-    private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'),
-  },
-  scopes: [
-    'https://www.googleapis.com/auth/drive',
-    'https://www.googleapis.com/auth/drive.file',
-    'https://www.googleapis.com/auth/spreadsheets',
-  ],
-});
-const sheets = google.sheets({
-  auth,
-  version: 'v4',
-});
-const response = await sheets.spreadsheets.values.append({
-  spreadsheetId: process.env.SPREADSHEET_ID,
-  range: 'Sheet1!A2:C',
-  valueInputOption: 'USER_ENTERED',
-  requestBody: {
-    values: [[phone, message]],
-  },
-});
-res.status(201).json({ message: 'It works!', response });
+  // Guard clause checks for first and last name,
+  // and returns early if they are not found
+  if (!body.first || !body.last) {
+    // Sends a HTTP bad request error code
+    return res.status(400).json({ data: 'First or last name not found' })
   }
-  res.status(200).json({ message: 'Hey!' });
+
+  // Found the name.
+  // Sends a HTTP success code
+  res.status(200).json({ data: `${body.first} ${body.last}` })
 }
 
-export default handler
 
 
 
