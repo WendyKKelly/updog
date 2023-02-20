@@ -13,7 +13,7 @@ export default function Contact() {
   } = useForm();
 
   function submitHandler(data) {
-    fetch('/api/submit', {
+    fetch('/api/sheet', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
