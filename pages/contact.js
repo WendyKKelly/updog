@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Contact.module.css';
 
 import { VStack, Stack, Text, Input, Button, Flex } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 
-export default function Home() {
+export default function Contact() {
   const {
     register,
     handleSubmit,
@@ -38,24 +38,12 @@ export default function Home() {
           <Stack textAlign={'center'} flexDirection={'column'}>
             <form onSubmit={handleSubmit(submitHandler)}>
               <Input
-                placeholder="Enter Name"
+                placeholder="Enter Phone"
                 variant="filled"
                 mt={2}
-                {...register('Name', { required: 'Please enter your name' })}
+                {...register('Phone', { required: 'Please enter your phone' })}
               />
-              <Input
-                placeholder="Enter Name"
-                variant="filled"
-                mt={2}
-                {...register('Name', { required: 'Please enter your name' })}
-              />
-              <Input
-                placeholder="Enter Name"
-                variant="filled"
-                mt={2}
-                {...register('Name', { required: 'Please enter your name' })}
-              />
-              {errors.Name && errors.Name.message}
+              {errorsPhone && errors.Phone.message}
               <Input
                 placeholder="Enter Message"
                 variant="filled"
