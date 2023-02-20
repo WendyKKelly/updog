@@ -2,12 +2,6 @@ import {google} from "googleapis"
 
 
 
-
-export default function handler(
-  req, res
-) {
-  return res.status(200).json({message: "It works!"})
-}
 async function handler (req, res) {
   if (req.method === "POST"){
       const {name, message, phone} = req.body;
@@ -41,6 +35,7 @@ const response = await sheets.spreadsheets.values.append({
 res.status(201).json({response, result: "Feedback posted to spreadsheet!"})
 
 
+export default handler;
 
 
 
