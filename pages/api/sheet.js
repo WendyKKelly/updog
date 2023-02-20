@@ -2,8 +2,8 @@ import { google } from "googleapis";
 
 async function handler (req, res) {
     if (req.method === "POST"){
-    		const name = "Wendy";
-		res.json({message: "It still works!"});
+        const { name, message } = req.body;
+		console.log(name, message);
     
     }
 const auth = new google.auth.GoogleAuth({
