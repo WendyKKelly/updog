@@ -1,7 +1,6 @@
 import {google} from "googleapis"
 
 
-
 async function handler (req, res) {
   if (req.method === "POST"){
       const {phone, message} = req.body;
@@ -36,7 +35,7 @@ res.status(201).json({ message: 'It works!', response });
   res.status(200).json({ message: 'Hey!' });
 }
 
-export default handler;
+export default handler
 
 
 

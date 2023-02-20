@@ -1,27 +1,15 @@
 import Head from 'next/head';
 import styles from '../styles/Contact.module.css';
 
-import { VStack, Stack, Text, Input, Button, Flex } from '@chakra-ui/react';
+
 import { useForm } from 'react-hook-form';
 
 export default function Contact() {
   const {
     register,
-    handleSubmit,
-    reset,
     formState: { errors }, // catch error messages
   } = useForm();
 
-  function submitHandler(data) {
-    fetch('/api/sheet', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    reset(); // clears the input on submitting
-  }
 
   return (
     <div className={styles.container}>
@@ -30,46 +18,36 @@ export default function Contact() {
       </Head>
 
       <main className={styles.main}>
-        <VStack spacing="1px" width="70%" align="center">
-          <Text fontSize="2xl" fontWeight="bold">
+        
+          <h5>
             Your response matters!
-          </Text>
+          </h5>
 
-          <Stack textAlign={'center'} flexDirection={'column'}>
-            <form onSubmit={handleSubmit(submitHandler)}>
-              <Input
-                placeholder="Enter Phone"
-                variant="filled"
-                mt={2}
+          
+            <form action="/api/sheet" method="post">
+              <label htmlFor="phone">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                
                 {...register('Phone', { required: 'Please enter your phone' })}
               />
               {errors.Phone && errors.Phone.message}
-              <Input
-                placeholder="Enter Message"
-                variant="filled"
-                mt={2}
+              <input
+                type="text"
+                id="message"
                 {...register('Feedback', { required: 'Enter your feedback!' })}
               />
               {errors.Feedback && errors.Feedback.message}
-              <VStack align="center">
-                <Button
-                  colorScheme="teal"
-                  bg={'gray.500'}
-                  textColor={'white'}
-                  _hover={{
-                    bgColor: 'pink.200',
-                    textColor: 'gray.900',
-                  }}
-                  type="submit"
-                  mt={2}
-                  variant="ghost"
+              
+                <button type="submit"
+                 
                 >
                   Submit Form
-                </Button>
-              </VStack>
+                </button>
+              
             </form>
-          </Stack>
-        </VStack>
+       
       </main>
     </div>
   );
