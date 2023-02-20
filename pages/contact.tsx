@@ -21,7 +21,7 @@ export default function Contact() {
   }
 
   // Send the form data to our API and get a response.
-  const response = await fetch('/api/form', {
+  const response = await fetch('/api/sheets/form', {
     // Body of the request is the JSON data we created above.
     body: JSON.stringify(data),
     // Tell the server we're sending JSON.
