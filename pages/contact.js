@@ -14,7 +14,7 @@ export default function Contact() {
     const JSONdata = JSON.stringify(data)
 
     // API endpoint where we send form data.
-    const endpoint = '/api/sheet'
+    const endpoint = '/api/sheets/form'
 
     // Form the request for sending data to the server.
     const options = {
