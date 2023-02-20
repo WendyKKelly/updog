@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import styles from '../styles/Contact.module.css';
+import styles from '../styles/Home.module.css';
 
 import { VStack, Stack, Text, Input, Button, Flex } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 
-export default function Contact() {
+export default function Home() {
   const {
     register,
     handleSubmit,
@@ -28,7 +28,6 @@ export default function Contact() {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <h5>Hello! Try Again - still trying </h5>
 
       <main className={styles.main}>
         <VStack spacing="1px" width="70%" align="center">
@@ -38,6 +37,18 @@ export default function Contact() {
 
           <Stack textAlign={'center'} flexDirection={'column'}>
             <form onSubmit={handleSubmit(submitHandler)}>
+              <Input
+                placeholder="Enter Name"
+                variant="filled"
+                mt={2}
+                {...register('Name', { required: 'Please enter your name' })}
+              />
+              <Input
+                placeholder="Enter Name"
+                variant="filled"
+                mt={2}
+                {...register('Name', { required: 'Please enter your name' })}
+              />
               <Input
                 placeholder="Enter Name"
                 variant="filled"
