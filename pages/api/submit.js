@@ -4,10 +4,9 @@ import {google} from "googleapis"
 
 async function handler (req, res) {
   if (req.method === "POST"){
-      const phone, message} = req.body;
+      const {phone, message} = req.body;
   res.json({message: "It works?"});
-  }
-}
+  
 const auth = new google.auth.GoogleAuth({
   credentials: {
     client_email: process.env.CLIENT_EMAIL,
@@ -26,14 +25,16 @@ const sheets = google.sheets({
 });
 const response = await sheets.spreadsheets.values.append({
   spreadsheetId: process.env.SPREADSHEET_ID,
-  range: 'Sheet1!A1:C1',
+  range: 'Sheet1!A2:C',
   valueInputOption: 'USER_ENTERED',
   requestBody: {
     values: [[phone, message]],
   },
 });
-res.status(201).json({response, result: "Feedback posted to spreadsheet!"})
-
+res.status(201).json({ message: 'It works!', response });
+  }
+  res.status(200).json({ message: 'Hey!' });
+}
 
 export default handler;
 
