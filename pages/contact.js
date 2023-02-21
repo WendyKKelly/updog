@@ -1,47 +1,76 @@
-import Script from 'next/script';
+import React, { useState } from "react";
+import styles from '../styles/Contact.module.css'
 
 export default function Contact() {
-    
-    const submitContact = async (event) => {
-        event.preventDefault();
-        const name = event.target.name.value;
-        const res = await fetch('/api/contact', {
-          body: JSON.stringify({
-            name: name,
-          }),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          method: 'POST',
-        });
-        const result = await res.json();
-        alert(`Is this your full name: ${result.name}`)
-      }
+  const [query, setQuery] = useState({
+    name: "",
+    email: ""
+  });
 
-return (
-<div className="max-w-xs my-2 overflow-hidden rounded shadow-lg">
-  <div className="px-6 py-4">
-    <div className="mb-2 text-xl font-bold">Contact us</div>
-    <form onSubmit={submitContact}>
-      <label htmlFor="name" className="mb-2 italic">Name</label>
-      <input
-        className="mb-4 border-b-2"
-        id="name"
-        name="name"
-        type="text"
-        autocomplete="name"
-        required
-      />
-      <button
-        type="submit"
-        className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
-      >
-        Submit
-      </button>
-    </form>
-  </div>
-</div>
-
-
-)
+  // Update inputs value
+  const handleParam = () => (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setQuery((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+  // Form Submit function
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    Object.entries(query).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    fetch("https://getform.io/{your-form-endpoint}", {
+      method: "POST",
+      body: formData
+    }).then(() => setQuery({ name: "", email: "", message: "" }));
+  };
+  return (
+    <div className="App">
+      <h1>NextJS form using Getform.io</h1>
+      <form onSubmit={formSubmit}>
+        <div>
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Name"
+            className="form-control"
+            value={query.name}
+            onChange={handleParam()}
+          />
+        </div>
+        <div>
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Email"
+            className="form-control"
+            value={query.email}
+            onChange={handleParam()}
+          />
+        </div>
+        <div>
+          <label>Message</label>
+          <input
+            type="text"
+            name="message"
+            required
+            placeholder="Message"
+            className="form-control"
+            value={query.message}
+            onChange={handleParam()}
+          />
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  );
 }
+
