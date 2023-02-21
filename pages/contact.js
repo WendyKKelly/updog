@@ -2,10 +2,13 @@ import Script from 'next/script';
 
 export default function Contact() {
     
-const submitContact = async (event) => {
-    event.preventDefault();
-    alert(`So your name is ${event.target.name.value}?`);
-  }
+    const submitContact = async (event) => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const res = await fetch(`https://api.agify.io/?name=${name}`);
+        const result = await res.json();
+        alert(`Hi ${name} your age is most likely: ${result.age}`);
+      }
 
 return (
 <div className="max-w-xs my-2 overflow-hidden rounded shadow-lg">
