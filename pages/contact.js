@@ -5,7 +5,7 @@ export default function Contact() {
 const submitContact = async (event) => {
     event.preventDefault();
     alert(`So your name is ${event.target.name.value}?`);
-  };
+  }
 
 return (
 <div className="max-w-xs my-2 overflow-hidden rounded shadow-lg">
