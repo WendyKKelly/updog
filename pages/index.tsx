@@ -18,7 +18,7 @@ import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
 import Link from 'next/link'
-import Buy from '../components/buy'
+
 import Story from '../components/story'
 
 
@@ -28,8 +28,11 @@ const cormorant = Cormorant({subsets: ['latin']})
 interface IProductListProps {
   products: IProduct[]
 }
+interface Script {
+  src: string
+}
 
-export default function Home({products}: IProductListProps) {
+export default function Home({products}: IProductListProps): JSX.Element {
   return (
    <>
     <Layout>
@@ -163,7 +166,11 @@ export default function Home({products}: IProductListProps) {
     
     
     </Layout>
-    <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>
+    <Script   
+    
+    src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"
+    
+    />
             <div hidden id="snipcart" data-api-key="OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1
 "></div>
     </>
