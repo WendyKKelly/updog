@@ -5,9 +5,17 @@ export default function Contact() {
     const submitContact = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;
-        const res = await fetch(`https://api.agify.io/?name=${name}`);
+        const res = await fetch('/api/contact', {
+          body: JSON.stringify({
+            name: name,
+          }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          method: 'POST',
+        });
         const result = await res.json();
-        alert(`Hi ${name} your age is most likely: ${result.age}`);
+        alert(`Is this your full name: ${result.name}`)
       }
 
 return (
