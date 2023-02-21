@@ -4,6 +4,11 @@ import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
+
+interface StaticImageData {
+    image: StaticImageData
+}
+
 export interface IProduct {
     id: string
     name: string
