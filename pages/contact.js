@@ -1,11 +1,13 @@
+import Script from 'next/script';
 
-
-
+export default function Contact() {
+    
 const submitContact = async (event) => {
     event.preventDefault();
     alert(`So your name is ${event.target.name.value}?`);
   };
 
+return (
 <div className="max-w-xs my-2 overflow-hidden rounded shadow-lg">
   <div className="px-6 py-4">
     <div className="mb-2 text-xl font-bold">Contact us</div>
@@ -28,3 +30,7 @@ const submitContact = async (event) => {
     </form>
   </div>
 </div>
+
+
+)
+}
