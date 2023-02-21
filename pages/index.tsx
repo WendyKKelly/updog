@@ -32,6 +32,7 @@ interface Script {
   src: string
 }
 
+
 export default function Home({products}: IProductListProps): JSX.Element {
   return (
    <>
