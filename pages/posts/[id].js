@@ -27,7 +27,7 @@ export async function getServerSideProps( {query} ) {
 }
 export default function Post({ title, content })  {
     return <article>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <div dangerouslySetInnerHTML={{     html: content    }}></div>
     </article>
 }
