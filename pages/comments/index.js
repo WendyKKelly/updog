@@ -10,7 +10,7 @@ function CommentsPage() {
         setComments(data)
     }
     const submitComment = async () => {
-        const response = await fetch('/api/comment', {
+        const response = await fetch('/api/comments', {
             method: 'POST',
             body: JSON.stringify({ comment }),
             headers: {
