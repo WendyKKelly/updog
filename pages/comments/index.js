@@ -40,3 +40,4 @@ function CommentsPage() {
                 </>
     )
 }
+export default CommentsPage
