@@ -26,8 +26,8 @@ await doc.useServiceAccountAuth({
 } catch (e) {
   console.error('Error: ', e);
 }
-}
-if (
+
+    if(
     form.name !== '' &&
     form.email !== '' &&
     form.topic !== '' &&
@@ -41,5 +41,6 @@ if (
     };
     appendSpreadsheet(newRow);
   }
+  res.status(200).json({ name: 'John Doe' })
 
-
+} 
