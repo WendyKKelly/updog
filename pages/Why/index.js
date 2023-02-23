@@ -1,5 +1,5 @@
 
-import { getWhyNextReasons } from ".../lib/api";
+import { getWhyNextReasons } from "@/lib/api";
 
 export default function IndexPage({ reasons }) {
   return (
