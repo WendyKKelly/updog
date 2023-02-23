@@ -18,7 +18,7 @@ export default function IndexPage({ reasons }) {
                 className="border border-grey-200 rounded p-4 hover:shadow-lg hover:border-transparent"
                 key={title}
                 href={href}
-                target="_blank"
+                
               >
                 <h3 className="font-bold mb-2">{title}</h3>
                 <div dangerouslySetInnerHTML={{ __html: description }} />
