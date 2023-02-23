@@ -17,8 +17,9 @@ function CommentsPage() {
                 'Content-Type': 'application/json'
             }
         })
-        const data = await response.json()
-        console.log(data)
+        const comment = await response.json()
+        reset();
+        
         }
 
     
