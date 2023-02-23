@@ -1,10 +1,12 @@
 
 import { getWhyNextReasons } from "@/lib/api";
 
-export default function IndexPage({ reasons }) {
+export default function Why({ reasons }) {
+  
   return (
+    <>
     <div>
-      
+      <Nav />
       <div className="container mx-auto py-20 px-8">
         <h1 className="text-5xl text-center text-accent-1 mb-16">
           Why Next.js?
@@ -18,7 +20,7 @@ export default function IndexPage({ reasons }) {
                 className="border border-grey-200 rounded p-4 hover:shadow-lg hover:border-transparent"
                 key={title}
                 href={href}
-                
+                target="_blank"
               >
                 <h3 className="font-bold mb-2">{title}</h3>
                 <div dangerouslySetInnerHTML={{ __html: description }} />
@@ -30,7 +32,7 @@ export default function IndexPage({ reasons }) {
         </div>
         <div className="text-center mt-8">
           {reasons.slice(reasons.length - 1).map(({ title, description }) => (
-            <div key={title} className="markdown inline-p">
+            <div className="markdown inline-p">
               <strong>{title}</strong>{" "}
               <span dangerouslySetInnerHTML={{ __html: description }} />
             </div>
@@ -38,6 +40,7 @@ export default function IndexPage({ reasons }) {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
@@ -53,4 +56,5 @@ export async function getStaticProps(context) {
     // - At most once every second
     revalidate: 1, // In seconds
   };
+
 }
