@@ -18,9 +18,6 @@ const ContactForm = () => {
           'Content-type': 'application/json'
         }
       });
-      if (!response.ok) {
-        throw new Error(response.statusText);
-      }
     }
   
     
