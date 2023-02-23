@@ -6,7 +6,7 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 // Config variables
 
-const SHEET_ID = process.env.GOOGLE_SHEET_ID;
+
 
 
 const ContactForm = () => {
@@ -28,7 +28,7 @@ const ContactForm = () => {
       // loads document properties and worksheets
       await doc.loadInfo();
 
-      const sheet = doc.sheetsById[SHEET_ID];
+      const sheet = doc.sheetsById[0];
       await sheet.addRow(row);
     } catch (e) {
       console.error('Error: ', e);
@@ -50,7 +50,7 @@ const ContactForm = () => {
         Topic: form.topic,
         Description: form.description,
       };
-      console.log(ok)
+      
 
       appendSpreadsheet(newRow);
     }
