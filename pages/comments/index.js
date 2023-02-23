@@ -9,10 +9,10 @@ function CommentsPage() {
         const data = await response.json()
         setComments(data)
     }
-     function submitComment(data) {
+     function submitComment() {
             fetch('/api/comments', {
             method: 'POST',
-            body: JSON.stringify({ data }),
+            body: JSON.stringify({ comment }),
             headers: {
                 'Content-Type': 'application/json'
             }
