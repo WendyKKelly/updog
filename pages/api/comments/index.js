@@ -36,7 +36,7 @@ import { comments } from '../../../data/comments'
             range: 'Sheet1!A2:C',
             valueInputOption: 'USER_ENTERED',
             requestBody: {
-              values: [[comment]],
+              values: [[ comment ]],
             },
           });
         res.status(201).json(newComment)
