@@ -9,7 +9,7 @@ function CommentsPage() {
         const data = await response.json()
         setComments(data)
     }
-    const submitComment = async () => {
+    async function submitComment() {
         const response = await fetch('/api/comments', {
             method: 'POST',
             body: JSON.stringify({ comment }),
@@ -18,9 +18,9 @@ function CommentsPage() {
             }
         })
         const comment = await response.json()
-        reset();
-        
-        }
+        reset()
+
+    }
 
     
     return (
