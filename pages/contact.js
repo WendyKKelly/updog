@@ -10,7 +10,7 @@ const ContactForm = () => {
     topic: '',
     description: '',
   });
-  const submitForm = async (e) => {
+  const submitForm = async () => {
      fetch("/api/form", {
         method: 'POST',
         body: JSON.stringify(),
@@ -18,7 +18,7 @@ const ContactForm = () => {
           'Content-type': 'application/json'
         }
       });
-      e.preventDefault();
+      
     }
   
     
