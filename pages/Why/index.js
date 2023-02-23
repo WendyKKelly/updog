@@ -30,7 +30,7 @@ export default function IndexPage({ reasons }) {
         </div>
         <div className="text-center mt-8">
           {reasons.slice(reasons.length - 1).map(({ title, description }) => (
-            <div className="markdown inline-p">
+            <div key={title} className="markdown inline-p">
               <strong>{title}</strong>{" "}
               <span dangerouslySetInnerHTML={{ __html: description }} />
             </div>
