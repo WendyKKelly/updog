@@ -11,7 +11,7 @@ const ContactForm = () => {
     description: '',
   });
   const submitForm = async (row) => {
-     fetch(/api/form, {
+     fetch("/api/form", {
         method: 'POST',
         body: JSON.stringify(),
         headers: {

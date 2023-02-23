@@ -2,16 +2,8 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 const doc = new GoogleSpreadsheet(process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID);
 export default async function handler(req, res) {
-
-const {
-    query: {row}
-
-} = req;
-
+if (req.method === 'POST') {
 try {
-    if (!row) {
-        throw new Error('Missing row');
-    }
 
 await doc.useServiceAccountAuth({
     client_email: process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL,
@@ -37,6 +29,7 @@ await doc.useServiceAccountAuth({
     };
     appendSpreadsheet(newRow);
   }
+} else {
   res.status(200).json({ name: 'John Doe' })
-
+}
 } 
