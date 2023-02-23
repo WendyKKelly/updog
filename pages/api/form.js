@@ -27,7 +27,7 @@ await doc.useServiceAccountAuth({
       Topic: form.topic,
       Description: form.description,
     };
-    appendSpreadsheet(newRow);
+    await sheet.addRow(newRow);
   }
 } else {
   res.status(200).json({ name: 'John Doe' })
