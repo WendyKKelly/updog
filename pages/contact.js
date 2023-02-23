@@ -18,6 +18,7 @@ const ContactForm = () => {
           'Content-type': 'application/json'
         }
       });
+      e.preventDefault();
     }
   
     
