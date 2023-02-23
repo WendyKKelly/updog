@@ -13,7 +13,7 @@ const ContactForm = () => {
   const submitForm = async (row) => {
      fetch(`/api/form?id=${row}`, {
         method: 'POST',
-        body: JSON.stringify(row),
+        body: JSON.stringify(),
         headers: {
           'Content-type': 'application/json'
         }
