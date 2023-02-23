@@ -9,15 +9,15 @@ function CommentsPage() {
         const data = await response.json()
         setComments(data)
     }
-    async function submitComment() {
-        const response = await fetch('/api/comments', {
+     function submitComment(data) {
+            fetch('/api/comments', {
             method: 'POST',
-            body: JSON.stringify({ comment }),
+            body: JSON.stringify({ data }),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
-        const comment = await response.json()
+        
         reset()
 
     }
