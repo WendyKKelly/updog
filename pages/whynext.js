@@ -1,29 +1,24 @@
 
 import { getWhyNextReasons } from "@/lib/api";
 
-export default function Why({ reasons }) {
+export default function Why(reasons) {
   
   return (
-    <>
-    <div>
-      
-      <div className="container mx-auto py-20 px-8">
-        <h1 className="text-5xl text-center text-accent-1 mb-16">
+    
+      <div>
+     
+        <h1 >
           Why Next.js?
         </h1>
 
        
-        <div key={title} className="text-center mt-8">
-          {reasons.slice(reasons.length - 1).map(({ title }) => (
-            <div key={title} className="markdown inline-p">
-              <strong>{title}</strong>{" "}
+        <div key={title} >{title}
+        
               
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
-    </>
+          
+            </div>
+    
   );
 }
 
