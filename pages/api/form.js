@@ -29,7 +29,7 @@ await doc.useServiceAccountAuth({
     };
     await sheet.addRow(newRow);
   }
-} else {
+} 
   res.status(200).json({ name: 'John Doe' })
-}
+
 } 
