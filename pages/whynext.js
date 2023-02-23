@@ -12,29 +12,12 @@ export default function Why({ reasons }) {
           Why Next.js?
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {reasons
-            .slice(0, reasons.length - 1)
-            .map(({ title, description, href }) => (
-              <a
-                className="border border-grey-200 rounded p-4 hover:shadow-lg hover:border-transparent"
-                key={title}
-                href={href}
-                
-              >
-                <h3 className="font-bold mb-2">{title}</h3>
-                <div dangerouslySetInnerHTML={{ __html: description }} />
-                <span className="text-blue-600 hover:text-blue-400 hover:underline mt-4 block">
-                  Documentation →
-                </span>
-              </a>
-            ))}
-        </div>
+       
         <div key={title} className="text-center mt-8">
-          {reasons.slice(reasons.length - 1).map(({ title, description }) => (
+          {reasons.slice(reasons.length - 1).map(({ title }) => (
             <div key={title} className="markdown inline-p">
               <strong>{title}</strong>{" "}
-              <span dangerouslySetInnerHTML={{ __html: description }} />
+              
             </div>
           ))}
         </div>
