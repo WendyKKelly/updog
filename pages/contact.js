@@ -1,12 +1,6 @@
 
 
 import React, { useState } from 'react';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
-
-
-// Config variables
-
-
 
 
 const ContactForm = () => {
@@ -16,53 +10,27 @@ const ContactForm = () => {
     topic: '',
     description: '',
   });
-
-  const doc = new GoogleSpreadsheet(process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID);
-
-  const appendSpreadsheet = async (row) => {
-    try {
-      await doc.useServiceAccountAuth({
-        client_email: process.env.NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL,
-        private_key: process.env.NEXT_PUBLIC_GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  const submitForm = async (row) => {
+     fetch(`/api/form?id=${row}`, {
+        method: 'POST',
+        body: JSON.stringify(row),
+        headers: {
+          'Content-type': 'application/json'
+        }
       });
-      // loads document properties and worksheets
-      await doc.loadInfo();
-
-      const sheet = doc.sheetsById[0];
-      await sheet.addRow(row);
-    } catch (e) {
-      console.error('Error: ', e);
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
     }
-  };
-
-  const submitForm = (e) => {
-    e.preventDefault();
-
-    if (
-      form.name !== '' &&
-      form.email !== '' &&
-      form.topic !== '' &&
-      form.description !== ''
-    ) {
-      const newRow = {
-        FullName: form.name,
-        Email: form.email,
-        Topic: form.topic,
-        Description: form.description,
-      };
-      
-
-      appendSpreadsheet(newRow);
-    }
-  };
-
+  
+    
   const handleChange = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
   };
-
+    
   return (
     <div className="flex justify-center items-center min-h-screen">
       <form
@@ -122,4 +90,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactForm
