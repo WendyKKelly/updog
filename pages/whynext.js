@@ -6,7 +6,7 @@ export default function Why({ reasons }) {
   return (
     <>
     <div>
-      <Nav />
+      
       <div className="container mx-auto py-20 px-8">
         <h1 className="text-5xl text-center text-accent-1 mb-16">
           Why Next.js?
@@ -20,7 +20,7 @@ export default function Why({ reasons }) {
                 className="border border-grey-200 rounded p-4 hover:shadow-lg hover:border-transparent"
                 key={title}
                 href={href}
-                target="_blank"
+                
               >
                 <h3 className="font-bold mb-2">{title}</h3>
                 <div dangerouslySetInnerHTML={{ __html: description }} />
@@ -30,7 +30,7 @@ export default function Why({ reasons }) {
               </a>
             ))}
         </div>
-        <div className="text-center mt-8">
+        <div key={title}className="text-center mt-8">
           {reasons.slice(reasons.length - 1).map(({ title, description }) => (
             <div className="markdown inline-p">
               <strong>{title}</strong>{" "}
