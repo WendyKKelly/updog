@@ -11,11 +11,7 @@ await doc.useServiceAccountAuth({
   });
   await doc.loadInfo();
   const sheet = doc.sheetsById[0];
-  await sheet.addRow(row);
-} catch (e) {
-  console.error('Error: ', e);
-}
-    if(
+  if(
     form.name !== '' &&
     form.email !== '' &&
     form.topic !== '' &&
@@ -29,6 +25,10 @@ await doc.useServiceAccountAuth({
     };
     await sheet.addRow(newRow);
   }
+} catch (e) {
+  console.error('Error: ', e);
+}
+   
 } 
   res.status(200).json({ name: 'John Doe' })
 
