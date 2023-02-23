@@ -50,6 +50,7 @@ const ContactForm = () => {
         Topic: form.topic,
         Description: form.description,
       };
+      console.log(ok)
 
       appendSpreadsheet(newRow);
     }
