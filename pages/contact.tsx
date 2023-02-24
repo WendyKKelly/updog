@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import {FormEvent, useState} from "react";
 
 
-const contactForm: NextPage = () => {
+const ContactForm: NextPage = () => {
   const [email, setEmail] = useState("");
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -46,4 +46,4 @@ const contactForm: NextPage = () => {
   )
 }
 
-export default contactForm
+export default ContactForm
