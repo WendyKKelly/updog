@@ -11,7 +11,7 @@ const ContactForm: NextPage = () => {
     let form = {
       email
     }
-    
+    console.log(form)
       fetch('/api/form', {
         method: 'POST',
         headers: {
@@ -22,6 +22,7 @@ const ContactForm: NextPage = () => {
        
       });
       console.log(form)
+      console.log("hello")
       
       setEmail('')
 
