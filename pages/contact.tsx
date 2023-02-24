@@ -8,20 +8,18 @@ const ContactForm: NextPage = () => {
     e.preventDefault();
     
 
-    let form = {
-      email
-    }
-    console.log(form)
+    
+    console.log("hi")
       fetch('/api/form', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-type': 'application/json',
-          body: JSON.stringify(form)
+          body: JSON.stringify(email)
         }
        
       });
-      console.log(form)
+      
       console.log("hello")
       
       setEmail('')
