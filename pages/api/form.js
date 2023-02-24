@@ -12,11 +12,9 @@ if (req.method === 'POST') {
    await doc.loadInfo();
   const sheet = doc.sheetsById[0];
    const newRow =await sheet.addRow( {name: 'name'})
-   
-  
 
+   res.sheet(newRow)
 
-  res.status(201).json({ message: 'It works!', response });
   
   }
 res.status(200).json({ message: 'Hey!' });
