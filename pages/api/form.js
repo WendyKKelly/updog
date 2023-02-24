@@ -11,9 +11,9 @@ if (req.method === 'POST') {
    const  doc = new GoogleSpreadsheet(process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID);
    await doc.loadInfo();
   const sheet = doc.sheetsById[0];
-   const newRow =await sheet.addRow( {name: 'name'})
+   await sheet.addRow( {name: 'name'})
 
-   res.sheet(newRow)
+   
 
   
   }
