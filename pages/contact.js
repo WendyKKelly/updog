@@ -12,7 +12,7 @@ const ContactForm = () => {
      
       fetch("/lib/form", {
         method: 'POST',
-        body: JSON.stringify(data),
+        body: JSON.stringify("form"),
         headers: {
           'Content-type': 'application/json'
         }
@@ -33,7 +33,7 @@ const ContactForm = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
       <form
-        className="space-y-3 w-full max-w-lg mx-auto p-5"
+        name="form"
         onSubmit={submitForm}
       >
         <p className="font-semibold text-2xl text-center">Contact Form</p>
