@@ -10,7 +10,7 @@ const ContactForm = () => {
   });
   function submitForm () {
      
-      fetch("/lib/form", {
+      fetch("/api/form", {
         method: 'POST',
         body: JSON.stringify("form"),
         headers: {
