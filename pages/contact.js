@@ -10,11 +10,11 @@ const ContactForm = () => {
     topic: '',
     description: '',
   });
-  function submitForm (data) {
+  function submitForm () {
      
       fetch("/api/form", {
         method: 'POST',
-        body: JSON.stringify(data),
+        body: JSON.stringify(),
         headers: {
           'Content-type': 'application/json'
         }
