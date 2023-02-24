@@ -12,7 +12,16 @@ await doc.useServiceAccountAuth({
   await doc.loadInfo();
   const sheet = doc.sheetsById[0];
   await sheet.addRow(row)
-  if(
+
+} catch (e) {
+  console.error('Error: ', e);
+}
+
+};
+const res = (e) => {
+    e.preventDefault();
+  
+if(
     form.name !== '' &&
     form.email !== '' &&
     form.topic !== '' &&
@@ -24,13 +33,9 @@ await doc.useServiceAccountAuth({
       Topic: form.topic,
       Description: form.description,
     };
-    await sheet.addRow(newRow);
+      res(newRow);
   }
-} catch (e) {
-  console.error('Error: ', e);
-}
-   
-} 
   res.status(200).json({ name: 'John Doe' })
 
 } 
+}
