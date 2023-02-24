@@ -22,15 +22,11 @@ await doc.useServiceAccountAuth({
 const Append = () => {
 if(
     form.name !== '' &&
-    form.email !== '' &&
-    form.topic !== '' &&
-    form.description !== ''
+   
   ) {
     const newRow = {
       FullName: form.name,
-      Email: form.email,
-      Topic: form.topic,
-      Description: form.description,
+   
     };
       Append(newRow);
   }
