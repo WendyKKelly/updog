@@ -21,7 +21,7 @@ const ContactForm: NextPage = () => {
         }
        
       });
-      console.log("hhello")
+      console.log(form)
       
       setEmail('')
 
