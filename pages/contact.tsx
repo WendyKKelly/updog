@@ -23,6 +23,7 @@ const ContactForm: NextPage = () => {
       });
       const content = await rawResponse.json();
       alert(content.data.tableRange)
+      console.log(content)
       setEmail('')
 
     }

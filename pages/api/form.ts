@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest,
   }
 
   const body = req.body as SheetForm
-
+console.log(body)
   try {
     const auth = new google.auth.GoogleAuth({
         credentials: {
@@ -30,7 +30,7 @@ const sheets = google.sheets({
   auth,
   version: 'v4'
 });
-
+console.log(sheets)
 const response = await sheets.spreadsheets.values.append({
   spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID,
   range: 'A1:B1',
@@ -41,7 +41,7 @@ const response = await sheets.spreadsheets.values.append({
       ]
   }
 });
-
+console.log(response)
 return res.status(201).json({
   data: response.data
 })
