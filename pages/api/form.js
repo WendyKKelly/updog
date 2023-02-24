@@ -21,7 +21,7 @@ await doc.useServiceAccountAuth({
 };
 const Append = () => {
 if(
-    form.name !== '' &&
+    form.name !== '' 
    
   ) {
     const newRow = {
