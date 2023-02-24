@@ -4,8 +4,8 @@ import { useState} from "react";
 
 const ContactForm  = () => {
   const [email, setEmail] = useState("");
-  const submitForm = async (e) => {
-    e.preventDefault();
+  const submitForm = async () => {
+    
 
     let form = {
       email
@@ -26,15 +26,6 @@ const ContactForm  = () => {
 
     }
     
-  
-    
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  
-  }
   return (
     <div className="flex justify-center items-center min-h-screen">
       <form
@@ -47,9 +38,9 @@ const ContactForm  = () => {
           <input
             name="email"
             type="text"
-            className="form-input form-field-contact"
-            placeholder="Full Name"
-            onChange={handleChange}
+            
+            placeholder="Email"
+            
           />
         </label>
        
