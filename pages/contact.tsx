@@ -12,18 +12,19 @@ const ContactForm: NextPage = () => {
       email
     }
     const rawResponse = await
-      fetch("/api/form", {
+      fetch('/api/form', {
         method: 'POST',
-        body: JSON.stringify(form),
         headers: {
           'Accept': 'application/json',
-          'Content-type': 'application/json'
+          'Content-type': 'application/json',
+          body: JSON.stringify(form)
         }
        
       });
+      console.log("hhello")
       const content = await rawResponse.json();
       alert(content.data.tableRange)
-      console.log(content)
+      console.log("hi")
       setEmail('')
 
     }
