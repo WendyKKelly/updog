@@ -34,7 +34,7 @@ const ContactForm = () => {
     <div className="flex justify-center items-center min-h-screen">
       <form
         name="form"
-        onSubmit={submitForm}
+        onSubmit={(e) => {e.preventDefault(); submitForm()}}
       >
         <p className="font-semibold text-2xl text-center">Contact Form</p>
         <label className="block">
