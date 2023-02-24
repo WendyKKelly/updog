@@ -10,16 +10,19 @@ const ContactForm = () => {
     topic: '',
     description: '',
   });
-  const submitForm = async () => {
-     fetch("/api/form", {
+  function submitForm (data) {
+     
+      fetch("/api/form", {
         method: 'POST',
-        body: JSON.stringify(),
+        body: JSON.stringify(data),
         headers: {
           'Content-type': 'application/json'
         }
+       
       });
-      
+      reset();
     }
+    
   
     
   const handleChange = (e) => {

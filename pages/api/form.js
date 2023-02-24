@@ -19,7 +19,7 @@ await doc.useServiceAccountAuth({
 
 };
 const Append = (e) => {
-    e.preventDefault();
+    
   
 if(
     form.name !== '' &&
