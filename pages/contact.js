@@ -1,24 +1,29 @@
+ 
+import { useState} from "react";
 
 
-import React, { useState } from 'react';
+const ContactForm  = () => {
+  const [email, setEmail] = useState("");
+  const submitForm = async (e) => {
+    e.preventDefault();
 
-
-const ContactForm = () => {
-  const [form, setForm] = useState({
-    name: '',
-  
-  });
-  function submitForm () {
-     
+    let form = {
+      email
+    }
+    const rawResponse = await
       fetch("/api/form", {
         method: 'POST',
-        body: JSON.stringify({form: setForm}),
+        body: JSON.stringify(form),
         headers: {
+          'Accept': 'application/json',
           'Content-type': 'application/json'
         }
        
       });
-      
+      const content = await rawResponse.json();
+      alert(content.data.tableRange)
+      setEmail('')
+
     }
     
   
@@ -28,8 +33,8 @@ const ContactForm = () => {
       ...form,
       [e.target.name]: e.target.value,
     });
-  };
-    
+  
+  }
   return (
     <div className="flex justify-center items-center min-h-screen">
       <form
@@ -40,7 +45,7 @@ const ContactForm = () => {
         <label className="block">
           <span className="text-gray-700 font-semibold">Full Name</span>
           <input
-            name="name"
+            name="email"
             type="text"
             className="form-input form-field-contact"
             placeholder="Full Name"
