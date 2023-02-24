@@ -12,7 +12,7 @@ const ContactForm = () => {
      
       fetch("/lib/form", {
         method: 'POST',
-        body: JSON.stringify(),
+        body: JSON.stringify(data),
         headers: {
           'Content-type': 'application/json'
         }

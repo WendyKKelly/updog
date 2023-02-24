@@ -12,6 +12,7 @@ if (req.method === 'POST') {
    await doc.loadInfo();
   const sheet = doc.sheetsById[0];
    const newRow =await sheet.addRow( {name: 'name'})
+   
   
 
 
