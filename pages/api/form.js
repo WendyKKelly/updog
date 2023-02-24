@@ -11,21 +11,12 @@ if (req.method === 'POST') {
    const  doc = new GoogleSpreadsheet(process.env.NEXT_PUBLIC_GOOGLE_SPREADSHEET_ID);
    await doc.loadInfo();
   const sheet = doc.sheetsById[0];
-   await sheet.addRow(row)
-  }
-  catch (e) {
-   console.error('Error: ', e);
-if(
-    form.name !== '' 
-   
-  ) {
-    const newRow = {
-      FullName: form.name,
-   
-    };
-      sheet(newRow);
-  }
+   const newRow =await sheet.addRow( {name: 'name'})
   
+}
+catch (e) {
+ console.error('Error: ', e);
+
   res.status(201).json({ message: 'It works!', response });
   
   }
