@@ -11,7 +11,7 @@ const ContactForm: NextPage = () => {
     let form = {
       email
     }
-    const rawResponse = await
+    
       fetch('/api/form', {
         method: 'POST',
         headers: {
@@ -22,9 +22,7 @@ const ContactForm: NextPage = () => {
        
       });
       console.log("hhello")
-      const content = await rawResponse.json();
-      alert(content.data.tableRange)
-      console.log("hi")
+      
       setEmail('')
 
     }
