@@ -21,7 +21,9 @@ if(
     };
       sheet(newRow);
   }
-  return res.send(sheet)
+  
+  res.status(201).json({ message: 'It works!', response });
   
 };
-} 
+res.status(200).json({ message: 'Hey!' });
+}
