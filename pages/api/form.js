@@ -12,7 +12,7 @@ await doc.useServiceAccountAuth({
   await doc.loadInfo();
   const sheet = doc.sheetsById[0];
   await sheet.addRow(row)
-
+ return res.send(sheet)
 } catch (e) {
   console.error('Error: ', e);
 }
