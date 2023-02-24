@@ -18,7 +18,7 @@ await doc.useServiceAccountAuth({
 }
 
 };
-const res = (e) => {
+const Append = (e) => {
     e.preventDefault();
   
 if(
@@ -33,7 +33,7 @@ if(
       Topic: form.topic,
       Description: form.description,
     };
-      res(newRow);
+      Append(newRow);
   }
   res.status(200).json({ name: 'John Doe' })
 
