@@ -12,7 +12,7 @@ const ContactForm = () => {
      
       fetch("/api/form", {
         method: 'POST',
-        body: JSON.stringify("form"),
+        body: JSON.stringify({form: form}),
         headers: {
           'Content-type': 'application/json'
         }
