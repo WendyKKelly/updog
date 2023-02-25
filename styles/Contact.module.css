@@ -37,7 +37,7 @@
     
   }
   .label {
-    font-size: 3rem;
+    font-size: 1rem;
     float: left;
     text-align: right;
     margin-right: 15px;
@@ -45,7 +45,10 @@
   }
   .fullname {
     grid-area: fullname;
-    width: 5rem;
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    background-color: #54b3d6;
 
   }
    .phone {
