@@ -51,8 +51,8 @@ export default function PageWithJSbasedForm() {
     <div>
       <h1>Hello - Please fill out this form</h1>
     </div>
-    <div className={styles.grid}>
-    <form className={styles.form}onSubmit={handleSubmit}>
+    <div >
+    <form className={styles.grid}onSubmit={handleSubmit}>
       <ul className="ul">
         <li> 
       <label className={styles.label}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
