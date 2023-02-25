@@ -26,6 +26,7 @@
     max-width: 100%;
     grid-template-areas:
     "fullname fullname fullname fullname"
+    "phone phone phone phone"
     "email email email email"
     "button button button button";
     
@@ -33,6 +34,9 @@
   .fullname {
     grid-area: fullname;
   }
+   .phone {
+    grid-area: phone;
+   }
   .email {
     grid-area: email;
   }
