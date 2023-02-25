@@ -37,6 +37,10 @@ export default function PageWithJSbasedForm() {
     alert(`Is this your full name and email address: ${result.data}`)
   }
   return (
+<main>
+    <div>
+      <h5>Hello - Please fill out this form</h5>
+    </div>
     // We pass the event to the handleSubmit() function on submit.
     <form onSubmit={handleSubmit}>
       <label htmlFor="fullname">Full Name</label>
@@ -47,5 +51,6 @@ export default function PageWithJSbasedForm() {
 
       <button type="submit">Submit</button>
     </form>
+    </main>
   )
 }
