@@ -12,8 +12,9 @@ export default function PageWithJSbasedForm() {
     // Get data from the form.
     const data = {
       fullname: event.target.fullname.value,
-      phone: event.target.phone.value,
+      tel: event.target.tel.value,
       email: event.target.email.value,
+      address: event.target.address.value,
     }
 
     // Send the data to the server in JSON format.
@@ -52,13 +53,15 @@ export default function PageWithJSbasedForm() {
     </div>
     <div className={styles.grid}>
     <form className={styles.form}onSubmit={handleSubmit}>
-      <label className={styles.label}htmlFor="fullname">Full Name</label>
+      <label className={styles.label}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
       <input className={styles.fullname}type="text" id="fullname" name="fullname" required />
       <label className={styles.label}htmlFor="phone">Phone</label>
-      <input className={styles.phone}type="text" id="phone" name="phone" required />
+      <input className={styles.phone}type="tel" id="tel" name="tel" required />
 
       <label className={styles.label}htmlFor="email">Email</label>
-      <input className={styles.email}type="text" id="email" name="email" required />
+      <input className={styles.email}type="email" id="email" name="email" required />
+      <label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
+      <input className={styles.address}type="address" id="address" name="address" required />
 
       <button className={styles.button}type="submit">Submit</button>
     </form>

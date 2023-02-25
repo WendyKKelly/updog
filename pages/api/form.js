@@ -7,9 +7,9 @@ async function handler(req, res) {
   // Optional logging to see the responses
   // in the command line where next.js app is running.
   console.log('body: ', body)
-  if (!body.fullname || !body.phone || !body.email)  {
+  if (!body.fullname || !body.tel || !body.email || !body.address)  {
     // Sends a HTTP bad request error code
-    return res.status(400).json({ data: 'Fullname or phone or email not found' })
+    return res.status(400).json({ data: 'Fullname or phone or email or address not found' })
   }
 
   const auth = new google.auth.GoogleAuth({
@@ -34,14 +34,14 @@ async function handler(req, res) {
     range: 'Sheet1!A1:B2',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
-      values: [[body.fullname, body.phone, body.email]],
+      values: [[body.fullname, body.tel, body.email, body.address]],
     },
   });
 
 
   // Found the name.
   // Sends a HTTP success code
-  res.status(200).json({ data: `${body.fullname} ${body.phone}${body.email}`, response })
+  res.status(200).json({ data: `${body.fullname} ${body.tel}${body.email} ${body.address}`, response })
 }
 
 export default handler;

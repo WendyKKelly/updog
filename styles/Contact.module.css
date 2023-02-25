@@ -1,3 +1,6 @@
+* {
+  border: none;
+}
 .section {
  
   background-color: rgb(18, 176, 213);
@@ -22,27 +25,46 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(25%, auto));
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
     width: var(--max-width);
     max-width: 100%;
     grid-template-areas:
     "fullname fullname fullname fullname"
     "phone phone phone phone"
     "email email email email"
+    "address address address address"
     "button button button button";
     
   }
+  .label {
+    font-size: 3rem;
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+  }
   .fullname {
     grid-area: fullname;
+    width: 5rem;
+
   }
    .phone {
     grid-area: phone;
+    width: 5rem;
    }
   .email {
     grid-area: email;
+    width: 5rem;
   }
-
+.address {
+  grid-area: address;
+  width: 5rem;
+}
   .button {
     grid-area: button;
+    width: 5rem;
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: #1a4e8a;
     margin: 0 -.25rem;
