@@ -41,7 +41,7 @@ export default function PageWithJSbasedForm() {
     <div>
       <h5>Hello - Please fill out this form</h5>
     </div>
-    // We pass the event to the handleSubmit() function on submit.
+    
     <form onSubmit={handleSubmit}>
       <label htmlFor="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" required />
