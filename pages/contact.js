@@ -45,7 +45,7 @@ export default function PageWithJSbasedForm() {
   }
   return (
     <Layout>
-      <section>
+      <section className={styles.section}>
 <main>
   
     <div>
