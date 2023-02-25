@@ -6,8 +6,8 @@ export default function PageWithJSbasedForm() {
 
     // Get data from the form.
     const data = {
-      fullname: event.target.first.value,
-      email: event.target.last.value,
+      fullname: event.target.fullname.value,
+      email: event.target.email.value,
     }
 
     // Send the data to the server in JSON format.
