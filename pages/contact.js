@@ -6,8 +6,8 @@ export default function PageWithJSbasedForm() {
 
     // Get data from the form.
     const data = {
-      first: event.target.first.value,
-      last: event.target.last.value,
+      fullname: event.target.first.value,
+      email: event.target.last.value,
     }
 
     // Send the data to the server in JSON format.
@@ -34,16 +34,16 @@ export default function PageWithJSbasedForm() {
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
-    alert(`Is this your full name: ${result.data}`)
+    alert(`Is this your full name and email address: ${result.data}`)
   }
   return (
     // We pass the event to the handleSubmit() function on submit.
     <form onSubmit={handleSubmit}>
-      <label htmlFor="first">First Name</label>
-      <input type="text" id="first" name="first" required />
+      <label htmlFor="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
 
-      <label htmlFor="last">Last Name</label>
-      <input type="text" id="last" name="last" required />
+      <label htmlFor="email">Email</label>
+      <input type="text" id="email" name="email" required />
 
       <button type="submit">Submit</button>
     </form>
