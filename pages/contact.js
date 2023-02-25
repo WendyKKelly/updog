@@ -1,3 +1,8 @@
+import Layout from '../components/Layout';
+import { Grandstander } from '@next/font/google'
+import {Cormorant} from '@next/font/google'
+import styles from '@/styles/Contact.module.css'
+
 export default function PageWithJSbasedForm() {
   // Handles the submit event on form submit.
   const handleSubmit = async (event) => {
@@ -37,20 +42,24 @@ export default function PageWithJSbasedForm() {
     alert(`Is this your full name and email address: ${result.data}`)
   }
   return (
+    <Layout>
 <main>
+  
     <div>
       <h5>Hello - Please fill out this form</h5>
     </div>
-    
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required />
+    <div className={styles.grid}>
+    <form className={styles.form}onSubmit={handleSubmit}>
+      <label className={styles.label}htmlFor="fullname">Full Name</label>
+      <input className={styles.fullname}type="text" id="fullname" name="fullname" required />
 
-      <label htmlFor="email">Email</label>
-      <input type="text" id="email" name="email" required />
+      <label className={styles.label}htmlFor="email">Email</label>
+      <input className={styles.email}type="text" id="email" name="email" required />
 
-      <button type="submit">Submit</button>
+      <button className={styles.button}type="submit">Submit</button>
     </form>
+    </div>
     </main>
+    </Layout>
   )
 }
