@@ -53,17 +53,20 @@ export default function PageWithJSbasedForm() {
     </div>
     <div className={styles.grid}>
     <form className={styles.form}onSubmit={handleSubmit}>
+      <ul className="ul">
+        <li> 
       <label className={styles.label}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
-      <input className={styles.fullname}type="text" id="fullname" name="fullname" required />
-      <label className={styles.label}htmlFor="phone">Phone</label>
-      <input className={styles.phone}type="tel" id="tel" name="tel" required />
+      <input className={styles.fullname}type="text" id="fullname" name="fullname" required /></li>
+      <li><label className={styles.label}htmlFor="phone">Phone</label>
+      <input className={styles.phone}type="tel" id="tel" name="tel" required /></li>
 
-      <label className={styles.label}htmlFor="email">Email</label>
-      <input className={styles.email}type="email" id="email" name="email" required />
-      <label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
-      <input className={styles.address}type="address" id="address" name="address" required />
+      <li><label className={styles.label}htmlFor="email">Email</label>
+      <input className={styles.email}type="email" id="email" name="email" required /></li>
+      <li><label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
+      <input className={styles.address}type="address" id="address" name="address" required /></li>
 
-      <button className={styles.button}type="submit">Submit</button>
+      <li><button className={styles.button}type="submit">Submit</button></li>
+      </ul>
     </form>
     </div>
     </main>
