@@ -96,9 +96,99 @@
   
   @media (max-width: 600px) {
     .grid {
-      width: 100%;
-      flex-direction: column;
+      width: 80%;
+      display: grid;
+      grid-gap: 0;
     }
+
+.section {
+ 
+  background-color: rgb(255 255 255);
+  background: cover;
+  padding: 0;
+  
+}
+.grandstander {
+  color: #1a4e8a;
+}
+.cormorant {
+  color: #fff;
+}
+ 
+ 
+
+  
+  .label {
+    font-size: 1rem;
+    float: left;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding-right: 15rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    
+  }
+ 
+  .fullname {
+    border: none;
+    background-color: #54b3d6;
+    padding:1rem;
+    margin:1rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+
+  }
+   .phone {
+    border: none;
+    background-color: #54b3d6;
+    padding:1rem;
+    margin:1rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+   }
+
+  .email {
+    border: none;
+    background-color: #54b3d6;
+    padding:1rem;
+    margin:1rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+  }
+.address {
+  border: none;
+    background-color: #54b3d6;
+    padding:1rem;
+    margin:1rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+.order {
+  border: none;
+    background-color: #54b3d6;
+    padding:1rem;
+    margin:1rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+  .button {
+    
+    border: none;
+    background-color: #54b3d6;
+    box-shadow: 0 8px 8px -4px lightblue;;
+    color: #1a4e8a;
+    margin-bottom: 1rem;
+    margin-right: 17rem;
+    margin-left: 2rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-family: grandstander;
+    font-size: 3rem;
+  }
+  
+  .button:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: #ff44cc;
+  }
   }
   
   
