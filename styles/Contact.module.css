@@ -54,6 +54,7 @@
     grid-area: fullname;
     width: 15rem;
     height: 3rem;
+    float: right;
     border: none;
     background-color: #54b3d6;
     padding:1rem;
