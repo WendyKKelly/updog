@@ -1,7 +1,7 @@
 
 .section {
  
-  background-color: rgb(201, 186, 231);
+  background-color: rgb(255 255 255);
   background: cover;
   padding: 0;
   
@@ -21,7 +21,7 @@
     justify-items: stretch;
     align-items: center;
     width: var(--max-width);
-    max-width: 100%;
+    max-width: 80%;
    ;
     
   }
@@ -78,9 +78,11 @@
     background-color: #54b3d6;
     box-shadow: 0 8px 8px -4px lightblue;;
     color: #1a4e8a;
-    margin: 0 10rem;
-    padding: 0 10rem;
+    margin: 1rem 10rem;
+    
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-family: grandstander;
+    font-size: 3rem;
     
   
   }
