@@ -22,38 +22,24 @@
     align-items: center;
     width: var(--max-width);
     max-width: 100%;
-    grid-template-areas:
-    "fullname "
-    "phone "
-    "email "
-    "address "
-    "button ";
+   ;
     
   }
-  .ul {
-    display: flex;
-
-    flex-wrap: wrap;
   
-    align-items: center;
-  
-  }
-
-  .ul li {
-    flex: 1 0 120px;
-    max-width: 220px;
-  }
-  .label {
+  label {
     font-size: 1rem;
     float: left;
     text-align: right;
-    margin-right: 15px;
-    width: 100px;
+    grid-column: 1 / 2;
+    
+  }
+  input,
+  button {
+    grid-column: 2 / 3;
   }
   .fullname {
-    grid-area: fullname;
-    width: 15rem;
-    height: 3rem;
+    
+   
     float: right;
     border: none;
     background-color: #54b3d6;
@@ -62,35 +48,27 @@
 
   }
    .phone {
-    grid-area: phone;
-    width: 15rem;
-    height: 3rem;
+   
     border: none;
     background-color: #54b3d6;padding:1rem;
     margin:1rem 0;
    }
 
   .email {
-    grid-area: email;
-    width: 15rem;
-    height: 3rem;
+   
     border: none;
     background-color: #54b3d6;padding:1rem;
     margin:1rem 0;
   }
 .address {
-  grid-area: address;
-  width: 15rem;
-    height: 3rem;
+  
     border: none;
     background-color: #54b3d6;
     padding:1rem;
     margin:1rem 0;
 }
   .button {
-    grid-area: button;
-    width: 15rem;
-    height: 3rem;
+   
     border: none;
     background-color: #54b3d6;
     box-shadow: inset 0 0 0 0 #54b3d6;
