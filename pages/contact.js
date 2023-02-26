@@ -15,7 +15,7 @@ export default function PageWithJSbasedForm() {
       tel: event.target.tel.value,
       email: event.target.email.value,
       address: event.target.address.value,
-      carrots: event.target.carrots.value,
+      order: event.target.order.value,
     }
 
     // Send the data to the server in JSON format.
@@ -63,24 +63,12 @@ export default function PageWithJSbasedForm() {
 
       <label className={styles.label}htmlFor="email">Email</label>
       <input className={styles.email}type="email" id="email" name="email" required />
+      <label className={styles.label}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
+      <textarea 
+      className={styles.order}type="text" id="order" name="order" required />
     <label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
-      <input className={styles.address}type="address" id="address" name="address" required />
-      <fieldset>
-  <legend>Choose all the vegetables you like to eat</legend>
-  <ul>
-    <li>
-      <label htmlFor="carrots">Carrots</label>
-      <input
-      className={styles.carrots}
-        type="checkbox"
-        id="carrots"
-        name="vegetable"
-        value="carrots"
-        checked />
-    </li>
-  
-  </ul>
-</fieldset>
+      <input className={styles.address}type="text" id="address" name="address" required />
+      
 
 
      <button className={styles.button}type="submit">Submit</button>
