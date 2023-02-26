@@ -31,13 +31,14 @@
     float: left;
     text-align: right;
     grid-column: 1 / 2;
+    margin-left: 5rem;
     
   }
  
   .fullname {
     
     grid-column: 2 / 3;
-    float: right;
+    
     border: none;
     background-color: #54b3d6;
     padding:1rem;
