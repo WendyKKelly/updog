@@ -65,6 +65,13 @@
     padding:1rem;
     margin:1rem 0;
 }
+.carrots {
+  grid-column: 2 / 3;
+    border: none;
+    background-color: #54b3d6;
+    padding:1rem;
+    margin:1rem 0;
+}
   .button {
     grid-column:  2 / 3;
     border: none;

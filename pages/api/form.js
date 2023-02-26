@@ -7,7 +7,7 @@ async function handler(req, res) {
   // Optional logging to see the responses
   // in the command line where next.js app is running.
   console.log('body: ', body)
-  if (!body.fullname || !body.tel || !body.email || !body.address)  {
+  if (!body.fullname || !body.tel || !body.email || !body.address || !body.carrots)  {
     // Sends a HTTP bad request error code
     return res.status(400).json({ data: 'Fullname or phone or email or address not found' })
   }
@@ -34,7 +34,7 @@ async function handler(req, res) {
     range: 'Sheet1!A1:B2',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
-      values: [[body.fullname, body.tel, body.email, body.address]],
+      values: [[body.fullname, body.tel, body.email, body.address, body.carrots]],
     },
   });
 
