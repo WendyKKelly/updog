@@ -104,6 +104,9 @@
       display: grid;
       grid-template-columns: 1fr;
      grid-template-areas: "group"
+     "group"
+     "group"
+     "group"
       
     }
 
@@ -129,10 +132,7 @@
   .label {
     font-size: 1rem;
     float: left;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    padding-right: 15rem;
-    padding-top: 2rem;
+    
     font-size: 2rem;
     
   }
@@ -140,44 +140,29 @@
   .fullname {
     border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
+    
 
   }
    .phone {
     border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
+    
    }
 
   .email {
     border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
+    
   }
 .address {
   border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
+    
 }
 .order {
   border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem;
-    margin-left: 5rem;
-    margin-right: 2rem;
+    
 }
   .button {
     
