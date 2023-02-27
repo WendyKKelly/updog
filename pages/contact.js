@@ -113,8 +113,8 @@ export default function Contact() {
       <label className={styles.l_email}htmlFor="email">Email:</label>
       <input className={styles.i_email} type="email" id="email" name="email"  />
       
-      <label className={styles.l_order}htmlFor="message">Tell us your thoughts:</label>
-      <textarea className={styles.i_order}
+      <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
+      <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
 
      <button className={styles.button}type="submit">Submit</button>

@@ -11,7 +11,7 @@ import Layout from '../components/Layout';
 
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
-import styles from '@/styles/Contact.module.css'
+import styles from '@/styles/Nelson.module.css'
 
 import Link from 'next/link'
 
