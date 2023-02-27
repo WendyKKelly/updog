@@ -20,16 +20,17 @@
  }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
     row-gap: 2rem;
     justify-items: stretch;
     align-items: center;
     width: var(--max-width);
     max-width: 80%;
-   ;
-    
   }
-  
+ .group {
+  display: grid;
+
+ }
   .label {
     font-size: 1rem;
     float: left;
