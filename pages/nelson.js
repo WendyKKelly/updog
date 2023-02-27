@@ -88,7 +88,7 @@ export default function Nelson() {
       <section className={styles.section}>
       
         <main className={styles.main}>
-        <div className={styles.grid1}>
+        
 
         <div className={styles.title}>
           <div className={grandstander.className}>
@@ -103,29 +103,29 @@ export default function Nelson() {
           
     <form className={styles.grid}onSubmit={handleSubmit}>
       
-        <div className={styles.group}>
-      <label className={styles.label}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
-      <input className={styles.fullname}type="text" id="fullname" name="fullname" required /></div>
-      <div className={styles.group}>
-     <label className={styles.label}htmlFor="phone">Phone</label>
-      <input className={styles.phone}type="tel" id="tel" name="tel" required /></div>
-      <div className={styles.group}>
-      <label className={styles.label}htmlFor="email">Email</label>
-      <input className={styles.email}type="email" id="email" name="email" required /></div>
-      <div className={styles.group}>
-      <label className={styles.label}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
-      <textarea 
-      className={styles.order}type="text" id="order" name="order" required /></div>
-       <div className={styles.group}>
-    <label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
-      <input className={styles.address}type="text" id="address" name="address" required /></div>
+        
+      <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
+      <input type="text" id="fullname" name="fullname" required />
       
-
+     <label className={styles.l_phone}htmlFor="phone">Phone</label>
+      <input type="tel" id="tel" name="tel" required />
+      
+      <label className={styles.l_email}htmlFor="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      
+     
+       
+    <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
+      <input type="text" id="address" name="address" required />
+      
+      <label className={styles.l_order}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
+      <textarea 
+      type="text" id="order" name="order" required />
 
      <button className={styles.button}type="submit">Submit</button>
       
     </form>
-    </div>
+    
         
         
         </main>

@@ -3,87 +3,118 @@
  
   background-color: rgb(255 255 255);
   background: cover;
-  padding: 0;
+  padding-top: 1rem;
   
+}
+.main {
+  max-width: 51rem;
+    margin: 0 auto;
 }
 .grandstander {
   color: #1a4e8a;
 }
 .cormorant {
-  color: #fff;
+  color: gray;
 }
  .desc {
-  width: 80%;
+  
+    font-size: 1.3rem;
+    margin-top: 0;
  }
  .title {
-  width: 80%;
+  font-size: 1.5rem;
+    
+    margin-bottom: 0.2rem;
  }
   .grid {
+    padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
-    row-gap: 2rem;
-    justify-items: stretch;
-    align-items: center;
-    width: var(--max-width);
-    max-width: 80%;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem;
   }
  .group {
   display: grid;
 
  }
-  .label {
+  .l_name {
     font-size: 1rem;
-    float: left;
-    text-align: right;
-    grid-column: 1 / 2;
-    margin-right: 5rem;
-    
+    display: block;
+    width: 100%; 
+    grid-row: 1 / 2;
   }
- 
-  .fullname {
+  .l_phone {
+    font-size: 1rem;
+    display: block;
+    width: 100%; 
+    grid-row: 3 / 4;
+  }
+  .l_email {
+    font-size: 1rem;
+    display: block;
+    width: 100%; 
+    grid-row: 5 / 6;
+  }
+  
+  .l_address {
+    font-size: 1rem;
+    display: block;
+    width: 100%; 
+    grid-row: 7 / 8;
+  }
+  .l_order {
+    font-size: 1rem;
+    display: block;
+    width: 100%; 
+    grid-row: 9 / 10;
+  }
+  #fullname {
     
-    grid-column: 2 / 3;
-    
+    grid-row: 2 / 3;
+    display: block;
     border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem 0;
+    width: 100%;
+
 
   }
-   .phone {
-    grid-column: 2 / 3;
+   #phone {
+    grid-row: 4 / 5;
+    display: block;
     border: none;
-    background-color: #54b3d6;padding:1rem;
-    margin:1rem 0;
+    background-color: #54b3d6;
+    width: 100%;
+
    }
 
-  .email {
-    grid-column: 2 / 3;
+  #email {
+    grid-row: 6 / 7;
     border: none;
-    background-color: #54b3d6;padding:1rem;
-    margin:1rem 0;
+    background-color: #54b3d6;
+    display: block;
+    width: 100%;
   }
-.address {
-  grid-column: 2 / 3;
+#address {
+  grid-row: 8 / 9;
     border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem 0;
+    display: block;
+    width: 100%;
 }
-.order {
-  grid-column: 2 / 3;
+#order {
+  grid-row: 10 / 15;
     border: none;
     background-color: #54b3d6;
-    padding:1rem;
-    margin:1rem 0;
+    display: block;
+    width: 100%;
 }
   .button {
-    grid-column:  1 / 3;
+    grid-row: 15 / 16;
+    display: block;
     border: none;
     background-color: #54b3d6;
     box-shadow: 0 8px 8px -4px lightblue;;
     color: #1a4e8a;
-    margin: 1rem 10rem;
+    
     
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     font-family: grandstander;
@@ -101,88 +132,64 @@
   
   @media (max-width: 600px) {
     .grid {
-      width: 80%;
-      display: grid;
-      grid-template-columns: 1fr;
-     grid-template-areas: "group"
-     "group"
-     "group"
-     "group"
+      margin: auto;
+      width: 50rem;
+      grid-template-columns: 22rem 22rem;
+      grid-column-gap: 1rem;
       
     }
 
-.section {
- 
-  background-color: rgb(255 255 255);
-  background: cover;
-  padding: 0;
   
-}
-.grandstander {
-  color: #1a4e8a;
-}
-.cormorant {
-  color: #fff;
-}
- 
- 
-.group{
-  grid-area: group;
-}
-  
-  .label {
-    font-size: 1rem;
-    float: left;
-    
-    font-size: 2rem;
-    
+  .l_name {
+    grid-row: 1 / 2;
   }
- 
-  .fullname {
-    border: none;
-    background-color: #54b3d6;
-    
+  .l_phone {
+    grid-row: 3 / 4;
+        grid-column: 1 / 2
+  }
+  .l_email {
+   
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .l_address {
+    grid-row: 5 / 6;
+  }
+  .l_order {
+    grid-row: 7 / 8;
+  }
+  #fullname {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3
+
 
   }
-   .phone {
-    border: none;
-    background-color: #54b3d6;
-    
+   #phone {
+    grid-row: 4 / 5;
+        grid-column: 1 / 2;
+
    }
 
-  .email {
-    border: none;
-    background-color: #54b3d6;
-    
+  #email {
+    grid-row: 4 / 5;
+        grid-column: 2 / 3;
   }
-.address {
-  border: none;
-    background-color: #54b3d6;
-    
+#address {
+  grid-row: 6 / 7;
+        grid-column: 1 / 3;
 }
-.order {
-  border: none;
-    background-color: #54b3d6;
-    
+#order {
+  grid-row: 8 / 13;
+  grid-column: 1 / 3;
 }
   .button {
+    grid-row: 14 / 15;
     
-    border: none;
-    background-color: #54b3d6;
-    box-shadow: 0 8px 8px -4px lightblue;;
-    color: #1a4e8a;
-    margin-bottom: 1rem;
-    margin-right: 17rem;
-    margin-left: 2rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    font-family: grandstander;
-    font-size: 3rem;
+  
   }
   
-  .button:hover {
-    box-shadow: inset 100px 0 0 0 #54b3d6;
-    color: #ff44cc;
-  }
+ 
   }
   
   
