@@ -19,7 +19,7 @@ const Footer = ({ children }) => {
             
         </div>
         <Link
-            href="../pages/contact"
+            href="../contact"
             
             target="_blank"
             rel="noopener noreferrer"
