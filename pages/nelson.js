@@ -107,34 +107,26 @@ export default function Nelson() {
       <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
       <input className={styles.i_name} type="text" id="fullname" name="fullname" required />
       
-     <label className={styles.l_phone}htmlFor="phone">Phone</label>
-      <input className={styles.i_phone} type="tel" id="tel" name="tel" required />
+     <label className={styles.l_phone}htmlFor="phone">Phone: (either phone or email so that we can contact you.)</label>
+      <input className={styles.i_phone} type="tel" id="tel" name="tel"  />
       
-      <label className={styles.l_email}htmlFor="email">Email</label>
+      <label className={styles.l_email}htmlFor="email">Email:</label>
       <input className={styles.i_email} type="email" id="email" name="email" required />
       
      
        
-    <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? Anywhere between 9 Mile and Blewitt )</label>
+    <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? We'll go anywhere between 9 Mile and Blewitt)</label>
       <input className={styles.i_address} type="text" id="address" name="address" required />
       
       <label className={styles.l_order}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
       <textarea className={styles.i_order}
-      type="text" id="order" name="order" required />
+      placeholder="Please write your order here. For example: 1 bag of treats $10, 1 pouch $10. We will contact you to confirm your order and delivery place and time. When we deliever your treats, you can etransfer to Updog or pay in cash" type="text" id="order" name="order" required />
 
      <button className={styles.button}type="submit">Submit</button>
       
     </form>
-    
-        
-        
         </main>
-    
-        
-       
       </section>
-    
-    
     </Layout>
     </>
   )}

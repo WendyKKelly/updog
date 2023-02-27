@@ -20,6 +20,8 @@
   
     font-size: 1.3rem;
     margin-top: 0;
+    width: 20rem;
+    margin-left: .3rem;
  }
  .desc h5 {
   font-size: 2rem;
@@ -27,7 +29,7 @@
  }
  .title {
   
-    
+    width: 20rem;
     margin-bottom: 0.2rem;
   
  }
@@ -145,6 +147,26 @@
       max-width: 51rem;
         margin: 0 auto;
     }
+    .desc {
+  
+      font-size: 3rem;
+      margin-top: 0;
+      width: 90%;
+      margin-left: .3rem;
+   }
+   .desc h5 {
+    
+    color: #1a4e8a;
+   }
+   .title {
+    
+      width: 90%;
+      margin-bottom: 0.2rem;
+    
+   }
+   .title h1 {
+    font-size: 6rem;
+  }
     .grid {
       margin: auto;
       width: 50rem;

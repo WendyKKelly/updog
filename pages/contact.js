@@ -1,10 +1,29 @@
+
+import Head from 'next/head'
+import Image from 'next/image'
+import updogSample from "../public/images/samples.png"
+import updogTreat from "../public/images/120-grams.png"
+import updogPouch from "../public/images/treatpouch.png"
+import updogRefill from "../public/images/refills.png"
 import Layout from '../components/Layout';
+
+
+
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Contact.module.css'
 
-export default function PageWithJSbasedForm() {
-  // Handles the submit event on form submit.
+import Link from 'next/link'
+
+
+
+const grandstander = Grandstander({ subsets: ['latin'] })
+const cormorant = Cormorant({subsets: ['latin']})
+
+
+
+export default function Contact() {
+
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
@@ -14,15 +33,15 @@ export default function PageWithJSbasedForm() {
       fullname: event.target.fullname.value,
       tel: event.target.tel.value,
       email: event.target.email.value,
-      address: event.target.address.value,
-      order: event.target.order.value,
+      message: event.target.message.value,
+      
     }
 
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data)
 
     // API endpoint where we send form data.
-    const endpoint = '/api/form'
+    const endpoint = '/api/contact'
 
     // Form the request for sending data to the server.
     const options = {
@@ -45,38 +64,64 @@ export default function PageWithJSbasedForm() {
     alert(`Is this your full name and email address and phone: ${result.data}`)
   }
   return (
+   <>
     <Layout>
+      <Head>
+        <title>Updog Treats</title>
+        
+        <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
+        <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
+        
+                <link rel="shortcut icon" href="../public/favicon.ico" />
+        <meta
+          property="og:description"
+          content="Fresh, healthy, locally made in Nelson BC — Updog Treats"
+        />
+        <meta
+          property="og:image"
+          content="/images/updoglogogold.png"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
       <section className={styles.section}>
-<main>
-  
-    <div>
-      <h1>Hello - Please fill out this form</h1>
-    </div>
-    <div >
+      
+        <main className={styles.main}>
+        
+
+        <div className={styles.title}>
+          <div className={grandstander.className}>
+          <h1 className={grandstander.className} >Reach Out</h1>
+          </div>
+        </div>
+
+        <div className={styles.desc}>
+          <div className={cormorant.className}>
+          <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Have a bone to pick? A suggestion? Go for it —</h5>
+          </div></div>
+          
     <form className={styles.grid}onSubmit={handleSubmit}>
       
         
-      <label className={styles.label}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
-      <input className={styles.fullname}type="text" id="fullname" name="fullname" required />
-     <label className={styles.label}htmlFor="phone">Phone</label>
-      <input className={styles.phone}type="tel" id="tel" name="tel" required />
-
-      <label className={styles.label}htmlFor="email">Email</label>
-      <input className={styles.email}type="email" id="email" name="email" required />
-      <label className={styles.label}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
-      <textarea 
-      className={styles.order}type="text" id="order" name="order" required />
-    <label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
-      <input className={styles.address}type="text" id="address" name="address" required />
+      <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
+      <input className={styles.i_name} type="text" id="fullname" name="fullname" required />
       
-
+     <label className={styles.l_phone}htmlFor="phone">Phone: (either phone or email so that we can contact you if necessary.)</label>
+      <input className={styles.i_phone} type="tel" id="tel" name="tel"  />
+      
+      <label className={styles.l_email}htmlFor="email">Email:</label>
+      <input className={styles.i_email} type="email" id="email" name="email"  />
+      
+      <label className={styles.l_order}htmlFor="message">Tell us your thoughts:</label>
+      <textarea className={styles.i_order}
+       type="text" id="message" name="message" required />
 
      <button className={styles.button}type="submit">Submit</button>
       
     </form>
-    </div>
-    </main>
-    </section>
+        </main>
+      </section>
     </Layout>
-  )
-}
+    </>
+  )}
