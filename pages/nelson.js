@@ -99,8 +99,8 @@ export default function Nelson() {
         <div className={styles.desc}>
           <div className={cormorant.className}>
           <h5 className={cormorant.className}>Order from this page, and upon receiving your paid order, we will contact you for delivery or pickup options.</h5>
-          </div>
-          <div >
+          </div></div>
+          
     <form className={styles.grid}onSubmit={handleSubmit}>
       
         <div className={styles.group}>
@@ -126,8 +126,7 @@ export default function Nelson() {
       
     </form>
     </div>
-        </div>
-        </div>
+        
         
         </main>
     
