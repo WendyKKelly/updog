@@ -18,12 +18,18 @@ const Footer = ({ children }) => {
             </h4>
             
         </div>
+        <Link
+            href="../pages/contact"
+            
+            target="_blank"
+            rel="noopener noreferrer"
+          >
         <div className={styles.card}>
         <h4 className={grandstander.className}>
               Contact <span>-&gt;</span>
             </h4>
             
-        </div>
+        </div></Link>
         <div className={styles.card}>
         <h4 className={grandstander.className}>
               FAQs <span>-&gt;</span>
