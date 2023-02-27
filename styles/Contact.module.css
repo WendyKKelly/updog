@@ -7,7 +7,7 @@
   
 }
 .main {
-  max-width: 51rem;
+  max-width: 30rem;
     margin: 0 auto;
 }
 .grandstander {
@@ -21,16 +21,25 @@
     font-size: 1.3rem;
     margin-top: 0;
  }
+ .desc h5 {
+  font-size: 2rem;
+  color: #1a4e8a;
+ }
  .title {
-  font-size: 1.5rem;
+  
     
     margin-bottom: 0.2rem;
+  
  }
+ .title h1 {
+  font-size: 3rem;
+}
   .grid {
     padding: 1rem;
     display: grid;
     grid-auto-rows: 2rem;
     grid-row-gap: 0.5rem;
+    width: 20rem;
   }
  .group {
   display: grid;
@@ -131,6 +140,11 @@
   }
   
   @media (min-width: 40rem) {
+
+    .main {
+      max-width: 51rem;
+        margin: 0 auto;
+    }
     .grid {
       margin: auto;
       width: 50rem;
