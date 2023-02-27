@@ -105,21 +105,21 @@ export default function Nelson() {
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
-      <input type="text" id="fullname" name="fullname" required />
+      <input className={styles.i_name} type="text" id="fullname" name="fullname" required />
       
      <label className={styles.l_phone}htmlFor="phone">Phone</label>
-      <input type="tel" id="tel" name="tel" required />
+      <input className={styles.i_phone} type="tel" id="tel" name="tel" required />
       
       <label className={styles.l_email}htmlFor="email">Email</label>
-      <input type="email" id="email" name="email" required />
+      <input className={styles.i_email} type="email" id="email" name="email" required />
       
      
        
     <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? Anywhere between 9 Mile and Blewitt )</label>
-      <input type="text" id="address" name="address" required />
+      <input className={styles.i_address} type="text" id="address" name="address" required />
       
       <label className={styles.l_order}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
-      <textarea 
+      <textarea className={styles.i_order}
       type="text" id="order" name="order" required />
 
      <button className={styles.button}type="submit">Submit</button>
