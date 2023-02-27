@@ -103,19 +103,22 @@ export default function Nelson() {
           <div >
     <form className={styles.grid}onSubmit={handleSubmit}>
       
-        
+        <div className={styles.group}>
       <label className={styles.label}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
-      <input className={styles.fullname}type="text" id="fullname" name="fullname" required />
+      <input className={styles.fullname}type="text" id="fullname" name="fullname" required /></div>
+      <div className={styles.group}>
      <label className={styles.label}htmlFor="phone">Phone</label>
-      <input className={styles.phone}type="tel" id="tel" name="tel" required />
-
+      <input className={styles.phone}type="tel" id="tel" name="tel" required /></div>
+      <div className={styles.group}>
       <label className={styles.label}htmlFor="email">Email</label>
-      <input className={styles.email}type="email" id="email" name="email" required />
+      <input className={styles.email}type="email" id="email" name="email" required /></div>
+      <div className={styles.group}>
       <label className={styles.label}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
       <textarea 
-      className={styles.order}type="text" id="order" name="order" required />
+      className={styles.order}type="text" id="order" name="order" required /></div>
+       <div className={styles.group}>
     <label className={styles.label}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
-      <input className={styles.address}type="text" id="address" name="address" required />
+      <input className={styles.address}type="text" id="address" name="address" required /></div>
       
 
 

@@ -12,8 +12,12 @@
 .cormorant {
   color: #fff;
 }
- 
- 
+ .desc {
+  width: 80%;
+ }
+ .title {
+  width: 80%;
+ }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
@@ -98,7 +102,9 @@
     .grid {
       width: 80%;
       display: grid;
-      grid-gap: 0;
+      grid-template-columns: 1fr;
+     grid-template-areas: "group"
+      
     }
 
 .section {
@@ -116,7 +122,9 @@
 }
  
  
-
+.group{
+  grid-area: group;
+}
   
   .label {
     font-size: 1rem;
