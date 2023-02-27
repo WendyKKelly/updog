@@ -98,7 +98,7 @@ export default function Nelson() {
 
         <div className={styles.desc}>
           <div className={cormorant.className}>
-          <h5 className={cormorant.className}>Order from this page, and upon receiving your paid order, we will contact you for delivery or pickup options.</h5>
+          <h5 className={cormorant.className}>Order from this page, and upon receiving your order, we will contact you for delivery or pickup options.</h5>
           </div></div>
           
     <form className={styles.grid}onSubmit={handleSubmit}>
@@ -125,6 +125,10 @@ export default function Nelson() {
      <button className={styles.button}type="submit">Submit</button>
       
     </form>
+    <div className={styles.desc}>
+          <div className={cormorant.className}>
+          <h5 className={cormorant.className}>Use this page to avoid shipping charges — you are more than welcome to order from <Link href="./index">the main "shop" on the home page</Link> if you would like to. The local Nelson delivery is simply a "locals only" option we want to offer to our dear community.</h5>
+          </div></div>
         </main>
       </section>
     </Layout>
