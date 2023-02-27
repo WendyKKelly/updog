@@ -115,7 +115,7 @@ export default function Nelson() {
       
      
        
-    <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? Needs to be in Nelson area, from Nine Mile to Blewitt...call if you think you deserve treats but live at 10 Mile or just past Blewitt )</label>
+    <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? Anywhere between 9 Mile and Blewitt )</label>
       <input type="text" id="address" name="address" required />
       
       <label className={styles.l_order}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
