@@ -42,13 +42,13 @@ export default function Nutrition() {
         
           <div className={styles.desc}>
          <ul className={grandstander.className}>
-        <li>Uplift: <p>Covid, amirite? Things shifted — I think it's safe to say that all of us came out of these last few years feeling like <span className={styles.pink}>things had changed.</span> We decided we needed to do something positive to impact our community which we love dearly and we looked to our new-to-us dog, Luna, for inspiration.</p></li>
-        <li>Upcycle: <p>Upcycling remains </p></li>
-        <li>Chia Seeds: <p>Black chia seeds provide an excellent source of B vitamins and they’re rich in omega fatty acids, antioxidants, fiber, and minerals like calcium, magnesium and phosphorus. Because they are paired with meat in our treats, the omegas from chia seeds are balanced with the omegas from the meat, providing a good healthy balance for your dog. </p> </li>
+        <li>Uplift: <p>Covid, amirite? Things shifted — I think it's safe to say that all of us came out of these last few years feeling like <span className={styles.pink}>things had changed.</span> We decided we needed to do something positive to impact our community which we love dearly and we looked to our new-to-us dog, Luna, for inspiration.</p><p>When Luna arrived in our lives, a 4-year-old Akbash/Husky who needed to be rehomed, we knew immediately that she would uplift us. But could we be that uplifting, loving presence she needed? Her first family loves her dearly and needed to know that her new family was able to provide the kind of love and care she was used to and needed (and deserved).</p><p>Dogs provide a kind of uplifting joyful presence that deserves to be met with at least reciprocal love back. Don't ya think?</p></li>
+        <li>Upcycle: <p>Upcycling remains at the heart of Updog.  Here's the thing: The world can look bleak at times. An antedote is to look for small helpful solutions that move the needle, if even a bit. Updog is about using materials that would otherwise go to waste, and doing our dagnabit best to avoid adding to the world's problems. That includes an attempt to be zero plastic, zero waste.</p></li>
+        <li>Up, up, and away: <p>We are feeling hopeful these days. It's helpful that we live in one of the most beautiful towns in the world. Updog offers dog treats and upcycled dodads as a way to do our part, however small, to create beauty out of chaos and be good.</p> </li>
     </ul>
 
     <h5 className={cormorant.className}>
-            ...And these treats taste <span className={styles.pink}>GOOD</span>. Dogs love them and have been known to wait paitiently for <span className={styles.pink}>minutes</span> just to get another. Think of all the training gains...think of all the <span className={styles.pink}>love</span>...
+            ...If you have a<span className={styles.pink}>GOOD</span>dog or know a <span className={styles.pink}>GOOD</span> dog give them an <span className={styles.pink}>Updog</span> treat...
           </h5>
     </div>
     
