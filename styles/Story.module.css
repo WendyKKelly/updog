@@ -3,6 +3,9 @@
         background-color: rgb(146, 115, 206);
         background: cover;
       }
+      .main {
+        margin: auto;
+      }
       
       .content {
         padding: 1rem;
@@ -48,7 +51,7 @@
 @media (min-width: 40rem) {
 
 .main {
-  max-width: 51rem;
+  max-width: 80rem;
   margin: auto;
 }
     .grandstander {
@@ -67,7 +70,7 @@
       "h_title h_title h_title h_title"
       "humans humans humans humans"
       ;
-      width: var(--max-width);
+      
       width: 50rem;
       margin-bottom: 7rem;
       
@@ -86,15 +89,14 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem 2rem;
-      max-width: 90%;
+      
+     
     }
     
     .d_desc {
       
       margin-left: 2rem;
+      width: 10rem;
     }
     .d_image {
       padding: 1rem 1.2rem;
@@ -153,6 +155,7 @@
     }
     .h_desc {
       margin-left: 2rem;
+      width: 10rem;
     }
   }
     /* Enable hover only on non-touch devices */
