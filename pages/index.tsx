@@ -119,8 +119,8 @@ export default function Home({products}: IProductListProps): JSX.Element {
             </p>
           </a>
 
-          <a
-            href=""
+          <Link
+            href="./about"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -131,10 +131,10 @@ export default function Home({products}: IProductListProps): JSX.Element {
             <p className={grandstander.className}>
               We're a couple of dog lovers who wanted to feed our dog healthy, fresh, locally made treats.
             </p>
-          </a>
+          </Link>
 
           <Link
-            href="#buy"
+            href=""
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
