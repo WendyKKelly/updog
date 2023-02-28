@@ -17,6 +17,7 @@ export default function Story() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.section}>
+        <main className={styles.main}>
       <div className={styles.top}>
       <div className={styles.story_title}>
      <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
@@ -161,7 +162,7 @@ export default function Story() {
             </div>
            
    
-              
+            </main>  
         </section>
         </>
   )
