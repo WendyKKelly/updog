@@ -68,14 +68,14 @@
       "humans humans humans humans"
       ;
       width: var(--max-width);
-      max-width: 100%;
+      width: 50rem;
       margin-bottom: 7rem;
-      margin-left: 5rem;
+      
     }
 
     .story_title {
       grid-area: story_title;
-      padding: 7rem 4rem;
+      
     }
     .story_title p {
       padding-top:5rem;
@@ -120,7 +120,7 @@
       opacity: 0.6;
       font-size: 0.9rem;
       line-height: 1.5;
-      max-width: 30ch;
+      
     }
     .h_title {
       grid-area: h_title;
