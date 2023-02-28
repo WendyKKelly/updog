@@ -7,9 +7,6 @@
         margin: auto;
       }
       
-      .content {
-        padding: 1rem;
-      }
       .top {
         display: grid;
         grid-template-columns: repeat(1, minmax(100%, auto));
