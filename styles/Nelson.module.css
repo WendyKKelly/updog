@@ -7,8 +7,13 @@
     
   }
   .main {
-    
-      margin: 0 auto;
+   
+      display: inline-block;
+      min-width: 50%;
+      max-width: 100%;
+      width: calc((480px - 100%) * 480);
+      margin: auto;
+      
   }
   .pink {
     color: #ff44cc;
@@ -37,7 +42,7 @@
     
    }
    .title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
     .grid {
       padding: 1rem;

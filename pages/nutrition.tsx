@@ -29,6 +29,7 @@ export default function Nutrition() {
       </Head>
       
       <section className={styles.section}>
+        <main className={styles.main}>
         <div className={styles.grid1}>
         <div className={styles.title}>
           <div className={grandstander.className}>
@@ -54,7 +55,7 @@ export default function Nutrition() {
     
     </div>
 
-      
+    </main>
       </section>
     
     

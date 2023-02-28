@@ -22,7 +22,7 @@
       .story_title {
         grid-area: story_title;
     padding: 2rem;
-    width: 20rem;
+    width: max(0px, min(16px, (100% - 350px + 1px) * 9999)) / 16px;
       }
 
       .dogs {

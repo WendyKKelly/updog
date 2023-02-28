@@ -7,9 +7,13 @@
   
 }
 .main {
-  
-    margin: auto;
+  display: inline-block;
+min-width: 50%;
+max-width: 100%;
+width: calc((480px - 100%) * 480);
+margin: auto;
 }
+
 .grandstander {
   color: #1a4e8a;
 }
