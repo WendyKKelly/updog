@@ -150,7 +150,7 @@ height: 300px;
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
-  
+  max-width: unset;
   grid-template-areas:
   "title title image image"
   "desc desc desc desc"
@@ -159,6 +159,7 @@ height: 300px;
 }
 .title {
  grid-area: title;
+ padding-top: 10rem;
   
 }
 .image {
