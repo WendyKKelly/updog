@@ -84,7 +84,7 @@
       font-size: 1rem;
       display: block;
       width: 100%; 
-      grid-row: 9 / 12;
+      grid-row: 10 / 12;
     }
     .i_name {
       
@@ -113,7 +113,7 @@
       width: 100%;
     }
   .i_address {
-    grid-row: 8 / 9;
+    grid-row: 9 / 10;
       border: none;
       background-color: #54b3d6;
       display: block;
