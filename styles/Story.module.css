@@ -9,35 +9,31 @@
       
       .top {
         display: grid;
-        grid-template-columns: repeat(1, minmax(100%, auto));
+        grid-template-columns: 20rem;
         grid-template-areas: 
         "story_title" 
         "dogs"
         "h_title" 
         "humans" ;
-        width: var(--max-width);
-        max-width: min-content;
-        text-align: center;
+        
         margin-bottom: 7rem;
-        margin-left: -.25rem;
+        margin-left: 2rem;
       }
       .story_title {
         grid-area: story_title;
-    padding: 4rem;
+    padding: 2rem;
+    width: 20rem;
       }
 
       .dogs {
         grid-area: dogs;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
       }
       .humans {
         grid-area: humans;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem 2rem;
-        max-width: 90%;
+        flex-direction: column;
       }
     
     .h1 {
@@ -68,7 +64,7 @@
       "humans humans humans humans"
       ;
       
-      width: 50rem;
+      
       margin-bottom: 7rem;
       
     }
@@ -179,7 +175,7 @@
     
     
     /* Tablet and Smaller Desktop */
-    @media (min-width: 701px) and (max-width: 1120px) {
+    @media (min-width: 701px) and (max-width: 40rem) {
       .dogs {
         grid-template-columns: repeat(2, 50%);
       }
