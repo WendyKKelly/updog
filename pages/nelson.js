@@ -120,7 +120,7 @@ export default function Nelson() {
       
       <label className={styles.l_order}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
       <textarea className={styles.i_order}
-      placeholder="Please write your order here. For example: 1 bag of treats $10, 1 pouch $10. We will contact you to confirm your order and delivery place and time. When we deliever your treats, you can etransfer to Updog or pay in cash" type="text" id="order" name="order" required />
+      placeholder="Please write your order here. For example: 1 bag of treats $10, 1 pouch $10. We will contact you to confirm your order and delivery. When we deliver your treats, you can etransfer to Updog or pay in cash" type="text" id="order" name="order" required />
 
      <button className={styles.button}type="submit">Submit</button>
       
