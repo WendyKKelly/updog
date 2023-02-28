@@ -1,9 +1,56 @@
-.section {
-    
-    background-color: rgb(146, 115, 206);
-    background: cover;
   
-  }
+      .section {
+        background-color: rgb(146, 115, 206);
+        background: cover;
+      }
+      
+      .content {
+        padding: 1rem;
+      }
+      .top {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100%, auto));
+        grid-template-areas: 
+        "story_title" 
+        "dogs"
+        "h_title" 
+        "humans" ;
+        width: var(--max-width);
+        max-width: min-content;
+        text-align: center;
+        margin-bottom: 7rem;
+        margin-left: -.25rem;
+      }
+      .story_title {
+        grid-area: story_title;
+    padding: 4rem;
+      }
+
+      .dogs {
+        grid-area: dogs;
+        padding: 0;
+      }
+      .humans {
+        grid-area: humans;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem 2rem;
+        max-width: 90%;
+      }
+    
+    .h1 {
+      font-size: 4rem;
+    
+    }
+
+@media (min-width: 40rem) {
+
+.main {
+  max-width: 51rem;
+  margin: auto;
+}
     .grandstander {
       color: #1a4e8a;
     }
@@ -107,6 +154,7 @@
     .h_desc {
       margin-left: 2rem;
     }
+  }
     /* Enable hover only on non-touch devices */
     @media (hover: hover) and (pointer: fine) {
       .card:hover {
@@ -124,56 +172,11 @@
     }
     
     /* Mobile */
-    @media (max-width: 700px) {
-      .content {
-        padding: 1rem;
-      }
-      .top {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(100%, auto));
-        grid-template-areas: 
-        "story_title" 
-        "dogs"
-        "h_title" 
-        "humans" ;
-        width: var(--max-width);
-        max-width: min-content;
-        text-align: center;
-        margin-bottom: 7rem;
-        margin-left: -.25rem;
-      }
-      .story_title {
-        grid-area: story_title;
-    padding: 4rem;
-      }
-
-      .dogs {
-        grid-area: dogs;
-        padding: 0;
-      }
-      .humans {
-        grid-area: humans;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem 2rem;
-        max-width: 90%;
-      }
-      
-    
-   
-    
-    
-    
-    .h1 {
-      font-size: 4rem;
-    
-    }
+  
     
      
   
-    }
+    
     
     /* Tablet and Smaller Desktop */
     @media (min-width: 701px) and (max-width: 1120px) {
