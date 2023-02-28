@@ -1,7 +1,12 @@
+.section{
+  background-color: rgb(18, 176, 213);
+}
+
 .main {
   margin: auto;
 }
 .grid1 {
+  display: grid;
   grid-template-columns: 380px;
   grid-template-areas:
    "title"
