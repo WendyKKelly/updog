@@ -10,6 +10,9 @@
     max-width: 30rem;
       margin: 0 auto;
   }
+  .pink {
+    color: #ff44cc;
+   }
   .grandstander {
     color: #1a4e8a;
   }
