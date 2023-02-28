@@ -217,7 +217,7 @@ export const products: IProduct[] = [
       name: "Updog Pouch - Large",
       price: 10.00,
       image: updogPouch,
-      description: "Ultralight, upcycled, handmade with care. When brewmaster Mike got the idea to make his own ultralight camping gear, who could have predicted this? These treat bags now come in 2 sizes — small, about the size of a rock cliimber's chalk bag, and the one shown here which will hold enough  treats for your dog and all their friends or, actually, your water bottle.",
+      description: "Ultralight, upcycled, handmade with care from malt and grain bags. When brewmaster Mike made an offhand remark about upcycling grain bags, who could have predicted this? These treat bags now come in 2 sizes — small, about the size of a rock climber's chalk bag, and the one shown here which will hold enough  treats for your dog and all their friends or, actually, your water bottle.",
       url: '/api/productspouch',
       weight: 120,
       length: 10,
