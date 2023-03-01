@@ -41,7 +41,7 @@ async function handler(req, res) {
 
   // Found the name.
   // Sends a HTTP success code
-  res.status(200).json({ data: `${body.fullname} ${body.tel}${body.email} ${body.address}`, response })
+  res.redirect(307, '/about');
 }
 
 export default handler;

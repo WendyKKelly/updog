@@ -9,11 +9,14 @@ import Layout from '../components/Layout';
 
 
 
+
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Nelson.module.css'
 
 import Link from 'next/link'
+
+
 
 
 
@@ -66,6 +69,7 @@ export default function Nelson() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
     alert(`Is this your full name and email address and phone: ${result.data}`)
+
   }
   return (
    <>
