@@ -41,7 +41,7 @@ async function handler(req, res) {
 
   // Found the name.
   // Sends a HTTP success code
-  res.redirect(307, '/about');
+  res.redirect(307, '/about', response);
 }
 
 export default handler;
