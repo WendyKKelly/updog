@@ -15,7 +15,8 @@ import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Nelson.module.css'
 
 import Link from 'next/link'
-
+import {useRouter} from 'next/router'
+import {useState} from 'react'
 
 
 
@@ -26,6 +27,13 @@ const cormorant = Cormorant({subsets: ['latin']})
 
 
 export default function Nelson() {
+
+  const router = useRouter()
+  
+  const thankSubmit = (e) => {
+      e.preventDefault()
+      router.push("./about")
+  }
 
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
@@ -111,7 +119,7 @@ export default function Nelson() {
 
           
           
-    <form action='/api/thank-you' method='post' className={styles.grid}onSubmit={handleSubmit}>
+    <form className={styles.grid}onSubmit={handleSubmit && thankSubmit}>
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
