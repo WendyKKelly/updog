@@ -34,8 +34,7 @@ export default function Contact() {
       tel: event.target.tel.value,
       email: event.target.email.value,
       message: event.target.message.value,
-      horns: event.target.horns.value,
-      scales: event.target.scales.value,
+   
       
     }
 
@@ -118,19 +117,7 @@ export default function Contact() {
       <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
-       <fieldset>
-    <legend>Choose your monster's features:</legend>
 
-    <div>
-      <input type="checkbox" id="scales" name="scales" onChange={(e) => setChecked(e.target.checked)} />
-      <label htmlFor="scales">Scales</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="horns" name="horns" onChange={(e) => setChecked(e.target.checked)} />
-      <label htmlFor="horns">Horns</label>
-    </div>
-</fieldset>
 
      <button className={styles.button}type="submit">Submit</button>
       

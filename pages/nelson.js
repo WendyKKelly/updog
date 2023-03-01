@@ -34,7 +34,11 @@ export default function Nelson() {
       tel: event.target.tel.value,
       email: event.target.email.value,
       address: event.target.address.value,
+      treats: event.target.treats.value,
+      sample: event.target.sample.value,
+      pouch: event.target.pouch.value,
       order: event.target.order.value,
+      
     }
 
     // Send the data to the server in JSON format.
@@ -100,6 +104,36 @@ export default function Nelson() {
           <div className={cormorant.className}>
           <h5 className={cormorant.className}>Order from this page, and upon receiving your order, we will contact you for delivery or pickup options.</h5>
           </div></div>
+
+          <div className={styles.images}>
+          <Image
+                src="../public/images/120-grams.png"
+                alt="Updog Treats"
+                className={styles.image}
+                width={500}
+                height={600}
+                priority
+              />
+              <p>Updog Treats 120 grams / $10</p>
+                <Image
+                src="../public/images/treatpouch.png"
+                alt="Updog Treats"
+                className={styles.image}
+                width={500}
+                height={600}
+                priority
+              />
+              <p>Updog Treat pouch — $10</p>
+                <Image
+                src="../public/images/samples.png"
+                alt="Updog Treats"
+                className={styles.image}
+                width={500}
+                height={600}
+                priority
+              />
+              <p>Updog Treat Sample 10 grams / $1</p>
+          </div>
           
     <form className={styles.grid}onSubmit={handleSubmit}>
       
@@ -117,10 +151,15 @@ export default function Nelson() {
        
     <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? We'll go anywhere between 9 Mile and Blewitt)</label>
       <input className={styles.i_address} type="text" id="address" name="address" required />
-      
-      <label className={styles.l_order}htmlFor="order">What would you like? <ul><li>treats $10 for 120 grams</li><li>pouch $10 </li><li>sample $1</li></ul></label>
+      <label className={styles.l_treats} htmlFor="treats">Dog Treats: (please write the number of (120 gram / $10 each) treats you would like)</label>
+      <input className={i_treats} type="number" id="treats" name="treats" />
+      <label className={styles.l_sample} htmlFor="sample">Dog Treat Samples: (please write the number of (10 gram / $1 each) samples you would like)</label>
+      <input className={i_sample} type="number" id="sample" name="sample" />
+      <label className={styles.l_pouch} htmlFor="pouch">Dog Treat Pouch: (please write the number of dog treat pouches ($10 each) you would like)</label>
+      <input className={i_pouch} type="number" id="pouch" name="pouch" />
+      <label className={styles.l_order}htmlFor="order">Special Instructions, comments:</label>
       <textarea className={styles.i_order}
-      placeholder="Please write your order here. For example: 1 bag of treats $10, 1 pouch $10. We will contact you to confirm your order and delivery. When we deliver your treats, you can etransfer to Updog or pay in cash" type="text" id="order" name="order" required />
+       type="text" id="order" name="order" required />
 
      <button className={styles.button}type="submit">Submit</button>
       
