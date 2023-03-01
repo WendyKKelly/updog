@@ -122,12 +122,12 @@ export default function Contact() {
     <legend>Choose your monster's features:</legend>
 
     <div>
-      <input type="checkbox" id="scales" name="scales" checked />
+      <input type="checkbox" id="scales" name="scales" onChange={(e) => setChecked(e.target.checked)} />
       <label htmlFor="scales">Scales</label>
     </div>
 
     <div>
-      <input type="checkbox" id="horns" name="horns" />
+      <input type="checkbox" id="horns" name="horns" onChange={(e) => setChecked(e.target.checked)} />
       <label htmlFor="horns">Horns</label>
     </div>
 </fieldset>
