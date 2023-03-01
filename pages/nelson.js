@@ -105,35 +105,7 @@ export default function Nelson() {
           <h5 className={cormorant.className}>Order from this page, and upon receiving your order, we will contact you for delivery or pickup options.</h5>
           </div></div>
 
-          <div className={styles.images}>
-          <Image
-                src="../public/images/120-grams.png"
-                alt="Updog Treats"
-                className={styles.image}
-                width={500}
-                height={600}
-                priority
-              />
-              <p>Updog Treats 120 grams / $10</p>
-                <Image
-                src="../public/images/treatpouch.png"
-                alt="Updog Treats"
-                className={styles.image}
-                width={500}
-                height={600}
-                priority
-              />
-              <p>Updog Treat pouch — $10</p>
-                <Image
-                src="../public/images/samples.png"
-                alt="Updog Treats"
-                className={styles.image}
-                width={500}
-                height={600}
-                priority
-              />
-              <p>Updog Treat Sample 10 grams / $1</p>
-          </div>
+          
           
     <form className={styles.grid}onSubmit={handleSubmit}>
       

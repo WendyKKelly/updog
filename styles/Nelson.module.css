@@ -273,10 +273,12 @@
   .i_treats {
       grid-column: 1 / 2;
       grid-row: 7  / 8;
-    }.i_sample {
+    }
+    .i_sample {
      grid-column: 2 / 3;
       grid-row: 7 / 8;
-    }.i_pouch {
+    }
+    .i_pouch {
       grid-column: 1 / 2;
       grid-row: 9/ 10;
     }
