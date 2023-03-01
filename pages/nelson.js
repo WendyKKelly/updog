@@ -124,11 +124,11 @@ export default function Nelson() {
     <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? We'll go anywhere between 9 Mile and Blewitt)</label>
       <input className={styles.i_address} type="text" id="address" name="address" required />
       <label className={styles.l_treats} htmlFor="treats">Dog Treats: (please write the number of (120 gram / $10 each) treats you would like)</label>
-      <input className={i_treats} type="number" id="treats" name="treats" />
+      <input className={styles.i_treats} type="number" id="treats" name="treats" />
       <label className={styles.l_sample} htmlFor="sample">Dog Treat Samples: (please write the number of (10 gram / $1 each) samples you would like)</label>
-      <input className={i_sample} type="number" id="sample" name="sample" />
+      <input className={styles.i_sample} type="number" id="sample" name="sample" />
       <label className={styles.l_pouch} htmlFor="pouch">Dog Treat Pouch: (please write the number of dog treat pouches ($10 each) you would like)</label>
-      <input className={i_pouch} type="number" id="pouch" name="pouch" />
+      <input className={styles.i_pouch} type="number" id="pouch" name="pouch" />
       <label className={styles.l_order}htmlFor="order">Special Instructions, comments:</label>
       <textarea className={styles.i_order}
        type="text" id="order" name="order" required />
