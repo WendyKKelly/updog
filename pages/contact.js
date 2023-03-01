@@ -93,15 +93,15 @@ export default function Contact() {
         
 
         <div className={styles.title}>
-          <div className={grandstander.className}>
+         
           <h1 className={grandstander.className} >Reach Out</h1>
           </div>
-        </div>
+        
 
         <div className={styles.desc}>
-          <div className={cormorant.className}>
+          
           <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Have a bone to pick? A suggestion? Go for it —</h5>
-          </div></div>
+          </div>
           
     <form className={styles.grid}onSubmit={handleSubmit}>
       
