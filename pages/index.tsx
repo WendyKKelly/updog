@@ -159,7 +159,7 @@ export default function Home({products}: IProductListProps): JSX.Element {
       target="blank"
       rel="noopener noreferrer"
       >
-      <li ><span className={styles.link}>Local to Nelson? Order Direct Here</span></li></Link>
+      <li ><span className={styles.link}>Local to Nelson? Order Direct Here (Free & Quick in town delivery)</span></li></Link>
       <li>Order Online: (Free Shipping on orders over $50)</li>
       </ul>
       </div>
