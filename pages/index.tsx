@@ -42,7 +42,7 @@ export default function Home({products}: IProductListProps): JSX.Element {
    <>
     <Layout>
       <Head>
-        <title>Updog Treats</title>
+        <title>Updog Treats | Nelson British Columbia's Fresh Healthy Dog Treats</title>
         
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
@@ -68,10 +68,10 @@ export default function Home({products}: IProductListProps): JSX.Element {
         <div className={styles.grid1}>
 
         <div className={styles.title}>
-          <div className={grandstander.className}>
+          
           <h1 className={grandstander.className} >What's Up, Dog? Treats!</h1>
           </div>
-        </div>
+        
       
         <Image
                 src="/images/updoglogogold.png"
@@ -83,11 +83,11 @@ export default function Home({products}: IProductListProps): JSX.Element {
               />
 
         <div className={styles.desc}>
-          <div className={cormorant.className}>
+         
           <h5 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
           </div>
        
-        </div>
+        
         </div>
         </main>
         <div className={styles.grid}>

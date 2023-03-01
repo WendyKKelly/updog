@@ -67,7 +67,7 @@ export default function Nelson() {
    <>
     <Layout>
       <Head>
-        <title>Updog Treats</title>
+        <title>Updog Treats | Nelson British Columbia's Fresh Healthy Dog Treats</title>
         
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />

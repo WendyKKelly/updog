@@ -34,6 +34,8 @@ export default function Contact() {
       tel: event.target.tel.value,
       email: event.target.email.value,
       message: event.target.message.value,
+      horns: event.target.horns.value,
+      scales: event.target.scales.value,
       
     }
 
@@ -67,7 +69,7 @@ export default function Contact() {
    <>
     <Layout>
       <Head>
-        <title>Updog Treats</title>
+        <title>Updog Treats | Nelson British Columbia's Fresh Healthy Dog Treats</title>
         
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
@@ -116,6 +118,19 @@ export default function Contact() {
       <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
+       <fieldset>
+    <legend>Choose your monster's features:</legend>
+
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked />
+      <label htmlFor="scales">Scales</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns" />
+      <label htmlFor="horns">Horns</label>
+    </div>
+</fieldset>
 
      <button className={styles.button}type="submit">Submit</button>
       
