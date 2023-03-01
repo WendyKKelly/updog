@@ -14,7 +14,7 @@ import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Contact.module.css'
 
 import Link from 'next/link'
-
+import {useRouter} from 'next/router'
 
 
 const grandstander = Grandstander({ subsets: ['latin'] })
@@ -23,7 +23,12 @@ const cormorant = Cormorant({subsets: ['latin']})
 
 
 export default function Contact() {
-
+  const router = useRouter()
+  
+  const thankSubmit = (e) => {
+      e.preventDefault()
+      router.push("./contact-thx")
+  }
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
@@ -62,7 +67,7 @@ export default function Contact() {
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
-    alert(`Is this your full name and email address and phone: ${result.data}`)
+  
   }
   return (
    <>
@@ -102,7 +107,7 @@ export default function Contact() {
           <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Have a bone to pick? A suggestion? Go for it —</h5>
           </div>
           
-    <form className={styles.grid}onSubmit={handleSubmit}>
+    <form className={styles.grid}onSubmit={handleSubmit && thankSubmit}>
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>

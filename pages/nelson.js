@@ -32,7 +32,7 @@ export default function Nelson() {
   
   const thankSubmit = (e) => {
       e.preventDefault()
-      router.push("./about")
+      router.push("./thank-you")
   }
 
   const handleSubmit = async (event) => {
