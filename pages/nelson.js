@@ -76,7 +76,7 @@ export default function Nelson() {
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
-    alert(`Is this your full name and email address and phone: ${result.data}`)
+    
 
   }
   return (
