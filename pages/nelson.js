@@ -150,7 +150,7 @@ export default function Nelson() {
     </form>
     <div className={styles.desc}>
           <div className={cormorant.className}>
-          <h5 className={cormorant.className}>Use this page to avoid shipping charges — you are more than welcome to order from <Link className={styles.pink} href="./index">the main "shop" on the home page</Link> if you would like to. The local Nelson delivery is simply a "locals only" option we want to offer to our dear community.</h5>
+          <h5 className={cormorant.className}>Use this page to avoid shipping charges and get a quicker delivery — you are more than welcome to order from <Link className={styles.pink} href="./index">the main "shop" on the home page</Link>. The free local Nelson delivery is simply a "locals only" option we want to offer to our dear community.</h5>
           </div></div>
         </main>
       </section>
