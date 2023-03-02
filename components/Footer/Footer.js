@@ -35,12 +35,18 @@ const Footer = ({ children }) => {
             </h4>
             
         </div></Link>
+        <Link
+            href="https://whatsupdog.substack.com/p/a39db468-97f1-4b9f-b8e6-30bd28f7de47"
+            
+            target="_blank"
+            rel="noopener noreferrer"
+          >
         <div className={styles.card}>
         <h4 className={grandstander.className}>
-              FAQs <span>-&gt;</span>
+              What's Up Dog Newsletter <span>-&gt;</span>
             </h4>
             
-        </div>
+        </div></Link>
         <Link
             href="https://www.instagram.com/updogtreats/"
             
