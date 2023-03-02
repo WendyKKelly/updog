@@ -126,6 +126,9 @@ height: 300px;
   padding: .5rem .5rem;
   margin-left: 6rem;
 }
+.title h1 {
+  font-size: 6rem;
+  }
 .image {
  
   margin-left: 4.25rem;
