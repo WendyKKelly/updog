@@ -201,6 +201,9 @@ height: 300px;
  padding-top: 10rem;
   
 }
+.title h1 {
+  font-size: 6rem;
+  }
 .image {
   grid-area: image;
   
