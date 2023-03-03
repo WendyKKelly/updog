@@ -1,37 +1,15 @@
 
-import Script from 'next/script';
-import ProductList from "../components/ProductList";
-import {IProduct} from "../components/Product";
-import {GetStaticProps} from "next";
 import Head from 'next/head'
 import Image from 'next/image'
-import updogSample from "../public/images/samples.png"
-import updogTreat from "../public/images/120-grams.png"
-import updogPouch from "../public/images/treatpouch.png"
-import updogRefill from "../public/images/refills.png"
 import Layout from '../components/Layout';
 import Get from '../components/get-treats'
-
-
-
-
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
-import Link from 'next/link'
-
 import Story from '../components/story'
-
-
-
-
 
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-
-
-
 
 export default function Home() {
   return (
