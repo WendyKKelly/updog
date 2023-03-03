@@ -11,7 +11,7 @@
   .grid1 {
     display: grid;
     padding: 1rem;
-    grid-auto-rows: 2rem;
+   grid-template-rows: 1 fr 1fr 1fr;
     row-gap: 0.7rem;
     
     
@@ -19,33 +19,21 @@
 
   .desc {
   display: grid;
-  grid-row: 1 / 3
+  grid-row: 1 / 2
   }
   .desc h5 {
     color: #1a4e8a;
     font-size: 2.5rem;
   }
   
- 
-  .list ul li::marker {
-    
-    display: inline-block;
-     margin-right: 2rem;
-  }
-  
-  .list li {
-    
-    font-size: 2rem;
-    color: #1a4e8a;
-  }
   .nelson {
     display: grid;
-    grid-row: 3 / 5;
+    grid-row: 2 / 4;
     grid-column: 1 / 2;
   }
   .away {
     display: grid;
-    grid-row: 3 / 5;
+    grid-row: 2 / 4;
     grid-column: 2 / 3;
   }
   .link {
@@ -90,18 +78,6 @@
     font-size: 3rem;
   }
   
-
-  .list ul li::marker {
-    
-    display: inline-block;
-     margin-right: 2rem;
-  }
-  
-  .list li {
-    
-    font-size: 2rem;
-    color: #1a4e8a;
-  }
   .nelson {
     display: grid;
     grid-row: 3 / 5;
@@ -167,17 +143,9 @@
   }
   
 
-  .list ul li::marker {
-    
-    display: inline-block;
-     
-  }
   
-  .list li {
-    
-    font-size: 2rem;
-    color: #1a4e8a;
-  }
+  
+  
   .nelson {
     display: grid;
     grid-row: 3 / 5;
@@ -245,26 +213,14 @@
       }
       
       
-      .list {
-        display: grid;
-        
-      }
-      .list ul li::marker {
-        
-        display: inline-block;
-         margin-right: 2rem;
-      }
-      
-      .list li {
-        
-        font-size: 2rem;
-        color: #1a4e8a;
-      }
+    
       .nelson {
+        display: grid;
         grid-row: 3 / 5;
         grid-column: 1 / 2;
       }
       .away {
+        display: grid;
         grid-row: 3 / 5;
         grid-column: 2 / 3;
       }

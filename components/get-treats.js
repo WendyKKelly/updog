@@ -17,22 +17,24 @@ export default function Get() {
         Get Updog Treats:
     </h5>
     </div>
-   <div className={styles.list}>
-      <ul><Link href="./nelson"
+   
+   <div className={styles.nelson} >
+      <Link href="./nelson"
       className={styles.link}
       target="blank"
       rel="noopener noreferrer"
       >
-      <li className={styles.nelson} >Shop in Nelson</li></Link>
-      <Link href="./shop"
+      Shop in Nelson</Link></div
+      <div className={styles.away} ><Link href="./shop"
       className={styles.link}
       target="blank"
       rel="noopener noreferrer"
       >
-      <li className={styles.away} >Shop from Away</li></Link>
-      </ul>
+      Shop from Away</Link></div>
+      
+     
       </div>
-      </div>
+      
       </main>
 </section>
   )
