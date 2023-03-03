@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
-import styles from '@/styles/Food.module.css'
+import styles from '@/styles/Get.module.css'
 import Link from 'next/link'
 
 
@@ -22,13 +22,13 @@ export default function Get() {
       target="blank"
       rel="noopener noreferrer"
       >
-      <li >Shop in Nelson</li></Link>
+      <li className={styles.nelson} >Shop in Nelson</li></Link>
       <Link href="./shop"
       className={styles.link}
       target="blank"
       rel="noopener noreferrer"
       >
-      <li>Shop from Away</li></Link>
+      <li className={styles.away} >Shop from Away</li></Link>
       </ul>
       </div>
       </div>

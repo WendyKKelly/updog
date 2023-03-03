@@ -66,6 +66,7 @@ export default function Home() {
         <div className={styles.title}>
           
           <h1 className={grandstander.className} >What's Up, Dog? Treats!</h1>
+          <h3>Simple. Healthy. Cravable treats for dogs.</h3>
           </div>
         
       
