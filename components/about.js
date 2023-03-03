@@ -1,3 +1,17 @@
+
+import Image from 'next/image'
+import { Grandstander } from '@next/font/google'
+import {Cormorant} from '@next/font/google'
+import styles from '@/styles/Food.module.css'
+import Link from 'next/link'
+
+
+const grandstander = Grandstander({ subsets: ['latin'] })
+const cormorant = Cormorant({subsets: ['latin']})
+export default function About() {
+  return (
+    <>
+
 <div className={styles.grid}>
 <Link
   href="./nutrition"
@@ -55,3 +69,6 @@
   </p>
 </Link>
 </div>
+</>
+  )
+}

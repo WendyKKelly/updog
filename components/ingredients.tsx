@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import Image from 'next/image'
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
@@ -8,15 +8,10 @@ import Link from 'next/link'
 
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-export default function Ingredients() {
+export default function About() {
   return (
     <>
-      <Head>
-        <title>Updog Treats</title>
-        <meta name="description" content="hyper local healthy dog treats" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     
       <section className={styles.section}>
       <main className={styles.main}>
         <div className={styles.description}>
