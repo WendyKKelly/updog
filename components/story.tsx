@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import Image from 'next/image'
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
@@ -10,18 +10,13 @@ const cormorant = Cormorant({subsets: ['latin']})
 export default function Story() {
   return (
     <>
-      <Head>
-        <title>Updog Treats</title>
-        <meta name="description" content="hyper local healthy dog treats" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+   
       <section className={styles.section}>
         <main className={styles.main}>
       <div className={styles.top}>
       <div className={styles.story_title}>
-     <h5 className={grandstander.className}>Updog: Uplift & Upcycle</h5>
-            <p className={grandstander.className}>Here's what the dogs have to say about Updog Treats: </p></div>
+     <h5 className={grandstander.className}>The Upvote from Dogs:</h5>
+           </div>
             <div className={styles.dogs}>
              <div className={styles.d_image}>
             <Image

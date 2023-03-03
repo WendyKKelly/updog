@@ -77,10 +77,7 @@ export default function Home() {
                 priority
               />
 
-        <div className={styles.desc}>
-         
-          <h5 className={cormorant.className}>hyper-local, hyper-fresh, hyper-healthy dog treats for well-loved dogs.</h5>
-          </div>
+       
        
         
         </div>
