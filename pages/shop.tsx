@@ -7,7 +7,7 @@ import Image from 'next/image'
 import updogSample from "../public/images/samples.png"
 import updogTreat from "../public/images/120-grams.png"
 import updogPouch from "../public/images/treatpouch.png"
-import updogRefill from "../public/images/refills.png"
+import updogRefill from "../public/images/refill.png"
 import Layout from '../components/Layout';
 
 
