@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import {NextApiRequest, NextApiResponse} from "next";
-import {products} from "../../index";
+import {products} from "../../shop";
 import {IProduct} from "../../../components/Product";
 
 export interface ISnipcartProduct {
