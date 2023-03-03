@@ -168,10 +168,7 @@
     font-size: 3rem;
   }
   
-  .list {
-    display: grid;
-    
-  }
+
   .list ul li::marker {
     
     display: inline-block;
