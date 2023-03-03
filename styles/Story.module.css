@@ -30,16 +30,9 @@
         display: flex;
         flex-direction: column;
       }
-      .humans {
-        grid-area: humans;
-        display: flex;
-        flex-direction: column;
-      }
+  
     
-    .h1 {
-      font-size: 4rem;
-    
-    }
+ 
 
 @media (min-width: 40rem) {
 
@@ -113,39 +106,7 @@
       line-height: 1.5;
       
     }
-    .h_title {
-      grid-area: h_title;
-      padding: 7rem 4rem;
-    }
-    .humans {
-      grid-area: humans;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem 2rem;
-      max-width: 90%;
-    }
    
-    .h_card {
-      
-      padding: 1rem 1.2rem;
-      border-radius: var(--border-radius);
-      background: rgba(var(--card-rgb), 0);
-      border: 1px solid rgba(var(--card-border-rgb), 0);
-      transition: background 200ms, border 200ms;
-      width: fit-content;
-    }
-  
-    .h_card span {
-      display: inline-block;
-      transition: transform 200ms;
-    }
-    .h_desc {
-      margin-left: 2rem;
-      width: 10rem;
-    }
   }
     /* Enable hover only on non-touch devices */
     @media (hover: hover) and (pointer: fine) {
