@@ -116,49 +116,7 @@ export default function Story() {
             </div>
             
         
-          <div className={styles.h_title}>
-          <h5 className={grandstander.className}>Humans:</h5>
-          <p className={grandstander.className}>Mike and Wendy are making hyper healthy dog treats and upcycled dog treat pouches.</p>
-          </div>
-          <div className={styles.humans}>
-            
-              <div className={styles.h_card}>
-            <Image
-                src="/images/mike2.png"
-                alt="Mike Kelly"
-                width={300}
-                height={350}
-                priority
-              />
-              <div className={styles.h_desc}>
-<h4 className={grandstander.className}>
-              Mike Kelly <span>-&gt;</span>
-            </h4>
-            <p className={grandstander.className}>
-              Brewmaster, baker, upcycled dog treat pouch  maker.
-            </p>
-            
-            </div>
-            </div>
-            <div className={styles.h_card}>
-            <Image
-                src="/images/wendy3.png"
-                alt="Wendy Kelly"
-                width={300}
-                height={350}
-                priority
-              />
-              <div className={styles.h_desc}>
-<h4 className={grandstander.className}>
-              Wendy Kelly <span>-&gt;</span>
-            </h4>
-            <p className={grandstander.className}>
-              Webmaster*, baker, healthy dog treat maker.
-            </p>
-            
-            </div>
-            </div>
-            </div>
+         
             </div>
            
    
