@@ -10,10 +10,10 @@
   }
   .grid1 {
     display: grid;
-    padding: 1rem;
+    padding: 0rem;
    grid-template-rows: 1 fr 1fr 1fr;
     row-gap: 0.7rem;
-    column-gap: 1.2rem;
+    column-gap: .2rem;
     
     
   }
@@ -30,7 +30,9 @@
       color: #1a4e8a;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       font-family: grandstander;
-      font-size: 3rem;
+      font-size: 1rem;
+      justify-self: center;
+    padding-left: 2rem;
   }
   .away {
     display: grid;
@@ -42,7 +44,9 @@
       color: #1a4e8a;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       font-family: grandstander;
-      font-size: 3rem;
+      font-size: 1rem;
+      justify-self: center;
+    padding-left: 2rem;
   }
   .about {
     display: grid;
@@ -54,7 +58,9 @@
       color: #1a4e8a;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       font-family: grandstander;
-      font-size: 3rem;
+      font-size: 1rem;
+      justify-self: center;
+    padding-left: 2rem;
   }
   .link {
     box-shadow: inset 0 0 0 0 #54b3d6;
@@ -62,6 +68,7 @@
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
   
   }
   
