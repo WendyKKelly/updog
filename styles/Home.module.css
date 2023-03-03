@@ -72,7 +72,7 @@ height: 300px;
   padding-left: 4rem;
 }
 .list ul li::marker {
-  content: "🐶";
+  
   display: inline-block;
    margin-right: 2rem;
 }
