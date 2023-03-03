@@ -58,7 +58,7 @@
  
   .main {
     max-width: 380px;
- 
+  }
   .link {
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: #1a4e8a;
@@ -75,7 +75,7 @@
    
   }
 }
-  
+
   @media (min-width: 40rem) {
   .section {
    
