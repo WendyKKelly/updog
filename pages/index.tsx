@@ -85,16 +85,10 @@ export default function Home() {
         </div>
         </main>
        
-        <Get/>
-        
-       
-        < Story />
-        
-      
       </section>
-    
-    
-    </Layout>
+        <Get/>
+        < Story />
+        </Layout>
    
     </>
   )
