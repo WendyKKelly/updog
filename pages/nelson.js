@@ -108,13 +108,13 @@ export default function Nelson() {
 
         <div className={styles.title}>
           <div className={grandstander.className}>
-          <h1 className={grandstander.className} >In Nelson? Hurray!</h1>
+          <h1 className={grandstander.className} >Shop in Nelson Area:</h1>
           </div>
         </div>
 
         <div className={styles.desc}>
           <div className={cormorant.className}>
-          <h5 className={cormorant.className}>Order from this page, and upon receiving your order, we will contact you for delivery or pickup options.</h5>
+          <h5 className={cormorant.className}>Order here. Free delivery in Nelson area.</h5>
           </div></div>
 
           
@@ -122,10 +122,10 @@ export default function Nelson() {
     <form className={styles.grid}onSubmit={handleSubmit && thankSubmit}>
       
         
-      <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
+      <label className={styles.l_name}htmlFor="fullname">Your name:</label>
       <input className={styles.i_name} type="text" id="fullname" name="fullname" required />
       
-     <label className={styles.l_phone}htmlFor="phone">Phone: (either phone or email so that we can contact you.)</label>
+     <label className={styles.l_phone}htmlFor="phone">Phone: </label>
       <input className={styles.i_phone} type="tel" id="tel" name="tel"  />
       
       <label className={styles.l_email}htmlFor="email">Email:</label>
@@ -133,13 +133,13 @@ export default function Nelson() {
       
      
        
-    <label className={styles.l_address}htmlFor="address">Address: (Where should we deliver your treats? We'll go anywhere between 9 Mile and Blewitt)</label>
+    <label className={styles.l_address}htmlFor="address">Address: </label>
       <input className={styles.i_address} type="text" id="address" name="address" required />
-      <label className={styles.l_treats} htmlFor="treats">Dog Treats: (please write the number of (120 gram / $10 each) treats you would like)</label>
+      <label className={styles.l_treats} htmlFor="treats">Dog Treats: (How many 120 gram bags?)</label>
       <input className={styles.i_treats} type="number" id="treats" name="treats" />
-      <label className={styles.l_sample} htmlFor="sample">Dog Treat Samples: (please write the number of (10 gram / $1 each) samples you would like)</label>
+      <label className={styles.l_sample} htmlFor="sample">Dog Treat Samples: (How many 10 gram bags?)</label>
       <input className={styles.i_sample} type="number" id="sample" name="sample" />
-      <label className={styles.l_pouch} htmlFor="pouch">Dog Treat Pouch: (please write the number of dog treat pouches ($10 each) you would like)</label>
+      <label className={styles.l_pouch} htmlFor="pouch">Dog Treat Pouch: (How many treat pouches?)</label>
       <input className={styles.i_pouch} type="number" id="pouch" name="pouch" />
       <label className={styles.l_order}htmlFor="order">Special Instructions, comments:</label>
       <textarea className={styles.i_order}
@@ -148,10 +148,7 @@ export default function Nelson() {
      <button className={styles.button}type="submit">Submit</button>
       
     </form>
-    <div className={styles.desc}>
-          <div className={cormorant.className}>
-          <h5 className={cormorant.className}>Use this page to avoid shipping charges and get a quicker delivery — you are more than welcome to order from <Link className={styles.pink} href="./index">the main "shop" on the home page</Link>. The free local Nelson delivery is simply a "locals only" option we want to offer to our dear community.</h5>
-          </div></div>
+    
         </main>
       </section>
     </Layout>
