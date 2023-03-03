@@ -24,7 +24,7 @@ export default function Get() {
       target="blank"
       rel="noopener noreferrer"
       >
-      Shop in Nelson</Link></div
+      Shop in Nelson</Link></div>
       <div className={styles.away} ><Link href="./shop"
       className={styles.link}
       target="blank"
