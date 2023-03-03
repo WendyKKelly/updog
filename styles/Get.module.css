@@ -13,9 +13,9 @@
   }
   .grid1 {
     display: grid;
-    
+    padding: 1rem;
     grid-auto-rows: 2rem;
-    grid-row-gap: 0.7rem;
+    row-gap: 0.7rem;
     width: 20rem;
     
   }

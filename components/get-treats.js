@@ -9,7 +9,8 @@ const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
 export default function Get() {
   return (
-
+<section>
+  <main>
     <div className={styles.grid1}>
           <div className={styles.desc}>
          <h5 className={grandstander.className}>
@@ -32,5 +33,7 @@ export default function Get() {
       </ul>
       </div>
       </div>
+      </main>
+</section>
   )
 }

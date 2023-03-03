@@ -31,6 +31,10 @@ margin-left: 2rem;
 .title h1 {
 font-size: 3rem;
 }
+.title h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
 .image {
  
 margin-left: -.75rem;
@@ -129,6 +133,9 @@ height: 300px;
 .title h1 {
   font-size: 6rem;
   }
+  .title h3 {
+    font-size: 4rem;
+  }
 .image {
  
   margin-left: 4.25rem;
@@ -203,6 +210,9 @@ height: 300px;
 }
 .title h1 {
   font-size: 6rem;
+  }
+  .title h3 {
+    font-size: 4rem;
   }
 .image {
   grid-area: image;
