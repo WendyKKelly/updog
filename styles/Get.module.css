@@ -23,17 +23,38 @@
   .nelson {
     display: grid;
     grid-row: 2 / 4;
-    
+    display: block;
+      border: none;
+      background-color: #54b3d6;
+      box-shadow: 0 8px 8px -4px lightblue;;
+      color: #1a4e8a;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      font-family: grandstander;
+      font-size: 3rem;
   }
   .away {
     display: grid;
     grid-row: 2 / 4;
-    
+    display: block;
+      border: none;
+      background-color: #54b3d6;
+      box-shadow: 0 8px 8px -4px lightblue;;
+      color: #1a4e8a;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      font-family: grandstander;
+      font-size: 3rem;
   }
   .about {
     display: grid;
     grid-row: 2 / 4;
-    
+    display: block;
+      border: none;
+      background-color: #54b3d6;
+      box-shadow: 0 8px 8px -4px lightblue;;
+      color: #1a4e8a;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      font-family: grandstander;
+      font-size: 3rem;
   }
   .link {
     box-shadow: inset 0 0 0 0 #54b3d6;
