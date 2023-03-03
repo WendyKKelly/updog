@@ -10,6 +10,7 @@ import updogTreat from "../public/images/120-grams.png"
 import updogPouch from "../public/images/treatpouch.png"
 import updogRefill from "../public/images/refills.png"
 import Layout from '../components/Layout';
+import Get from '../components/get-treats'
 
 
 
@@ -83,29 +84,8 @@ export default function Home() {
         </div>
         </main>
        
+        <Get/>
         
-        <div className={styles.grid1}>
-          <div className={styles.desc}>
-         <h5 className={grandstander.className}>
-        Get Updog Treats:
-    </h5>
-    </div>
-   <div className={styles.list}>
-      <ul><Link href="./nelson"
-      className={styles.link}
-      target="blank"
-      rel="noopener noreferrer"
-      >
-      <li >Shop in Nelson</li></Link>
-      <Link href="./shop"
-      className={styles.link}
-      target="blank"
-      rel="noopener noreferrer"
-      >
-      <li>Shop from Away</li></Link>
-      </ul>
-      </div>
-      </div>
        
         < Story />
         
