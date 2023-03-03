@@ -12,11 +12,7 @@ export default function Get() {
 <section className={styles.section}>
   <main className={styles.main}>
     <div className={styles.grid1}>
-          <div className={styles.desc}>
-         <h5 className={grandstander.className}>
-        Get Updog Treats:
-    </h5>
-    </div>
+         
    
    <div className={styles.nelson} >
       <Link href="./nelson"
@@ -32,7 +28,13 @@ export default function Get() {
       >
       Shop from Away</Link></div>
       
-     
+      <div className={styles.nelson} >
+      <Link href="./about"
+      className={styles.link}
+      target="blank"
+      rel="noopener noreferrer"
+      >
+      Learn More</Link></div>
       </div>
       
       </main>
