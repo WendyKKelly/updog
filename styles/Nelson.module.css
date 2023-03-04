@@ -122,7 +122,7 @@
       background-color: #54b3d6;
       width: 100%;
      }
-     i_phone:focus {
+     .i_phone:focus {
       background-color: #fff;
       border-color:#54b3d6;
       border-width: .3rem;
@@ -135,7 +135,7 @@
       display: block;
       width: 100%;
     }
-    i_email:focus {
+    .i_email:focus {
       background-color: #fff;
       border-color:#54b3d6;
       border-width: .3rem;
@@ -147,7 +147,7 @@
       display: block;
       width: 100%;
   }
-  i_address:focus {
+  .i_address:focus {
     background-color: #fff;
     border-color:#54b3d6;
     border-width: .3rem;
@@ -159,7 +159,7 @@
       display: block;
       width: 100%;
     }
-    i_treats:focus {
+    .i_treats:focus {
       background-color: #fff;
       border-color:#54b3d6;
       border-width: .3rem;
@@ -183,7 +183,7 @@
       display: block;
       width: 100%;
     }
-    i_pouch:focus {
+    .i_pouch:focus {
       background-color: #fff;
       border-color:#54b3d6;
       border-width: .3rem;
@@ -196,7 +196,7 @@
       width: 100%;
   }
      
-  i_order:focus {
+  .i_order:focus {
     background-color: #fff;
     border-color:#54b3d6;
     border-width: .3rem;
