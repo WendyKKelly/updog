@@ -28,7 +28,8 @@ interface IProductProps {
 
 const Product = (props: IProductProps) => {
     return (
-        <section> 
+        <section className={styles.section}> 
+            <main className={styles.main}>
         <div className={styles.product}>
            <div className={styles.title}>
             <div className={grandstander.className}>
@@ -63,6 +64,7 @@ const Product = (props: IProductProps) => {
                 </div>
             </div>
         </div>
+        </main>
         </section>
     )
 }
