@@ -114,7 +114,7 @@ export default function Nelson() {
 
         <div className={styles.title}>
           <div className={grandstander.className}>
-          <h1 className={grandstander.className} >Shop in Nelson Area:</h1>
+          <h1 className={grandstander.className} ></h1>
           </div>
         </div>
         <ProductListnb products={products}/>
