@@ -1,10 +1,13 @@
-
+import Script from 'next/script';
+import ProductList from "../components/ProductList";
+import {IProduct} from "../components/Product";
+import {GetStaticProps} from "next";
 import Head from 'next/head'
 import Image from 'next/image'
-import updogSample from "../public/images/samples.png"
-import updogTreat from "../public/images/120-grams.png"
-import updogPouch from "../public/images/treatpouch.png"
-import updogRefill from "../public/images/refills.png"
+import updogSample from "../public/images/samples.jpg"
+import updogTreat from "../public/images/120-grams.jpg"
+import updogPouch from "../public/images/treatpouch.jpg"
+import updogRefill from "../public/images/refill.png"
 import Layout from '../components/Layout';
 
 
@@ -24,7 +27,10 @@ import {useState} from 'react'
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
 
-
+interface IProductListProps {
+    products: IProduct[]
+  }
+  
 
 export default function Nelson() {
 
@@ -111,6 +117,7 @@ export default function Nelson() {
           <h1 className={grandstander.className} >Shop in Nelson Area:</h1>
           </div>
         </div>
+        <ProductList products={products}/>
 
         <div className={styles.desc}>
           <div className={cormorant.className}>
@@ -142,7 +149,7 @@ export default function Nelson() {
       <label className={styles.l_pouch} htmlFor="pouch">Dog Treat Pouch: (How many treat pouches?)</label>
       <input className={styles.i_pouch} type="number" id="pouch" name="pouch" />
       <label className={styles.l_order}htmlFor="order">Special Instructions, comments:</label>
-      <textarea className={styles.i_order}
+      <input className={styles.i_order}
        type="text" id="order" name="order" required />
 
      <button className={styles.button}type="submit">Submit</button>
@@ -154,3 +161,67 @@ export default function Nelson() {
     </Layout>
     </>
   )}
+
+  export const products: IProduct[] = [
+  
+  
+    {
+      id: "treats",
+      name: "Updog Treats / 120 grams",
+      price: 10.00,
+      image: updogTreat,
+      description: "120 grams of treats that will make your dog love you (even more). These treats are made with spent barley grain from a local brewery, fresh ground meat (mainly pork but may include beef and a small amount of chicken) and chia seeds. Best refrigerated but can last up to 10 days in the pantry."
+        ,
+      url: '/api/products/treats',
+      weight: 120,
+      length: 10,
+      width: 5,
+      height: 2,
+  },
+  {
+        id: "sample",
+        name: "Updog Sample",
+        price: 1.00,
+        image: updogSample,
+        description: "Curious? Order a small 10 gram sample of our delicious treats. So far, every dog we have given samples to has begged us for more :) but we fully understand that you might want to try them out first. All our packaging is made inhouse with upcycled materials and we plan to keep it that way.",
+        url: '/api/products/sample',
+        weight: 120,
+        length: 10,
+        width: 5,
+        height: 2,
+  },
+  
+    {
+        id: "pouch",
+        name: "Updog Treat Pouch",
+        price: 10.00,
+        image: updogPouch,
+        description: "Ultralight, upcycled, handmade with care from malt and grain bags. When brewmaster Mike made an offhand remark about upcycling grain bags, who could have predicted this? These treat bags now come in 2 sizes — small, about the size of a rock climber's chalk bag, and a larger one, about twice as large. No two are the same.",
+        url: '/api/productspouch',
+        weight: 120,
+        length: 10,
+        width: 5,
+        height: 2,
+    },
+    {
+        id: "refill",
+        name: "Updog Treat Pouch w/ 120 grams treats",
+        price: 19.00,
+        image: updogRefill,
+        description: "Buy a handmade upcycled treat pouch (large or small) and save $1 on the treats, every time it's refilled. That's like a free bag of treats every 10 refills!",
+        url: '/api/products/refill',
+        weight: 120,
+        length: 10,
+        width: 5,
+        height: 2,
+    }
+  ]
+  
+  export const getStaticProps: GetStaticProps = async (context) => {
+  
+    return {
+        props: {
+            products
+        }
+    }
+  }
