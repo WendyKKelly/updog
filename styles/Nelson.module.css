@@ -110,19 +110,11 @@
       background-color: #54b3d6;
       width: 100%;
     }
-    .i_name:focus,
-    i_phone:focus,
-    i_email:focus,
-    i_address:focus,
-    i_treats:focus,
-    i_sample:focus,
-    i_pouch:focus,
-    i_order:focus {
+    .i_name:focus {
       background-color: #fff;
       border-color:#54b3d6;
       border-width: .3rem;
     }
-
      .i_phone {
       grid-row: 4 / 5;
       display: block;
@@ -130,6 +122,11 @@
       background-color: #54b3d6;
       width: 100%;
      }
+     i_phone:focus {
+      background-color: #fff;
+      border-color:#54b3d6;
+      border-width: .3rem;
+    }
   
     .i_email {
       grid-row: 6 / 7;
@@ -138,6 +135,11 @@
       display: block;
       width: 100%;
     }
+    i_email:focus {
+      background-color: #fff;
+      border-color:#54b3d6;
+      border-width: .3rem;
+    }
   .i_address {
     grid-row: 9 / 11;
       border: none;
@@ -145,24 +147,46 @@
       display: block;
       width: 100%;
   }
+  i_address:focus {
+    background-color: #fff;
+    border-color:#54b3d6;
+    border-width: .3rem;
+  }
   .i_treats {
       grid-row: 12 / 13;
       border: none;
       background-color: #54b3d6;
       display: block;
       width: 100%;
-    }.i_sample {
+    }
+    i_treats:focus {
+      background-color: #fff;
+      border-color:#54b3d6;
+      border-width: .3rem;
+    }
+    .i_sample {
       grid-row: 14 /15;
       border: none;
       background-color: #54b3d6;
       display: block;
       width: 100%;
-    }.i_pouch {
+    }
+    .i_sample:focus {
+      background-color: #fff;
+      border-color:#54b3d6;
+      border-width: .3rem;
+    }
+    .i_pouch {
       grid-row: 16 / 17;
       border: none;
       background-color: #54b3d6;
       display: block;
       width: 100%;
+    }
+    i_pouch:focus {
+      background-color: #fff;
+      border-color:#54b3d6;
+      border-width: .3rem;
     }
   .i_order {
     grid-row: 18/20;
@@ -171,6 +195,13 @@
       display: block;
       width: 100%;
   }
+     
+  i_order:focus {
+    background-color: #fff;
+    border-color:#54b3d6;
+    border-width: .3rem;
+  }
+
     .button {
       grid-row: 21 / 23;
       display: block;
