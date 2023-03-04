@@ -84,6 +84,11 @@ margin: auto;
 
 
   }
+  .i_name:focus {
+    background-color: #fff;
+    border-color:#54b3d6;
+    border-width: .3rem;
+  }
    .i_phone {
     grid-row: 4 / 5;
     display: block;
@@ -92,6 +97,11 @@ margin: auto;
     width: 100%;
 
    }
+   .i_phone:focus {
+    background-color: #fff;
+    border-color:#54b3d6;
+    border-width: .3rem;
+  }
 
   .i_email {
     grid-row: 6 / 7;
@@ -100,6 +110,11 @@ margin: auto;
     display: block;
     width: 100%;
   }
+  .i_email:focus {
+    background-color: #fff;
+    border-color:#54b3d6;
+    border-width: .3rem;
+  }
 
 .i_message {
   grid-row: 9 / 13;
@@ -107,6 +122,11 @@ margin: auto;
     background-color: #54b3d6;
     display: block;
     width: 100%;
+}
+.i_message:focus {
+  background-color: #fff;
+  border-color:#54b3d6;
+  border-width: .3rem;
 }
   .button {
     grid-row: 14 / 16;
