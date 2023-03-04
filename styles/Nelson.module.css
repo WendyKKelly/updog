@@ -110,6 +110,19 @@
       background-color: #54b3d6;
       width: 100%;
     }
+    .i_name:focus,
+    i_phone:focus,
+    i_email:focus,
+    i_address:focus,
+    i_treats:focus,
+    i_sample:focus,
+    i_pouch:focus,
+    i_order:focus {
+      background-color: #fff;
+      border-color:#54b3d6;
+      border-width: .3rem;
+    }
+
      .i_phone {
       grid-row: 4 / 5;
       display: block;
