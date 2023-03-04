@@ -30,6 +30,7 @@ const Product = (props: IProductProps) => {
     return (
         <section className={styles.section}> 
             <main className={styles.main}>
+                <div className={styles.flex}>
         <div className={styles.product}>
            <div className={styles.title}>
             <div className={grandstander.className}>
@@ -63,6 +64,7 @@ const Product = (props: IProductProps) => {
                 </button>
                 </div>
             </div>
+        </div>
         </div>
         </main>
         </section>

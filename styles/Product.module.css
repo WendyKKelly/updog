@@ -116,6 +116,11 @@ margin: auto;
        .m_title h1 {
         font-size: 6rem;
       }
+      .flex {
+        display: flex;
+        flex-flow: row wrap;
+
+      }
       .product {
         padding: 1rem;
         display: grid;
