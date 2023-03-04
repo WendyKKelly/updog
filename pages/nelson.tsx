@@ -1,6 +1,6 @@
 import Script from 'next/script';
-import ProductList from "../components/ProductList";
-import {IProduct} from "../components/Product";
+import ProductListnb from "../components/ProductListnb";
+import {IProduct} from "../components/Productnobutton";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
 import Image from 'next/image'
@@ -117,7 +117,7 @@ export default function Nelson() {
           <h1 className={grandstander.className} >Shop in Nelson Area:</h1>
           </div>
         </div>
-        <ProductList products={products}/>
+        <ProductListnb products={products}/>
 
         <div className={styles.desc}>
           <div className={cormorant.className}>
