@@ -7,52 +7,51 @@
   }
   .grid1 {
     display: grid;
-    padding: 0rem;
-   grid-template-rows: 1 fr 1fr 1fr;
-   grid-template-columns: 1fr;
+    padding: 1rem;
+   
+   grid-template-columns: 20rem;
     row-gap: 0.7rem;
     column-gap: .2rem;
   }
   .nelson {
     display: grid;
-    grid-row: 2 / 4;
-    display: block;
+    
+    
       border: none;
       background-color: #54b3d6;
       box-shadow: 0 8px 8px -4px lightblue;;
       color: #1a4e8a;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       font-family: grandstander;
-      font-size: 1rem;
-      justify-self: center;
+      font-size: 3rem;
+      padding-right: 2rem;
     padding-left: 2rem;
   }
   .away {
     display: grid;
-    grid-row: 4 / 5;
-    display: block;
+    
       border: none;
       background-color: #54b3d6;
       box-shadow: 0 8px 8px -4px lightblue;;
       color: #1a4e8a;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       font-family: grandstander;
-      font-size: 1rem;
-      justify-self: center;
+      font-size: 3rem;
+      padding-right: 2rem;
     padding-left: 2rem;
   }
   .about {
     display: grid;
-    grid-row: 5/6;
-    display: block;
+   
+    
       border: none;
       background-color: #54b3d6;
       box-shadow: 0 8px 8px -4px lightblue;;
       color: #1a4e8a;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       font-family: grandstander;
-      font-size: 1rem;
-      justify-self: center;
+      font-size: 3rem;
+      padding-right: 2rem;
     padding-left: 2rem;
   }
   .link {
