@@ -69,7 +69,7 @@ export default function Home() {
         <Get/>
         < Story />
         </Layout>
-        <Script >{`
+        <Script id="smartsupp" >{`
 var _smartsupp = _smartsupp || {};
 _smartsupp.key = 'c1222087171f62064976d0dc7b117d05679bc47f';
 window.smartsupp||(function(d) {
