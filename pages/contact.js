@@ -118,10 +118,10 @@ export default function Contact() {
       <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
-       <input type="text" name='route' onChange={(e)=>{setRoute(e.target.value)}} />
+       
 
 
-     <button className={styles.button}type="submit">Submit</button>
+     <button name='route' onChange={(e)=>{setRoute(e.target.value)}} className={styles.button}type="submit">Submit</button>
       
     </form>
         </main>
