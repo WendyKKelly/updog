@@ -1,9 +1,9 @@
-import Script from 'next/script';
+
 import ProductListnb from "../components/ProductListnb";
 import {IProduct} from "../components/Productnobutton";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
-import Image from 'next/image'
+
 import updogSample from "../public/images/samples.jpg"
 import updogTreat from "../public/images/120-grams.jpg"
 import updogPouch from "../public/images/treatpouch.jpg"
@@ -17,7 +17,6 @@ import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Nelson.module.css'
 
-import Link from 'next/link'
 import {useRouter} from 'next/router'
 import {useState} from 'react'
 
@@ -31,15 +30,16 @@ interface IProductListProps {
     products: IProduct[]
   }
   
+  interface useState {
+      useState: string
+  }
 
 export default function Nelson() {
 
-  const router = useRouter()
+   const router = useRouter()
+    const [route, setRoute] = useState()
   
-  const thankSubmit = (e) => {
-      e.preventDefault()
-      router.push("./thank-you")
-  }
+ 
 
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
@@ -83,7 +83,7 @@ export default function Nelson() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
     
-
+router.push("./thank-you")
   }
   return (
    <>
@@ -126,7 +126,7 @@ export default function Nelson() {
 
           
           
-    <form className={styles.grid}onSubmit={handleSubmit && thankSubmit}>
+    <form className={styles.grid}onSubmit={handleSubmit }>
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name:</label>
@@ -151,7 +151,7 @@ export default function Nelson() {
       <label className={styles.l_order}htmlFor="order">Special Instructions, comments:</label>
       <input className={styles.i_order}
        type="text" id="order" name="order" required />
-
+<input className={styles.i_input} type="text" name='route' onChange={(e: React.ChangeEvent<HTMLInputElement>)=>{this.setRoute(e.currentTarget.value)}} />
      <button className={styles.button}type="submit">Submit</button>
       
     </form>
