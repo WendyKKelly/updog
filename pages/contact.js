@@ -60,7 +60,7 @@ export default function Contact() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
   
-    router.push("./contact-thx" + route)
+    router.push("./contact-thx")
 }
 
   
