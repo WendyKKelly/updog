@@ -58,11 +58,12 @@ export default function Contact() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
   
-    const router = useRouter()
-  const thankSubmit = (e) => {
-    e.preventDefault()
-    router.push("./contact-thx")
+  
 }
+const router = useRouter()
+const thankSubmit = (e) => {
+  e.preventDefault()
+  router.push("./contact-thx")
   }
   return (
    <>
