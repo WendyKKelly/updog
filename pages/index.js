@@ -14,16 +14,7 @@ const cormorant = Cormorant({subsets: ['latin']})
 export default function Home() {
   return (
    <>
-           <Script id="smartsupp" >{`
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = 'c1222087171f62064976d0dc7b117d05679bc47f';
-window.smartsupp||(function(d) {
-var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-c.type='text/javascript';c.charset='utf-8';c.async=true;
-c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);`}
-</Script>
+
     <Layout>
       <Head>
         <title>Updog Treats | Nelson British Columbia's Fresh Healthy Dog Treats</title>
