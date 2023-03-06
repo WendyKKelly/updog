@@ -18,11 +18,7 @@ const cormorant = Cormorant({subsets: ['latin']})
 
 
 export default function Contact() {
-  const router = useRouter()
-  const thankSubmit = (e) => {
-    e.preventDefault()
-    router.push("./contact-thx")
-}
+  
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
@@ -62,6 +58,11 @@ export default function Contact() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
   
+    const router = useRouter()
+  const thankSubmit = (e) => {
+    e.preventDefault()
+    router.push("./contact-thx")
+}
   }
   return (
    <>
