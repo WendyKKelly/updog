@@ -128,6 +128,9 @@ margin: auto;
   border-color:#54b3d6;
   border-width: .3rem;
 }
+.i_input {
+  display: none;
+}
   .button {
     grid-row: 14 / 16;
     display: block;

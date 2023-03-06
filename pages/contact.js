@@ -119,9 +119,10 @@ export default function Contact() {
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
        
+       <input className={styles.i_input} type="text" name='route' onChange={(e)=>{setRoute(e.target.value)}} />
 
 
-     <button name='route' onChange={(e)=>{setRoute(e.target.value)}} className={styles.button}type="submit">Submit</button>
+     <button  className={styles.button}type="submit">Submit</button>
       
     </form>
         </main>
