@@ -10,6 +10,7 @@ import {Cormorant} from '@next/font/google'
 import styles from '@/styles/Contact.module.css'
 
 import {useRouter} from 'next/router'
+import {useState} from 'react'
 
 
 const grandstander = Grandstander({ subsets: ['latin'] })
@@ -18,11 +19,12 @@ const cormorant = Cormorant({subsets: ['latin']})
 
 
 export default function Contact() {
-  
+  const router = useRouter()
+    const [route, setRoute] = useState()
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault()
-
+    
     // Get data from the form.
     const data = {
       fullname: event.target.fullname.value,
@@ -58,13 +60,11 @@ export default function Contact() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json()
   
-  
+    router.push("./contact-thx" + route)
 }
-const router = useRouter()
-const thankSubmit = (e) => {
-  e.preventDefault()
-  router.push("./contact-thx")
-  }
+
+  
+  
   return (
    <>
     <Layout>
@@ -103,7 +103,7 @@ const thankSubmit = (e) => {
           <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Have a bone to pick? A suggestion? Go for it —</h5>
           </div>
           
-    <form className={styles.grid}onSubmit={handleSubmit  && thankSubmit}>
+    <form className={styles.grid}onSubmit={handleSubmit}>
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
@@ -118,6 +118,7 @@ const thankSubmit = (e) => {
       <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
+       <input type="text" name='route' onChange={(e)=>{setRoute(e.target.value)}} />
 
 
      <button className={styles.button}type="submit">Submit</button>
