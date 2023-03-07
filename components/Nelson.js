@@ -10,7 +10,7 @@ const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
   
 
-const Nelson = () => {
+const NelsonProducts = () => {
     return (
         <section className={styles.section}> 
             <main className={styles.main}>
@@ -106,4 +106,4 @@ const Nelson = () => {
     )
 }
 
-export default Nelson
+export default NelsonProducts
