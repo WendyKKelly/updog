@@ -99,7 +99,7 @@ export const products: IProduct[] = [
         price: 10.00,
         image: updogPouch,
         description: "Ultralight, upcycled, handmade with care from malt and grain bags. When brewmaster Mike made an offhand remark about upcycling grain bags, who could have predicted this? These treat bags now come in 2 sizes — small, about the size of a rock climber's chalk bag, and a larger one, about twice as large. No two are the same.",
-        url: '/api/productspouch',
+        url: '/api/products/pouch',
         weight: 120,
         length: 10,
         width: 5,
