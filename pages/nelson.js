@@ -1,5 +1,5 @@
 
-import {NelsonProducts} from "../components/Nelson";
+import {NelsonProducts} from "../components/NelsonProducts";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
 
