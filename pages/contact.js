@@ -104,7 +104,7 @@ export default function Contact() {
           <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Send us a pic of your dog begging for Updog Treats? Have a bone to pick? A suggestion? Go for it —</h5>
           </div>
           
-    <form className={styles.grid}onSubmit={handleSubmit}>
+    <form className={styles.grid}onSubmit={handleSubmit} enctype="multipart/form-data">
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name: (What would you like us to call you?)</label>
