@@ -1,10 +1,7 @@
 .section{
   background-color: rgb(18, 176, 213);
 }
-iframe
-#chat-application-ifram {
-  display:inline-block;
-}
+
 .main {
 display: inline-block;
 min-width: 50%;
