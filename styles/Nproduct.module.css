@@ -24,7 +24,7 @@
       grid-row-gap: 0.7rem;
       width: 20rem;
       }
-      .title h5 {
+      .title h6 {
         font-size: 2rem;
         color:#1a4e8a;
       }
@@ -177,7 +177,7 @@
               grid-column: 1 / 8;
               grid-row: 1 /7;
             }
-            .title h5 {
+            .title h6 {
                 font-size: 2rem;
                 color:#1a4e8a;
             }

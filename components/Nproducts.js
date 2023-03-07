@@ -19,7 +19,7 @@ export default function Nproducts () {
         <div className={styles.product}>
            <div className={styles.t_title}>
             <div className={grandstander.className}>
-            <h5 className={styles.title}>Updog Treats / 120 grams</h5></div></div>
+            <h6 className={styles.title}>Updog Treats / 120 grams</h6></div></div>
             <div className={styles.t_image}>
             <Image 
             src={updogTreat} 
@@ -41,7 +41,7 @@ export default function Nproducts () {
         </div>
         <div className={styles.s_title}>
             <div className={grandstander.className}>
-            <h5 className={styles.title}>Updog Sample</h5></div></div>
+            <h6 className={styles.title}>Updog Sample</h6></div></div>
             <div className={styles.s_image}>
             <Image 
             src={updogSample} 
@@ -63,7 +63,7 @@ export default function Nproducts () {
         </div>
         <div className={styles.p_title}>
             <div className={grandstander.className}>
-            <h5 className={styles.title}>Updog Treat Pouch</h5></div></div>
+            <h6 className={styles.title}>Updog Treat Pouch</h6></div></div>
             <div className={styles.p_image}>
             <Image 
             src={updogPouch} 
@@ -84,7 +84,7 @@ export default function Nproducts () {
         </div>
         <div className={styles.tp_title}>
             <div className={grandstander.className}>
-            <h5 className={styles.title}>Updog Treat Pouch w/ 120 grams treats</h5></div></div>
+            <h6 className={styles.title}>Updog Treat Pouch w/ 120 grams treats</h6></div></div>
             <div className={styles.tp_image}>
             <Image 
             src={updogRefill} 
