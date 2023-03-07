@@ -31,7 +31,7 @@ export default function Contact() {
       tel: event.target.tel.value,
       email: event.target.email.value,
       message: event.target.message.value,
-      avatar: event.target.avatar.value,
+      
    
       
     }
@@ -115,11 +115,9 @@ export default function Contact() {
       
       <label className={styles.l_email}htmlFor="email">Email:</label>
       <input className={styles.i_email} type="email" id="email" name="email"  />
-      <label className={styles.l_avatar} htmlFor="avatar">Send a picture of your dog waiting for Updog Treats</label>
+      
 
-<input className={styles.i_avatar} type="file"
-       id="avatar" name="avatar"
-       accept="image/png, image/jpeg"></input>
+
       <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />
