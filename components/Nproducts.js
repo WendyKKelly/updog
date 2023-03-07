@@ -10,7 +10,7 @@ const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
   
 
-const Nproducts = () => {
+export default function Nproducts () {
     return (
         <section className={styles.section}> 
             <main className={styles.main}>
@@ -106,4 +106,3 @@ const Nproducts = () => {
     )
 }
 
-export default Nproducts
