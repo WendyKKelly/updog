@@ -31,6 +31,7 @@ export default function Contact() {
       tel: event.target.tel.value,
       email: event.target.email.value,
       message: event.target.message.value,
+      avatar: event.target.avatar.value,
    
       
     }
