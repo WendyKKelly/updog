@@ -1,5 +1,5 @@
 
-import {NelsonProducts} from "../components/NelsonProducts";
+import {Nproducts} from "../components/Nproducts";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
 
@@ -112,7 +112,7 @@ router.push("./thank-you")
           <h1 className={grandstander.className} ></h1>
           </div>
         </div>
-        <NelsonProducts/>
+        <Nproducts/>
 
         <div className={styles.desc}>
           <div className={cormorant.className}>
