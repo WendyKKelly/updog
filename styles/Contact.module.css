@@ -127,7 +127,7 @@ margin: auto;
   display: block;
   width: 100%;
 }
-i_avatar:focus {
+.i_avatar:focus {
   background-color: #fff;
   border-color:#54b3d6;
   border-width: .3rem;
