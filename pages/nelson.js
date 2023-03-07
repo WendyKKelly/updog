@@ -118,7 +118,7 @@ router.push("./thank-you")
 
           
           
-    <form id={form}className={styles.grid}onSubmit={handleSubmit }>
+    <form id="form"className={styles.grid}onSubmit={handleSubmit }>
       
         
       <label className={styles.l_name}htmlFor="fullname">Your name:</label>
