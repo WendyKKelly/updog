@@ -1,12 +1,9 @@
 
-import {Nproducts} from "../components/Nproducts";
-import {GetStaticProps} from "next";
+import Nproducts from "../components/Nproducts";
+
 import Head from 'next/head'
 
-import updogSample from "../public/images/samples.jpg"
-import updogTreat from "../public/images/120-grams.jpg"
-import updogPouch from "../public/images/treatpouch.jpg"
-import updogRefill from "../public/images/refill.png"
+
 import Layout from '../components/Layout';
 
 

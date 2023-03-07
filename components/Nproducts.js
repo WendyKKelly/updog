@@ -50,7 +50,7 @@ export default function Nproducts () {
             </div>
             <div className={styles.desc}>
             <div className={cormorant.className}>
-            <p className={styles.description}>Curious? Order a small 10 gram sample of our delicious treats. So far, every dog we have given samples to has begged us for more :) but we fully understand that you might want to try them out first. All our packaging is made inhouse with upcycled materials and we plan to keep it that way.</p></div></div>
+            <p className={styles.description}>Curious? Order a small 10 gram sample of our delicious treats. So far, every dog we have given samples to has begged us for more — but we fully understand that you might want to try them out first. All our packaging is made inhouse with upcycled materials and we plan to keep it that way.</p></div></div>
             <div className={styles.ppb}>
             <div className={cormorant.className}>
                 <div className={styles.price}>$1</div>
