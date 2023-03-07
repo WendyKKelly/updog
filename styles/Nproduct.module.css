@@ -18,23 +18,7 @@
       .cormorant {
         color: #fff;
       }
-      .desc {
-         font-size: 1.3rem;
-        margin-top: 0;
-        width: 20rem;
-        margin-left: .3rem;
-     }
-     .desc h5 {
-      font-size: 2rem;
-      color: #1a4e8a;
-     }
-     .m_title {
-        width: 20rem;
-        margin-bottom: 0.2rem;
-     }
-     .m_title h1 {
-      font-size: 2.5rem;
-    }
+    
     .product {
       padding: 1rem;
       display: grid;
@@ -42,7 +26,7 @@
       grid-row-gap: 0.7rem;
       width: 20rem;
       }
-      .title h2 {
+      .title h5 {
         font-size: 2rem;
       }
     
@@ -177,26 +161,7 @@
               max-width: 51rem;
                 margin: 0 auto;
             }
-            .desc {
         
-              font-size: 3rem;
-              margin-top: 0;
-              width: 90%;
-              margin-left: .3rem;
-           }
-           .desc h5 {
-            
-            color: #1a4e8a;
-           }
-           .m_title {
-            
-              width: 90%;
-              margin-bottom: 0.2rem;
-            
-           }
-           .m_title h1 {
-            font-size: 6rem;
-          }
     
           .product {
             padding: 1rem;
@@ -213,7 +178,7 @@
               grid-column: 1 / 8;
               grid-row: 1 /7;
             }
-            .title h2 {
+            .title h5 {
                 font-size: 2rem;
             }
             .t_image {
