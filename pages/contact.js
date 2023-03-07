@@ -100,7 +100,7 @@ export default function Contact() {
 
         <div className={styles.desc}>
           
-          <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Have a bone to pick? A suggestion? Go for it —</h5>
+          <h5 className={cormorant.className}>Want to tell us that we are very very good humans? Send us a pic of your dog begging for Updog Treats? Have a bone to pick? A suggestion? Go for it —</h5>
           </div>
           
     <form className={styles.grid}onSubmit={handleSubmit}>
@@ -114,7 +114,11 @@ export default function Contact() {
       
       <label className={styles.l_email}htmlFor="email">Email:</label>
       <input className={styles.i_email} type="email" id="email" name="email"  />
-      
+      <label className={styles.l_avatar} htmlFor="avatar">Send a picture of your dog waiting for Updog Treats</label>
+
+<input className={styles.i_avatar} type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg"></input>
       <label className={styles.l_message}htmlFor="message">Tell us your thoughts:</label>
       <textarea className={styles.i_message}
        type="text" id="message" name="message" required />

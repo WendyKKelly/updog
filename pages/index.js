@@ -11,7 +11,7 @@ import Story from '../components/story'
 
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-const AblyChatComponent = dynamic(() => import('../components/AblyChatComponent'), { ssr: false });
+
 export default function Home() {
   return (
    <>
@@ -65,7 +65,7 @@ export default function Home() {
 
        
        
-<AblyChatComponent />
+
         </div>
         </main>
        
