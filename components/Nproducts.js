@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import updogSample from "../public/images/samples.jpg"
 import updogTreat from "../public/images/120-grams.jpg"
 import updogPouch from "../public/images/treatpouch.jpg"
@@ -32,7 +33,7 @@ export default function Nproducts () {
             <p className={styles.description}>120 grams of treats that will make your dog love you (even more). These treats are made with spent barley grain from a local brewery, fresh ground meat (mainly pork but may include beef and a small amount of chicken) and chia seeds. Best refrigerated but can last up to 10 days in the pantry.</p></div></div>
             <div className={styles.t_ppb}>
             <div className={cormorant.className}>
-                <div className={styles.t_button}>Order Now</div>
+                <Link href="#form"><div className={styles.t_button}>Order Now</div></Link>
                 <div className={styles.t_price}>$10</div>
                 
                 
@@ -54,7 +55,7 @@ export default function Nproducts () {
             <p className={styles.description}>Curious? Order a small 10 gram sample of our delicious treats. So far, every dog we have given samples to has begged us for more — but we fully understand that you might want to try them out first. All our packaging is made inhouse with upcycled materials and we plan to keep it that way.</p></div></div>
             <div className={styles.s_ppb}>
             <div className={cormorant.className}>
-            <div className={styles.t_button}>Order Now</div>
+            <Link href="#form"><div className={styles.t_button}>Order Now</div></Link>
                 <div className={styles.t_price}>$1</div>
                 
                 
@@ -77,7 +78,7 @@ export default function Nproducts () {
             <div className={styles.p_ppb}>
             <div className={cormorant.className}>
                 <div className={styles.t_price}>$10</div>
-                <div className={styles.t_button}>Order Now</div>
+                <Link href="#form"><div className={styles.t_button}>Order Now</div></Link>
                 
             </div>
         </div>
@@ -98,7 +99,7 @@ export default function Nproducts () {
             <div className={styles.tp_ppb}>
             <div className={cormorant.className}>
                 <div className={styles.t_price}>$19</div>
-                <div className={styles.t_button}>Order Now</div>
+                
                 
             </div>
         </div>

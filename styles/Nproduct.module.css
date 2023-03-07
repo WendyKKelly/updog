@@ -47,18 +47,18 @@
         font-size: 2rem;
         display: grid;
         width: 100%; 
-        grid-row: 1 / 2;
+        grid-row: 1 / 6;
       }
       .t_image {
         font-size: 1rem;
         display: grid;
         width: 100%; 
-        grid-row: 3 / 10;
+        grid-row: 7 / 14;
       }
      .t_desc {
       display: grid;
         width: 100%; 
-        grid-row: 11 / 19;
+        grid-row: 15 / 23;
      }
       .description {
         font-size: 1.5rem;
@@ -67,7 +67,7 @@
 
     .t_ppb {
       display: grid;
-      grid-row: 19/22;
+      grid-row: 23/25;
     }
       
         .t_price {
@@ -92,18 +92,18 @@
             font-size: 2rem;
             display: grid;
             width: 100%; 
-            grid-row: 23 / 24;
+            grid-row: 26 /28;
           }
           .s_image {
             font-size: 1rem;
             display: grid;
             width: 100%; 
-            grid-row: 25 / 32;
+            grid-row: 28/35 ;
           }
          .s_desc {
           display: grid;
             width: 100%; 
-            grid-row: 33 / 41;
+            grid-row: 35 / 43;
          }
           .description {
             font-size: 1.5rem;
@@ -112,25 +112,25 @@
          
         .s_ppb {
           display: grid;
-          grid-row: 41/44;
+          grid-row: 43/45;
         }
      
               .p_title {
                 font-size: 2rem;
                 display: grid;
                 width: 100%; 
-                grid-row: 45 / 46;
+                grid-row: 46 / 50;
               }
               .p_image {
                 font-size: 1rem;
                 display: grid;
                 width: 100%; 
-                grid-row: 47 / 54;
+                grid-row: 51/58;
               }
              .p_desc {
               display: grid;
                 width: 100%; 
-                grid-row: 55 / 63;
+                grid-row: 58 / 66;
              }
               .description {
                 font-size: 1.5rem;
@@ -139,14 +139,14 @@
              
             .p_ppb {
               display: grid;
-              grid-row: 63/66;
+              grid-row: 66/69;
             }
           
                   .tp_title {
                     font-size: 2rem;
                     display: grid;
                     width: 100%; 
-                    grid-row: 67 / 68;
+                    grid-row: 69/75;
                   }
                
                   .description {
@@ -157,16 +157,16 @@
                     font-size: 1rem;
                     display: grid;
                     width: 100%; 
-                    grid-row: 69 / 75;
+                    grid-row: 76 / 83;
                   }
                   .tp_desc {
                     display: grid;
                       width: 100%; 
-                      grid-row: 76 / 81;
+                      grid-row: 83 / 85;
                    }
                 .tp_ppb {
                   display: grid;
-                  grid-row: 81/84;
+                  grid-row: 87/89;
                 }
                 
           @media (min-width: 40rem) {
@@ -208,14 +208,17 @@
               display: grid;
               width: 100%; 
               grid-column: 1 / 8;
-              grid-row: 1 /2;
+              grid-row: 1 /7;
+            }
+            .title h2 {
+                font-size: 2rem;
             }
             .t_image {
                 font-size: 1rem;
                 display: grid;
                 width: 100%; 
                 grid-column: 9 / 18;
-                grid-row: auto;
+                grid-row: 1 / 10;
               }
            .t_desc {
             display: grid;
@@ -227,7 +230,7 @@
           .t_ppb{
             display: grid;
             grid-column: 1 / 3;
-            grid-row: 4 / 7;
+            grid-row: 9/13;
           }
            
               .t_price {
@@ -261,7 +264,7 @@
             display: grid;
             width: 100%; 
             grid-column: 9 / 18;
-            grid-row: auto;
+            grid-row: 11 / 20;
           }
          .s_desc {
           display: grid;
@@ -289,7 +292,7 @@
             display: grid;
             width: 100%; 
             grid-column: 9 / 18;
-            grid-row: auto;
+            grid-row: 21 / 30;
           }
          .p_desc {
           display: grid;
@@ -317,7 +320,7 @@
             display: grid;
             width: 100%; 
             grid-column: 9 / 18;
-            grid-row: auto;
+            grid-row: 31 / 40;
           }
          .tp_desc {
           display: grid;
