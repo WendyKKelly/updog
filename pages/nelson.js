@@ -1,6 +1,5 @@
 
-import NelsonList from "../components/NelsonList";
-import {INelson} from "../components/Nelson";
+import {Nelson} from "../components/Nelson";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
 
