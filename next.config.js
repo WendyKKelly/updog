@@ -1,19 +1,5 @@
 module.exports = {
-  async rewrites() {
-
-    return [
-
-      {
-
-        source: '/sitemap.xml',
-
-        destination: '/api/sitemap',
-
-      },
-
-    ]
-
-  },
+  
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.fs = false;

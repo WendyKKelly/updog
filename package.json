@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -29,6 +30,7 @@
     "marked": "^4.2.12",
     "next": "^13.1.6",
     "next-auth": "^4.19.2",
+    "next-sitemap": "^4.0.5",
     "node": "17.9.1",
     "npm": "^9.5.0",
     "react": "^18.2.0",
