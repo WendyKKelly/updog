@@ -5,6 +5,7 @@ module.exports = {
       config.resolve.fallback.tls = false;
       config.resolve.fallback.net = false;
       config.resolve.fallback.child_process = false;
+      require(".scripts/sitemap-generator");
     }
 
     return config;
