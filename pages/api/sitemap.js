@@ -21,9 +21,9 @@ export default function handler(req, res) {
   
       <url>
   
-        <loc>http://www.example.com/foo.html</loc>
+        <loc>https://updogtreats.com/</loc>
   
-        <lastmod>2021-01-01</lastmod>
+        <lastmod>2023-03-11</lastmod>
   
       </url>
   
