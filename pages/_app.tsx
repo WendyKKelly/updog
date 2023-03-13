@@ -1,5 +1,6 @@
 import '@/styles/globals.scss'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app'
 
 
@@ -11,7 +12,7 @@ import type { AppProps } from 'next/app'
 
 
   <Component {...pageProps} />
- 
+  <Analytics />
 <Script id="chat" type="text/javascript">
 {`var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
