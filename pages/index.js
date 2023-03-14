@@ -24,10 +24,8 @@ export default function Home() {
         
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
-        <link rel="preconnect" href="https://app.snipcart.com"/>
-                <link rel="preconnect" href="https://cdn.snipcart.com"/>
-                <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"/>
-                <link rel="shortcut icon" href="../public/favicon.ico" />
+      
+           
         <meta
           property="og:description"
           content="Fresh, healthy, locally made in Nelson BC — Updog Treats"
