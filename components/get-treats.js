@@ -14,19 +14,13 @@ export default function Get() {
     <div className={styles.grid1}>
          
    
-   <div className={styles.nelson} >
-      <Link href="./nelson"
-      className={styles.link}
-      target="blank"
-      rel="noopener noreferrer"
-      >
-      Shop in Nelson</Link></div>
+
       <div className={styles.away} ><Link href="./shop"
       className={styles.link}
       target="blank"
       rel="noopener noreferrer"
       >
-      Shop from Away</Link></div>
+      Shop Now</Link></div>
       
       <div className={styles.nelson} >
       <Link href="./about"
