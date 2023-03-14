@@ -11,11 +11,11 @@ export default function Alert () {
   
   return (
     <>
-      
+      <container className={styles.container}>
         <Link 
         href="./shop">Free local (postal code starting with V1L) delivery
         </Link>
-        
+        </container>
         </>
   );
 };
