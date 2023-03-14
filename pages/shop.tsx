@@ -30,9 +30,7 @@ export default function Shop({products}: IProductListProps): JSX.Element {
 
 <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
 <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
-<link rel="preconnect" href="https://app.snipcart.com"/>
-        <link rel="preconnect" href="https://cdn.snipcart.com"/>
-        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"/>
+
       
 <meta
   property="og:description"
@@ -51,13 +49,7 @@ export default function Shop({products}: IProductListProps): JSX.Element {
     
     
     </Layout>
-    <Script   
     
-    src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"
-    
-    />
-            <div hidden id="snipcart" data-api-key="OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1
-    "></div>
     </>
   )
 }

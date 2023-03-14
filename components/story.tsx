@@ -1,12 +1,12 @@
 
 import Image from 'next/image'
 import { Grandstander } from '@next/font/google'
-import {Cormorant} from '@next/font/google'
+
 import styles from '@/styles/Story.module.css'
-import Link from 'next/link'
+
 
 const grandstander = Grandstander({ subsets: ['latin'] })
-const cormorant = Cormorant({subsets: ['latin']})
+
 export default function Story() {
   return (
     <>
@@ -109,12 +109,7 @@ export default function Story() {
             </div>
             
             </div>
-            
-        
-         
             </div>
-           
-   
             </main>  
         </section>
         </>
