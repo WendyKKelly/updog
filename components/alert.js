@@ -13,7 +13,7 @@ export default function Alert () {
     <>
       <container className={styles.container}>
         <Link 
-        href="./shop">Free local (postal code starting with V1L) delivery
+        href="./shop"><p className={styles.description}>Free local (postal code starting with V1L) delivery</p>
         </Link>
         </container>
         </>

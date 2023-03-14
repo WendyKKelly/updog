@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link"
 
 import Container from "../Container";
-import Alert from "../alert"
+
 
 import styles from "./Nav.module.css";
 const grandstander = Grandstander({ subsets: ['latin'] })
@@ -13,7 +13,7 @@ export default function Nav () {
   return (
     <nav className={styles.nav}>
       <Container className={styles.navContainer}>
-        <Alert/>
+        
         <Link 
         href="./index">
         <Image
