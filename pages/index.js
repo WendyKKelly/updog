@@ -3,6 +3,7 @@ import Script from 'next/script'
 import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/Layout';
+
 import Get from '../components/get-treats'
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'

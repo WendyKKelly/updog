@@ -4,26 +4,17 @@ import Image from "next/image";
 import Link from "next/link"
 
 import Container from "../Container";
-import Alert from "../alert"
 
-import styles from "./Nav.module.css";
+import styles from "@/styles/Alert.module.css";
 const grandstander = Grandstander({ subsets: ['latin'] })
-export default function Nav () {
+export default function Alert () {
   
   return (
     <nav className={styles.nav}>
       <Container className={styles.navContainer}>
-        <Alert/>
         <Link 
-        href="./index">
-        <Image
-                src="/images/Updog3.png"
-                alt="Updog Logo"
-                className={styles.logo}
-                width={500}
-                height={600}
-                priority
-              /></Link>
+        href="./shop">Free local (postal code starting with V1L) delivery
+        </Link>
         
         
       </Container>
