@@ -7,7 +7,7 @@ export default function Document(){
       <Head> <link rel="preconnect" href="https://app.snipcart.com"/>
                 <link rel="preconnect" href="https://cdn.snipcart.com"/>
                 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"/>
-                <link rel="shortcut icon" href="../public/favicon.ico" /></Head>
+                <link rel="shortcut icon" href="../favicon.ico" /></Head>
       <body>
     
         <Main />
