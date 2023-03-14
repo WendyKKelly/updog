@@ -75,7 +75,7 @@ export default function Contact() {
         <meta name="description" content="Fresh healthy dog treats made in Nelson British Columbia: Updog Treats — Uplift and Upcycle" />
         <meta property="og:title" content="Updog Treats: Nelson's Healthy Dog Treats" />
         
-                <link rel="shortcut icon" href="../public/favicon.ico" />
+              
         <meta
           property="og:description"
           content="Fresh, healthy, locally made in Nelson BC — Updog Treats"
