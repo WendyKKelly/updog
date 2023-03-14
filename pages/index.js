@@ -58,7 +58,7 @@ export default function Home() {
                 alt="Updog Logo"
                 className={styles.image}
                 width={500}
-                height={600}
+                height={500}
                 priority
               />
 

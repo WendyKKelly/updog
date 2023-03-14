@@ -1,25 +1,22 @@
-import Script from 'next/script';
+
 import ProductList from "../components/ProductList";
 import {IProduct} from "../components/Product";
 import {GetStaticProps} from "next";
 import Head from 'next/head'
-import Image from 'next/image'
+
 import updogSample from "../public/images/samples.jpg"
 import updogTreat from "../public/images/120-grams.jpg"
 import updogPouch from "../public/images/treatpouch.jpg"
 import updogRefill from "../public/images/refill.png"
 import Layout from '../components/Layout';
-import { Grandstander } from '@next/font/google'
-import {Cormorant} from '@next/font/google'
+
 
 
 
 interface IProductListProps {
     products: IProduct[]
   }
-  interface Script {
-    src: string
-  }
+
 
 export default function Shop({products}: IProductListProps): JSX.Element {
     return (

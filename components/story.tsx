@@ -22,7 +22,7 @@ export default function Story() {
             <Image
                 src="/images/rocky2.png"
                 alt="Rocky"
-                width={300}
+                width={280}
                 height={350}
                 priority
               />
@@ -39,7 +39,7 @@ export default function Story() {
             <Image
                 src="/images/rosa.png"
                 alt="Rosa"
-                width={300}
+                width={280}
                 height={350}
                 priority
               />
@@ -57,7 +57,7 @@ export default function Story() {
             <Image
                 src="/images/lampi.png"
                 alt="Lampi"
-                width={300}
+                width={280}
                 height={350}
                 priority
               />
@@ -75,7 +75,7 @@ export default function Story() {
             <Image
                 src="/images/morley.png"
                 alt="Morley"
-                width={300}
+                width={280}
                 height={350}
                 priority
               />
@@ -93,7 +93,7 @@ export default function Story() {
             <Image
                 src="/images/spokesdogplaceholder.png"
                 alt="Nelson dog"
-                width={300}
+                width={280}
                 height={350}
                 priority
               />
