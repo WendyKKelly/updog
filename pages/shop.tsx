@@ -52,7 +52,7 @@ export default function Shop({products}: IProductListProps): JSX.Element {
     <Script id="snipcart" dangerouslySetInnerHTML={{
           __html: `
             window.SnipcartSettings = {
-                publicApiKey: "${process.env.NEXT_PUBLIC_SNIPCART_API_KEY}",
+                publicApiKey: "OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1",
                 loadStrategy: "on-user-interaction",
                 modalStyle: "side",
             };
