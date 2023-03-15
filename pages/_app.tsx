@@ -28,7 +28,7 @@ s0.parentNode.insertBefore(s1,s0);
     window.SnipcartSettings = {
         publicApiKey: 'OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1',
         loadStrategy: 'on-user-interaction',
-        src="../scripts/snipcart",
+        src:'../scripts/snipcart',
     };`}
 
 </Script>
