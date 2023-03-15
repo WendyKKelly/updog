@@ -15,7 +15,7 @@ export interface IProduct {
     price: number
     url: string
     description: string
-    image: string | StaticImageData
+    image: StaticImageData
     weight: number
     length: number
     width: number
