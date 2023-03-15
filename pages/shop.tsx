@@ -42,9 +42,7 @@ export default function Shop({products}: IProductListProps): JSX.Element {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" href="/favicon.ico" />
 
-<link rel="preconnect" href="https://app.snipcart.com"/>
-        <link rel="preconnect" href="https://cdn.snipcart.com"/>
-        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"/>
+
 </Head>
 <section>
 <ProductList products={products}/>
