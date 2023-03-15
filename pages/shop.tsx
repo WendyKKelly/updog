@@ -52,9 +52,7 @@ export default function Shop({products}: IProductListProps): JSX.Element {
     
     
     </Layout>
-    <Script id="snipcart" src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>
-    <div hidden id="snipcart" data-api-key="OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1
-"></div>
+    
     </>
     
   )
