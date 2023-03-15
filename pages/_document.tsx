@@ -13,7 +13,7 @@ export default function Document(){
         <NextScript />
         <script>
   window.SnipcartSettings = {`{
-    publicApiKey: "process.env.NEXT_PUBLIC_SNIPCART_API_KEY",
+    publicApiKey: "OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1",
     loadStrategy: "on-user-interaction",
     currency: "cdn"
   };
