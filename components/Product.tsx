@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image"
 import Image from 'next/image'
 import styles from '../styles/Product.module.css';
 import { Grandstander } from '@next/font/google'
@@ -5,7 +6,7 @@ import {Cormorant} from '@next/font/google'
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
 
-type StaticImageData = {id: string; name: string; price: number; url: string; description: string;  image: string; weight: number; length: number; height: number; width: number; blurDataURL?: string; }
+
 
   
 export interface IProduct {
@@ -14,7 +15,7 @@ export interface IProduct {
     price: number
     url: string
     description: string
-    image?: string | StaticImageData
+    image: string | StaticImageData
     weight: number
     length: number
     width: number
