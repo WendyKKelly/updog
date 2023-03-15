@@ -24,7 +24,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();`}
 </Script>
-<Script id="snipcart" type="text/javascript" src='./scripts/snipcart'>{`
+<Script id="snipcart" type="text/javascript" src='./scripts/snipcart.js'>{`
     window.SnipcartSettings = {
         publicApiKey: 'OWQ5NjFhNzEtNDdlNC00YzBkLThkZjgtMDI3Zjk1OTRlNDBkNjM3MzY0MDAwMzM3ODE2MDA1',
         loadStrategy: 'on-user-interaction',
