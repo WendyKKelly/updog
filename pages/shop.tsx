@@ -51,7 +51,7 @@ export default function Shop({products}: IProductListProps): JSX.Element {
     
     </Layout>
     <Script id="snipcart">
-  window.SnipcartSettings = {`
+    {` window.SnipcartSettings = 
     publicApiKey: "process.env.NEXT_PUBLIC_SNIPCART_API_KEY",
     loadStrategy: "on-user-interaction",
     modalStyle: "side",
