@@ -5,7 +5,7 @@ import {Cormorant} from '@next/font/google'
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
 
-type StaticImageData = { src: string; height: number; width: number; blurDataURL?: string; }
+
 
   
 export interface IProduct {
@@ -15,7 +15,6 @@ export interface IProduct {
     url: string
     description: string
     image: StaticImageData
-    src?: string | StaticImageData
     weight: number
     length: number
     width: number
