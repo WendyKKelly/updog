@@ -17,7 +17,7 @@ interface IProductListProps {
   }
  
 
-export default function Shop({products}: IProductListProps): JSX.Element {
+export default function Shop({products}: IProductListProps){
     return (
 <>
 <Layout>
@@ -71,7 +71,7 @@ export const products: IProduct[] = [
       weight: 120,
       length: 10,
       width: 5,
-      height: 2,
+      height: 2
   },
   {
         id: "sample",
@@ -83,7 +83,7 @@ export const products: IProduct[] = [
         weight: 120,
         length: 10,
         width: 5,
-        height: 2,
+        height: 2
   },
   
     {
@@ -96,7 +96,7 @@ export const products: IProduct[] = [
         weight: 120,
         length: 10,
         width: 5,
-        height: 2,
+        height: 2
     },
     {
         id: "refill",
@@ -108,7 +108,7 @@ export const products: IProduct[] = [
         weight: 120,
         length: 10,
         width: 5,
-        height: 2,
+        height: 2
     }
   ]
   

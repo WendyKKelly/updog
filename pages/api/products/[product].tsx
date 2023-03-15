@@ -11,6 +11,10 @@ export interface ISnipcartProduct {
     url: string
     description: string
     image: string
+    weight: number
+    length: number
+    width: number
+    height: number
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
