@@ -13,7 +13,7 @@ export default function Alert () {
     <>
       <container className={styles.container}>
         <Link 
-        href="./shop"><div className={grandstander.className}><p className={styles.description}>Free local (postal code starting with V1L) delivery</p></div>
+        href="./shop"><div className={grandstander.className}><p className={styles.description}>Free local delivery</p></div>
         </Link>
         </container>
         </>
