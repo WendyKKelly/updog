@@ -1,21 +1,26 @@
 .navContainer {
     background-color: rgb(125, 180, 70);
-    display: flex;
-    flex-direction: column;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     padding: 1rem 0;
-    justify-content: center;
+    justify-content: space-between;
   }
 .logo,
   .description,
   .cart {
-    display: flex;
-    text-align: center;
+    display: grid;
   }
   .logo,
   .cart {
     max-width:7rem;
     max-height: 7rem; 
+  }
+  .logo {
+    justify-self: start;
+  }
+  .cart {
+    justify-self: end;
   }
   .description {
     line-height: 1.5;
@@ -23,18 +28,19 @@
     margin: 0;
   }
   .description a {
-    display: flex;
-    align-items: center;
+    display: grid;
+    
   }
   .description svg {
     margin-right: .4em;
   }
-  .cart {
-    margin-top: 1rem;
-  }
+
 
  /* Desktop */
 @media (min-width: 40rem) {
+  .navContainer {
+    max-width: 100%;
+  }
  .logo {
         margin-left: 3rem;
       }
@@ -52,7 +58,7 @@
         margin-right: 3rem;
       }
      .description a {
-        display: flex;
+        display: grid;
         align-items: center;
       }
      .description svg {
