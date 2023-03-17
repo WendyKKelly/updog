@@ -1,10 +1,13 @@
  .container {
     display: flex;
-    width: 100%;
     padding: .5rem 0;
     max-height: 2rem;
     justify-content: center;
     background-color: #fff;
+    min-width: 50%;
+    max-width: 100%;
+width: calc((480px - 100%) * 480);
+margin: auto;
    
   }
   .description {
