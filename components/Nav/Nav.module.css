@@ -1,13 +1,17 @@
-.navContainer {
-    background-color: rgb(125, 180, 70);
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem 0;
-    justify-content: space-between;
-    min-width: 50%;
-    max-width: 100%;
+
+.nav {
+ display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+  justify-content: space-between;
+  min-width: 50%;
+  max-width: 100%;
 width: calc((480px - 100%) * 480);
 margin: auto;
+}
+.navContainer {
+  background-color: rgb(125, 180, 70);
+  width: 100%;
   }
 .logo,
   .description,

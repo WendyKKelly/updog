@@ -13,7 +13,7 @@ export default function Nav () {
   return (
     
       <Container className={styles.navContainer}>
-        
+        <div className={styles.nav}>
         <Link 
         href="./index">
         <Image
@@ -31,7 +31,7 @@ export default function Nav () {
                 </svg>
                 <span className="header__price snipcart-total-price"></span>
             </Link></div>
-        
+            </div>
       </Container>
   
   );
