@@ -46,6 +46,9 @@ margin: auto;
 
  /* Desktop */
 @media (min-width: 40rem) {
+  .nav {
+    width: 80rem;
+  }
   .navContainer {
     max-width: 100%;
   }

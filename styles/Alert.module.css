@@ -17,6 +17,9 @@ width: calc((480px - 100%) * 480);
   }
 /* Desktop */
 @media (min-width: 40rem) {
+  .container {
+    width: 80rem;
+  }
     .description {
         text-align: center;
       }
