@@ -28,6 +28,7 @@ margin: auto;
   }
   .cart {
     justify-self: end;
+    margin-right: auto;
   }
   .description {
     line-height: 1.5;

@@ -1,21 +1,18 @@
  .container {
-    display: flex;
-    padding: .5rem 0;
+    display: grid;
     max-height: 2rem;
     justify-content: center;
     background-color: #fff;
     min-width: 50%;
     max-width: 100%;
-width: calc((480px - 100%) * 480);
-margin: auto;
-   
+width: calc((480px - 100%) * 480);  
   }
   .description {
     font-size: 1.5rem;
     margin: .5rem;
   }
   .description {
-    display: flex;
+    display: grid;
     align-items: center;
   }
 /* Desktop */
@@ -28,7 +25,7 @@ margin: auto;
         margin-right: 3rem;
         }
       .description a {
-        display: flex;
+        display: grid;
         align-items: center;
       }
     }
