@@ -28,6 +28,7 @@ margin: auto;
   }
   .cart {
     justify-self: end;
+    margin-top: 1rem;
     margin-right: auto;
   }
   .description {
