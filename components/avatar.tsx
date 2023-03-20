@@ -1,4 +1,4 @@
-import styles from "@/styles/Avatar.module.css";
+import styles from "@/styles/Avatars.module.css";
 
 type Props = {
   name: string
