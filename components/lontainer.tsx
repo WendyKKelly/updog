@@ -1,4 +1,4 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Lontainer.module.css";
 type Props = {
     children?: React.ReactNode
   }

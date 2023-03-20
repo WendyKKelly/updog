@@ -1,4 +1,4 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Body.module.css";
 
 export default function PostCategory({ children }) {
     return (

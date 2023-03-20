@@ -1,4 +1,4 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/More.module.css";
 import PostPreview from './post-preview'
 import type Post from '../interfaces/post'
 

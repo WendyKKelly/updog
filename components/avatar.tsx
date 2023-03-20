@@ -1,4 +1,4 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Avatar.module.css";
 
 type Props = {
   name: string
@@ -7,9 +7,9 @@ type Props = {
 
 const Avatar = ({ name, picture }: Props) => {
   return (
-    <div className="flex items-center">
+    <div className={styles.container}>
       <img src={picture} className={styles.image} alt={name} />
-      <div className="text-xl font-bold">{name}</div>
+      <div className={styles.description}>{name}</div>
     </div>
   )
 }

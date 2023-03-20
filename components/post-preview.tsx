@@ -1,6 +1,6 @@
 
 import Avatar from './avatar'
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Preview.module.css";
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import type Author from '../interfaces/author'
@@ -24,7 +24,7 @@ const PostPreview = ({
 }: Props) => {
   return (
     <div>
-      <div className={styles.description}>
+      <div className={styles.container}>
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <h3 className={styles.description}>
@@ -36,10 +36,10 @@ const PostPreview = ({
           {title}
         </Link>
       </h3>
-      <div className={styles.description}>
+      <div className={styles.title}>
        
       </div>
-      <p className={styles.description}>{excerpt}</p>
+      <p className={styles.block}>{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
   )

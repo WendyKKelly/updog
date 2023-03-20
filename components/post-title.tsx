@@ -1,4 +1,4 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Title.module.css";
 import { ReactNode } from 'react'
 
 type Props = {

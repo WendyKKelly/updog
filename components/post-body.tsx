@@ -1,5 +1,5 @@
 import markdownStyles from './markdown-styles.module.css'
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Body.module.css";
 type Props = {
   content: string
 }

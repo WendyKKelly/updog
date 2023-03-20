@@ -1,5 +1,5 @@
 
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Intro.module.css";
 import { CMS_NAME } from '../lib/constants'
 
 const Intro = () => {
@@ -8,15 +8,9 @@ const Intro = () => {
       <h1 className={styles.description}>
         Updog Blog
       </h1>
-      <h4 className={styles.description}>
-       Dogs.{' '}
-        <a
-          href="https://nextjs.org/"
-          className={styles.description}
-        >
-          Next.js
-        </a>{' '}
-        and {CMS_NAME}.
+      <h4 className={styles.title}>
+       Dogs.
+        
       </h4>
     </section>
   )

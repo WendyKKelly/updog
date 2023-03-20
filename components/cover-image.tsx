@@ -2,7 +2,7 @@
 import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Cover.module.css";
 type Props = {
   title: string
   src: string
@@ -14,9 +14,8 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn('shadow-sm w-full', {
-        'hover:shadow-lg transition-shadow duration-200': slug,
-      })}
+      className={styles.image
+      }
       width={1300}
       height={630}
     />

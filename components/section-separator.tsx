@@ -1,6 +1,6 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Title.module.css";
 const SectionSeparator = () => {
-  return <hr className={styles.description} />
+  return <hr className={styles.separate} />
 }
 
 export default SectionSeparator

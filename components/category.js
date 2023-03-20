@@ -1,5 +1,5 @@
 import CategoryPreview from '../components/category-preview'
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Category.module.css";
 
 export default function Category({ posts }) {
     return (

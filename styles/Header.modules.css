@@ -1,0 +1,31 @@
+.header {
+    display: none; 
+
+
+    @media (min-width: 768px) { 
+      display: block; 
+     }   
+}
+.description {
+    margin-bottom: 2rem; 
+
+@media (min-width: 640px) { 
+   }
+@media (min-width: 768px) { 
+  margin-bottom: 4rem; 
+ }
+}
+.div {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 42rem;   
+}
+.block {
+    display: block; 
+margin-bottom: 1.5rem; 
+
+
+@media (min-width: 768px) { 
+  display: none; 
+ }
+}

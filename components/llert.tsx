@@ -1,30 +1,12 @@
 import Lontainer from './lontainer'
-import cn from 'classnames'
-import { EXAMPLE_PATH } from '../lib/constants'
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Llert.module.css";
 
-export default function Llert({ preview }) {
+export default function Llert() {
   return (
-    <div
-      className={cn('border-b', {
-        'bg-accent-7 border-accent-7 text-white': preview,
-        'bg-accent-1 border-accent-2': !preview,
-      })}
-    >
+   
       <Lontainer>
         <div className={styles.description}>
-          {preview ? (
-            <>
-              This page is a preview.{' '}
-              <a
-                href="/api/exit-preview"
-                className={styles.description}
-              >
-                Click here
-              </a>{' '}
-              to exit preview mode.
-            </>
-          ) : (
+         
             <>
                  Learn more about why I am doing this project  {' '}
               <a
@@ -35,9 +17,9 @@ export default function Llert({ preview }) {
               </a>
               .
             </>
-          )}
+          
         </div>
       </Lontainer>
-    </div>
+    
   )
 }

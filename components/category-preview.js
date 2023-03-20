@@ -1,4 +1,4 @@
-import styles from "@/styles/Alert.module.css";
+import styles from "@/styles/Category.module.css";
 import Link from 'next/link'
 
 export default function CategoryPreview({

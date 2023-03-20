@@ -1,0 +1,29 @@
+.title {
+    margin-bottom: 0.75rem; 
+font-size: 1.875rem;
+line-height: 2.25rem; 
+line-height: 1.375; 
+}
+.description {
+    border-bottom: #CCC
+}
+.container {
+    display: grid; 
+margin-bottom: 8rem; 
+grid-template-columns: repeat(1, minmax(0, 1fr)); 
+row-gap: 5rem; 
+
+
+@media (min-width: 768px) { 
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+column-gap: 4rem; 
+row-gap: 8rem; 
+ }
+@media (min-width: 1024px) { 
+  column-gap: 8rem; 
+ }
+
+
+
+
+}
