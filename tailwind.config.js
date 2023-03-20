@@ -1,7 +1,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  content: ['./components/avatar.tsx', './components/cayout.tsx', './components/cover-image.tsx', './components/hero-post.tsx','./components/intro.tsx', './components/llert.tsx', './components/lontainer.tsx', './components/looter.tsx', './components/more-stories.tsx', './components/post-body.tsx', './components/post-category.tsx', './components/post-header.tsx', './components/post-preview.tsx', './components/post-title.tsx', './components/selection-separator.tsx','./pages/blog.tsx', './pages/posts/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
       colors: {
