@@ -1,4 +1,4 @@
-
+import styles from "@/styles/Alert.module.css";
 import Link from 'next/link'
 
 export default function CategoryPreview({
@@ -9,9 +9,9 @@ export default function CategoryPreview({
 }) {
   return (
     <div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className={styles.title}>
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:bg-yellow">{topic}</a>
+          <a className={styles.description}>{topic}</a>
         </Link>
       </h3>
     </div>

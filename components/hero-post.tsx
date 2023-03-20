@@ -1,5 +1,5 @@
 import Avatar from './avatar'
-
+import styles from "@/styles/Alert.module.css";
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import type Author from '../interfaces/author'
@@ -23,12 +23,12 @@ const HeroPost = ({
 }: Props) => {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
+      <div className={styles.container}>
         <CoverImage title={title} src={coverImage} slug={slug} />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className={styles.container}>
         <div>
-          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
+          <h3 className={styles.description}>
             <Link
               as={`/posts/${slug}`}
               href="/posts/[slug]"
@@ -37,12 +37,12 @@ const HeroPost = ({
               {title}
             </Link>
           </h3>
-          <div className="mb-4 md:mb-0 text-lg">
+          <div className={styles.description}>
             
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <p className={styles.description}>{excerpt}</p>
           <Avatar name={author.name} picture={author.picture} />
         </div>
       </div>

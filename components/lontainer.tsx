@@ -1,10 +1,10 @@
-
+import styles from "@/styles/Alert.module.css";
 type Props = {
     children?: React.ReactNode
   }
   
   const Lontainer = ({ children }: Props) => {
-    return <div className="container mx-auto px-5">{children}</div>
+    return <div className={styles.container}>{children}</div>
   }
   
   export default Lontainer

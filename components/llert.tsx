@@ -1,6 +1,7 @@
 import Lontainer from './lontainer'
 import cn from 'classnames'
 import { EXAMPLE_PATH } from '../lib/constants'
+import styles from "@/styles/Alert.module.css";
 
 export default function Llert({ preview }) {
   return (
@@ -11,13 +12,13 @@ export default function Llert({ preview }) {
       })}
     >
       <Lontainer>
-        <div className="py-2 text-center text-sm">
+        <div className={styles.description}>
           {preview ? (
             <>
               This page is a preview.{' '}
               <a
                 href="/api/exit-preview"
-                className="hover:bg-yellow duration-200 transition-colors"
+                className={styles.description}
               >
                 Click here
               </a>{' '}
@@ -28,7 +29,7 @@ export default function Llert({ preview }) {
                  Learn more about why I am doing this project  {' '}
               <a
                 href={`https://www.youtube.com/channel/UCWh7VTxiXz8HL-Ghf2caC0A/videos`}
-                className="hover:bg-yellow duration-200 transition-colors"
+                className={styles.description}
               >
                 And subscribe to my YouTube channel :)
               </a>

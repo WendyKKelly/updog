@@ -2,7 +2,7 @@
 import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import styles from "@/styles/Alert.module.css";
 type Props = {
   title: string
   src: string

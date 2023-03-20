@@ -1,6 +1,6 @@
-
+import styles from "@/styles/Alert.module.css";
 const SectionSeparator = () => {
-  return <hr className="border-neutral-200 mt-28 mb-24" />
+  return <hr className={styles.description} />
 }
 
 export default SectionSeparator
