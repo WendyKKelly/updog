@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-
+import Lontainer from '../../components/lontainer'
 import PostBody from '../../components/post-body'
 
 import PostHeader from '../../components/post-header'
-import Layout from '../../components/Layout'
+import Cayout from '../../components/cayout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
@@ -25,8 +25,8 @@ export default function Post({ post, morePosts, preview }: Props) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout >
-      
+    <Cayout >
+      <Lontainer>
         
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -47,8 +47,8 @@ export default function Post({ post, morePosts, preview }: Props) {
             </article>
           </>
         )}
-      
-    </Layout>
+      </Lontainer>
+    </Cayout>
   )
 }
 

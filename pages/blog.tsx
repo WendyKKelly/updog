@@ -1,8 +1,8 @@
-
+import Lontainer from '../components/lontainer'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
-import Layout from '../components/Layout'
+import Cayout from '../components/cayout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
@@ -17,11 +17,11 @@ export default function Blog({ allPosts }: Props) {
   const morePosts = allPosts.slice(1)
   return (
     <>
-      <Layout>
+      <Cayout>
         <Head>
           <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
         </Head>
-        
+        <Lontainer>
           <Intro />
           {heroPost && (
             <HeroPost
@@ -34,8 +34,8 @@ export default function Blog({ allPosts }: Props) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        
-      </Layout>
+          </Lontainer>
+      </Cayout>
     </>
   )
 }

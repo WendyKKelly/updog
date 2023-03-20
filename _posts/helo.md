@@ -1,6 +1,6 @@
 ---
-title: 'Babies and Bath Water'
-excerpt: 'I fully understand that when we see Christians raising children in a way that seems to fly in the face of everything Jesus said, it is important to call that out.' 
+title: 'Dogs'
+excerpt: 'This is some dummy text to start the updog blog' 
 coverImage: '/assets/blog/baby-bath-water/cover.jpg'
 date: '2021-05-07T05:35:07.322Z'
 author:
@@ -10,10 +10,6 @@ ogImage:
   url: '/assets/blog/baby-bath-water/cover.jpg'
 ---
 
-This morning I came across the work of a guy named Abraham Piper. This is what he says: ["Is one of my themes attacking Christianity? No. I don't attack Christianity. I berate evangelicalism. Fundamentalism,"](https://www.christiantoday.com/article/john.pipers.son.goes.viral.laying.into.evangelicalism.on.tiktok/136664.htm).
+This is dummy text about dogs for the blog post about dogs for updog - we'll also have stuff about upcycled things too.
 
-I agree with the first part. Not sure that I think the second half is the most mature stance?
-
-So. Here are my first thoughts on separating the wheat from the chaff? On throwing babies out with bathwater? No entirely sure which metaphor works. Let's find out, shall we?
-
-## Raised Christian?
+## Updog Blog?
