@@ -61,7 +61,7 @@ export default function Home() {
                 height={500}
                 priority
               />
-<h5>(Handmade With Love in Nelson.)</h5>
+
        
        
 
