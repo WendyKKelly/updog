@@ -4,40 +4,34 @@
     margin-bottom: 4rem; 
     flex-direction: column; 
     align-items: center; 
-    
-    @media (min-width: 768px) { 
-      .container {
-      flex-direction: row; 
-    justify-content: space-between; 
-      }
-     }  
 }
+@media (min-width: 768px) { 
+  .container {
+  flex-direction: row; 
+justify-content: space-between; 
+  }
+ }  
 .description {
     font-size: 3rem;
     line-height: 1; 
     font-weight: 700; 
     letter-spacing: -0.05em; 
-    line-height: 1.25; 
-    
-    
-    @media (min-width: 768px) { 
-      .description {
-        font-size: 6rem;
-    line-height: 1; 
-      }
-     }
-      
+    line-height: 1.25;  
 }
+@media (min-width: 768px) { 
+  .description {
+    font-size: 6rem;
+line-height: 1; 
+  }
+ }
 .title {
     margin-top: 1.25rem; 
 font-size: 1.125rem;
 line-height: 1.75rem; 
 text-align: center; 
-
-
+}
 @media (min-width: 768px) { 
   .title {
     text-align: left; 
   }
  }
-}
