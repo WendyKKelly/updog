@@ -10,10 +10,11 @@ ogImage:
   url: '/assets/blog/updog-treats-upcycle/cover.jpg'
 ---
 
-Mid-January, fire in our little wood fireplace. Mike and I talking by the fire, our lovely dog, Luna, at our feet.
-I had just found out that the one ingredient treats I was so proud to have discovered were dangerous.
+Mid-January, Mike and I talking by the fire, our lovely dog, Luna, at our feet.
+I had just found out that the one-ingredient treats I was so proud to have discovered were dangerous.
 [In fact, they were the cause of kidney failure in at least one local Nelson dog.](https://www.nelsonstar.com/news/nelson-pet-owners-warned-about-dog-treats/)
-The article I stumbled upon was from 2016, so it isn't news. But it was news to me. Comments after the article  suggested that the dear dog's human shouldn't have trusted treats made in China and instead should buy Canadian treats. 
+The article I stumbled upon in the Nelson Star was from 2016. How could I not have known? Luna seemed fine — she's a large dog and I hadn't been feeding them to her for long. 
+Comments after the article  suggested that the dear dog's human shouldn't have trusted treats made in China and instead should buy Canadian treats. 
 That got me thinking. 
 
 ### Locally Sourced & Made
@@ -34,17 +35,19 @@ Our house was soon humming with the sound of my ancient (wedding present) sewing
 
 We were making and testing dog treats and treat pouches, dear dog Luna a little confused but also happy with the energy, smells, and joy in the air.
 
-I read and tested easily several dozen recipes for dog treats. Often, the ingredients used were convenient. Not the healthiest for the dogs. 
+Dozens for recipes tested: Often, the ingredients used were convenient for humans but not necessarily the healthiest for the dogs. Could I make treats that were super healthy and delicious for dogs while still being convenient (sturdy and low odor) for humans?
 
-Taking notes, researching what dogs need and love to eat, trying mini experiments and making new notes, a few things became clear.
+Taking notes, researching what dogs need and love to eat, trying mini experiments and making new notes, a few takeaways became clear.
 
-### Good Dog Treats are Simple 
+### Good But Not Good Enough
 
-After lots of experimentation, I came up with a recipe that worked. It was super healthy for dogs with a combination of meat, oat flour, and chia seeds. The chia and meat are a good combination as the omega fats in each balance the other out. The oat flour was a compromise. Healthier than wheat (as far as my research could tell) with good b vitamins and low gluten.
+A combination of meat, oat flour, and chia seeds baked in a particular way at both high and low heat, with ingredients added in a particular manner seemed to do the trick.
+
+ The chia and meat are a good combination as the omega fats in each balance the other out. The oat flour was a compromise. Healthier than wheat (as far as my research could tell) with good b vitamins and low gluten.
 
 I was pretty satisfied. 
 
-Mike was sewing away, using old jeans, old Carharts, old anything durable to make a treat pouch that would also serve as the container for our treats. A dog "growler" is what we were thinking...
+Mike was sewing away, using old jeans, old Carharts, old anything durable to make a treat pouch that would also serve as the container for our treats. A dog "growler" began to take shape...
 
 ### Upcycled Growlers and...
 
@@ -52,11 +55,13 @@ Mike and I laughed at the idea of a dog "growler" — What a lovely way to encou
 
 Growlers...like the glass jugs we refill with beer...
 
+Beer — Mike and I looked at each other, thinking the same thing. Spent Grain!
+
 In the three decades that I have been a brewer's wife, I have been witness to the symbiotic relationship brewers have with local farmers. The spent grain is used as animal feed, keeping it out of the landfill. 
 
 It's healthy for livestock. But what about dogs?
 
-As it turns out, spent barley is super healthy for dogs! 
+[As it turns out, spent barley is super healthy for dogs!](./nutrition) 
 
 Back to the kitchen, where I spent many more hours replacing the oat flour with spent grain. After many notes, many hours, and many, many iterations, I was happy.
 
@@ -66,7 +71,7 @@ Witnessing my excitement with the spent grain, Mike brought home a few grain bag
 
 ### Taste Testing!
 
-We decided to see what the dogs thought :) and started to pass them out to Luna's friends. The response was overjoyed dogs :) Even the dogs that politely spat out other treats happily ate these.
+We decided to see what the dogs thought :) and started to pass them out to Luna's friends. The response was overjoyed dogs :) Even the dogs that politely spat out other treats happily ate these. 
 
 ### A Perfectly Imperfect Company 
 
