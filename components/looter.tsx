@@ -2,7 +2,7 @@ import Lontainer from './lontainer'
 import { FaInstagram } from 'react-icons/fa';
 import { Grandstander } from '@next/font/google'
 import {Cormorant} from '@next/font/google'
-import styles from '@styles/Footer.module.css';
+import styles from "@/styles/Footer.module.css";
 import Link from 'next/link';
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
