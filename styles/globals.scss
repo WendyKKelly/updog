@@ -2,10 +2,8 @@
 
 
 .app {
-  min-height: 100vh;
-  min-width: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  min-width: fit-content;
+  margin-left: 0rem;
 }
 
 .product-list {
@@ -13,21 +11,7 @@
 }
 
 
-.background-image {
-  position: absolute;
-  opacity: 0.02;
-  left: -10vw;
-  top: -10vh;
-  height: 75vh;
-  transform: rotate(20deg);
-  pointer-events: none;
-}
 
-
-.promotional-message {
-  margin-bottom: 100px;
-  margin-top: 25px;
-  text-align: center;
   h2 {
     font-family: var(--font-base);
     font-size: 6em;
@@ -42,7 +26,7 @@
     text-transform: uppercase;
     margin: 0;
   }
-}
+
 
 .product__price-button-container {
   display: flex;
@@ -53,7 +37,7 @@
 
 :root {
  
-  --font-base: ui-monospace, Savate, monospace;
+
 
 
  
