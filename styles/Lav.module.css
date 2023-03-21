@@ -1,6 +1,8 @@
 .wrap {
     background-color: rgb(125, 180, 70);
-    width: 100rem; 
+    min-width: 50%;
+     max-width: 100%;
+   width: calc((480px - 100%) * 480);
 }
 .nav {
     display: inline-grid;
@@ -50,7 +52,12 @@
    
    
     /* Desktop */
-   @media (min-width: 40rem) {
+   @media (min-width: 40rem) 
+   {
+
+    .wrap {
+        width: 100%;
+    }
      .nav {
        width: 100rem;
       
