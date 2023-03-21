@@ -1,4 +1,5 @@
 import Llert from './llert'
+import Nav from './Nav'
 import Looter from './looter'
 import Meta from './meta'
 import styles from "@/styles/Cayout.module.css";
@@ -13,6 +14,7 @@ const Cayout = ({  children }: Props) => {
       <Meta />
       <div className={styles.container}>
         <Llert />
+        <Nav/>
         <main>{children}</main>
       </div>
       <Looter />
