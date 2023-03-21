@@ -1,4 +1,7 @@
-
+.wrap {
+    background-color: rgb(125, 180, 70);
+    width: 100rem; 
+}
 .nav {
     display: inline-grid;
      grid-template-columns: 1fr 1fr;

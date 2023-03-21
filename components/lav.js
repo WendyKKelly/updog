@@ -8,7 +8,7 @@ const grandstander = Grandstander({ subsets: ['latin'] })
 export default function Nav () {
   
   return (
-    
+    <div className={styles.wrap}>
       <Lontainer className={styles.navContainer}>
         <div className={styles.nav}>
         <Link 
@@ -31,7 +31,7 @@ export default function Nav () {
             </div>
             </Lontainer>
             
-     
+            </div>
   
   );
 };
