@@ -34,6 +34,12 @@ color: #fff;
 padding-top: 2rem;
 margin-right: .8rem;
 }
+.title h5 {
+  font-size: 1.25rem;
+  color: #fff;
+  padding-top:1rem;
+  margin-right: .8rem;
+}
 .image {
  
 margin-left: -.75rem;

@@ -49,7 +49,7 @@ export default function Home() {
         <div className={styles.title}>
           
           <h1 className={grandstander.className} >What's Up, Dog? Treats!</h1>
-          <h3>Simple. Upcycled Dog Treats & Gear Handmade With Love in Nelson.</h3>
+          <h3>Upcycled Dog Treats & Gear</h3> <h5>(Handmade With Love in Nelson.)</h5>
           </div>
         
       
