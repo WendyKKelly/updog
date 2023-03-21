@@ -2,17 +2,14 @@ import { Grandstander } from "@next/font/google";
 
 import Image from "next/image";
 import Link from "next/link"
-
-import Container from "../Container";
-
-
-import styles from "./Nav.module.css";
+import Lontainer from ".lontainer"
+import styles from "@/styles/Lav.module.css";
 const grandstander = Grandstander({ subsets: ['latin'] })
 export default function Nav () {
   
   return (
     
-      <Container className={styles.navContainer}>
+      <Lontainer className={styles.navContainer}>
         <div className={styles.nav}>
         <Link 
         href="../index">
@@ -32,7 +29,7 @@ export default function Nav () {
                 <span className="header__price snipcart-total-price"></span>
             </Link></div>
             </div>
-      </Container>
+      </Lontainer>
   
   );
 };
