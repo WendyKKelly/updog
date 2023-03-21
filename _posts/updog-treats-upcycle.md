@@ -104,4 +104,3 @@ We're just starting out and are happy to hear from you. Look for us on Instagram
 
 
 
-### Updog Blog?

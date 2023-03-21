@@ -16,8 +16,8 @@ const CoverImage = ({ title, src, slug }: Props) => {
       alt={`Cover Image for ${title}`}
       className={styles.image
       }
-      width={1300}
-      height={630}
+      width={700}
+      height={700}
     />
   )
   return (
