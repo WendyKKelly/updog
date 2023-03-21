@@ -1,26 +1,69 @@
 import Lontainer from './lontainer'
-import { EXAMPLE_PATH } from '../lib/constants'
-import styles from "@/styles/Looter.module.css";
-const Looter = () => {
+import { FaInstagram } from 'react-icons/fa';
+import { Grandstander } from '@next/font/google'
+import {Cormorant} from '@next/font/google'
+import styles from '@styles/Footer.module.css';
+import Link from 'next/link';
+const grandstander = Grandstander({ subsets: ['latin'] })
+const cormorant = Cormorant({subsets: ['latin']})
+const Footer = ({ children }) => {
   return (
     <footer className={styles.footer}>
-      <Lontainer>
-        <div className={styles.container}>
-          <h3 className={styles.description}>
-            Statically Generated with Next.js.
-          </h3>
-          <div className={styles.link}>
+      <Lontainer >
+        <div className={styles.grid}>
+        <Link
+            href="../about"
             
-              Read Documentation
+            target="_blank"
+            rel="noopener noreferrer"
+          >   
+        <div className={styles.card}>
+        <h4 className={grandstander.className}>
+              About Us <span>-&gt;</span>
+            </h4>
             
+        </div></Link>
+        <Link
+            href="../contact"
             
-              View on GitHub
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+        <div className={styles.card}>
+        <h4 className={grandstander.className}>
+              Contact <span>-&gt;</span>
+            </h4>
             
-          </div>
+        </div></Link>
+        <Link
+            href="https://whatsupdog.substack.com/p/a39db468-97f1-4b9f-b8e6-30bd28f7de47"
+            
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+        <div className={styles.card}>
+        <h4 className={grandstander.className}>
+              What's Up Dog Newsletter <span>-&gt;</span>
+            </h4>
+            
+        </div></Link>
+        <Link
+            href="https://www.instagram.com/updogtreats/"
+            
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+        <div className={styles.card}>
+        <h4 className={styles.insta}>
+              <FaInstagram /> <span>-&gt;</span>
+            </h4>
+           
+        </div>
+        </Link>
         </div>
       </Lontainer>
     </footer>
   )
 }
 
-export default Looter
+export default Footer;
