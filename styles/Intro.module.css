@@ -6,8 +6,10 @@
     align-items: center; 
     
     @media (min-width: 768px) { 
+      .container {
       flex-direction: row; 
     justify-content: space-between; 
+      }
      }  
 }
 .description {
@@ -19,8 +21,10 @@
     
     
     @media (min-width: 768px) { 
-      font-size: 6rem;
+      .description {
+        font-size: 6rem;
     line-height: 1; 
+      }
      }
       
 }
@@ -32,6 +36,8 @@ text-align: center;
 
 
 @media (min-width: 768px) { 
-  text-align: left; 
+  .title {
+    text-align: left; 
+  }
  }
 }

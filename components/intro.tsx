@@ -9,7 +9,7 @@ const Intro = () => {
         Updog Blog
       </h1>
       <h4 className={styles.title}>
-       Dogs.
+       Stories for dog companions.
         
       </h4>
     </section>
