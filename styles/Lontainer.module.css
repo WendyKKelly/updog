@@ -8,3 +8,10 @@ min-width: 50%;
 max-width: 100%;
 width: calc((480px - 100%) * 480);
 }
+
+@media (min-width: 40rem) {
+    
+    .container{
+    width: 80rem;
+    }
+}
