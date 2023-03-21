@@ -1,6 +1,9 @@
 import Lontainer from './lontainer'
+import Link from 'next/link'
 import styles from "@/styles/Llert.module.css";
+import { Grandstander } from "@next/font/google";
 
+const grandstander = Grandstander({ subsets: ['latin'] })
 export default function Llert() {
   return (
    
@@ -8,13 +11,9 @@ export default function Llert() {
         <div className={styles.description}>
          
             <>
-                 Learn more about why I am doing this project  {' '}
-              <a
-                href={`https://www.youtube.com/channel/UCWh7VTxiXz8HL-Ghf2caC0A/videos`}
-                className={styles.description}
-              >
-                And subscribe to my YouTube channel :)
-              </a>
+            <Link 
+        href="./shop"><div className={grandstander.className}><p className={styles.description}>Free local delivery</p></div>
+        </Link>
               .
             </>
           
