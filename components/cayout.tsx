@@ -1,5 +1,5 @@
 import Llert from './llert'
-import Nav from './Nav'
+import Nav from './lav'
 import Looter from './looter'
 import Meta from './meta'
 import styles from "@/styles/Cayout.module.css";
