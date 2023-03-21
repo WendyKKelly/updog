@@ -1,5 +1,5 @@
 ---
-title: 'Dogs'
+title: 'Updog Treats Upcycle'
 excerpt: 'This is some dummy text to start the updog blog' 
 coverImage: '/assets/blog/baby-bath-water/cover.jpg'
 date: '2021-05-07T05:35:07.322Z'
