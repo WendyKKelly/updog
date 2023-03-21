@@ -2,7 +2,7 @@ import { Grandstander } from "@next/font/google";
 
 import Image from "next/image";
 import Link from "next/link"
-import Lontainer from ".lontainer"
+import Lontainer from './lontainer'
 import styles from "@/styles/Lav.module.css";
 const grandstander = Grandstander({ subsets: ['latin'] })
 export default function Nav () {
