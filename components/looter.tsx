@@ -6,7 +6,7 @@ import styles from '@styles/Footer.module.css';
 import Link from 'next/link';
 const grandstander = Grandstander({ subsets: ['latin'] })
 const cormorant = Cormorant({subsets: ['latin']})
-const Footer = ({ children }) => {
+const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Lontainer >

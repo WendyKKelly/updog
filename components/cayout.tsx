@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Cayout = ({ preview, children }: Props) => {
+const Cayout = ({  children }: Props) => {
   return (
     <>
       <Meta />
