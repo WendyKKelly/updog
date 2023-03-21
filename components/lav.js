@@ -8,9 +8,9 @@ const grandstander = Grandstander({ subsets: ['latin'] })
 export default function Nav () {
   
   return (
-    <div className={styles.nav}>
+    
       <Lontainer className={styles.navContainer}>
-        
+        <div className={styles.nav}>
         <Link 
         href="../index">
         <Image
@@ -28,8 +28,9 @@ export default function Nav () {
                 </svg>
                 <span className="header__price snipcart-total-price"></span>
             </Link></div>
-            </Lontainer>
             </div>
+            </Lontainer>
+            
      
   
   );
