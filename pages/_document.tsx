@@ -9,7 +9,7 @@ export default function Document(){
       <Head> 
                 <link rel="shortcut icon" href="../favicon.ico" />
                
-
+                <meta name="facebook-domain-verification" content="66prrfjygtlyk94he2k1ugjhn6czk9" />
                 </Head>
       <body>
     
