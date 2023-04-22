@@ -36,6 +36,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="facebook-domain-verification" content="66prrfjygtlyk94he2k1ugjhn6czk9" />
 
       
 
