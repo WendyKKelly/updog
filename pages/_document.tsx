@@ -8,6 +8,8 @@ export default function Document(){
     
       <Head> 
                 <link rel="shortcut icon" href="../favicon.ico" />
+               
+
                 </Head>
       <body>
     

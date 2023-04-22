@@ -1,7 +1,7 @@
 ---
 title: 'Updog Treats Upcycle'
 excerpt: 'What is Updog? Upcycled Dog Treats and Gear' 
-coverImage: '/assets/blog/updog-treats-upcycle/cover.jpg'
+[label](plastic-story.md)coverImage: '/assets/blog/updog-treats-upcycle/cover.jpg'
 date: '2023-03-07T05:35:07.322Z'
 author:
   name: 'Wendy Kelly'
