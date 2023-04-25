@@ -4,7 +4,7 @@ import {GetStaticProps} from "next"
 import Head from 'next/head'
 import Script from 'next/script'
 
-import updogTreat from "../../public/images/120-grams.jpg"
+import updogPouch from "../../public/images/treatpouch.jpg"
 
 import Layout from '../../components/Layout'
 
@@ -58,18 +58,17 @@ export const products: IProduct[] = [
   
   
     {
-      id: "treats",
-      name: "Updog Treats / 120 grams",
-      price: 10.00,
-      image: updogTreat,
-      description: "120 grams of treats that will make your dog love you (even more). These treats are made with spent barley grain from a local brewery, fresh grass fed beef liver and chia seeds. "
-        ,
-      url: '/products/treats',
-      weight: 120,
-      length: 10,
-      width: 5,
-      height: 2
-  }
+        id: "pouch",
+        name: "Updog Treat Pouch",
+        price: 10.00,
+        image: updogPouch,
+        description: "Ultralight, upcycled, handmade with care from malt and grain bags. When brewmaster Mike made an offhand remark about upcycling grain bags, who could have predicted this? These treat bags now come in 2 sizes — small, about the size of a rock climber's chalk bag, and a larger one, about twice as large. No two are the same.",
+        url: '/products/pouch',
+        weight: 120,
+        length: 10,
+        width: 5,
+        height: 2
+    }
 ]
   
 export const getStaticProps: GetStaticProps = async (context) => {

@@ -4,7 +4,7 @@ import {GetStaticProps} from "next"
 import Head from 'next/head'
 import Script from 'next/script'
 
-import updogTreat from "../../public/images/120-grams.jpg"
+import updogSample from "../../public/images/samples.jpg"
 
 import Layout from '../../components/Layout'
 
@@ -58,17 +58,16 @@ export const products: IProduct[] = [
   
   
     {
-      id: "treats",
-      name: "Updog Treats / 120 grams",
-      price: 10.00,
-      image: updogTreat,
-      description: "120 grams of treats that will make your dog love you (even more). These treats are made with spent barley grain from a local brewery, fresh grass fed beef liver and chia seeds. "
-        ,
-      url: '/products/treats',
-      weight: 120,
-      length: 10,
-      width: 5,
-      height: 2
+        id: "sample",
+        name: "Updog Sample",
+        price: 1.00,
+        image: updogSample,
+        description: "Curious? Order a small 10 gram sample of our delicious treats. So far, every dog we have given samples to has begged us for more :) but we fully understand that you might want to try them out first. All our packaging is made inhouse with upcycled materials and we plan to keep it that way.",
+        url: '/products/sample',
+        weight: 120,
+        length: 10,
+        width: 5,
+        height: 2
   }
 ]
   
