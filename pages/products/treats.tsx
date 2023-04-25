@@ -4,7 +4,7 @@ import {GetStaticProps} from "next"
 import Head from 'next/head'
 import Script from 'next/script'
 
-import updogTreat from "../public/images/120-grams.jpg"
+import updogTreat from "../../public/images/120-grams.jpg"
 
 import Layout from '../../components/Layout'
 
