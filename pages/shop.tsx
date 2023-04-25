@@ -68,7 +68,7 @@ export const products: IProduct[] = [
       name: "Updog Treats / 120 grams",
       price: 10.00,
       image: updogTreat,
-      description: "120 grams of treats that will make your dog love you (even more). These treats are made with spent barley grain from a local brewery, fresh ground meat (mainly pork but may include beef and a small amount of chicken) and chia seeds. Best refrigerated but can last up to 10 days in the pantry."
+      description: "120 grams of treats that will make your dog love you (even more). These treats are made with spent barley grain from a local brewery, fresh grass fed beef liver and chia seeds. "
         ,
       url: '/api/products/treats',
       weight: 120,
