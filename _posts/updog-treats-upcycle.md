@@ -10,7 +10,7 @@ ogImage:
   url: '/assets/blog/updog-treats-upcycle/cover.jpg'
 ---
 
-Mid-January, Mike and I talking by the fire, our lovely dog, Luna, at our feet.
+Mid-January, Mike and I are talking by the fire, our lovely dog, Luna, at our feet.
 I had just found out that the one-ingredient treats I was so proud to have discovered were dangerous.
 [In fact, they were the cause of kidney failure in at least one local Nelson dog.](https://www.nelsonstar.com/news/nelson-pet-owners-warned-about-dog-treats/)
 The article I stumbled upon in the Nelson Star was from 2016. How could I not have known? Luna seemed fine — she's a large dog and I hadn't been feeding them to her for long. 
