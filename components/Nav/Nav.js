@@ -15,7 +15,7 @@ export default function Nav () {
       <Container className={styles.navContainer}>
         <div className={styles.nav}>
         <Link 
-        href="./index">
+        href="https://www.updogtreats.com/index">
         <Image
                 src="/images/Updog3.png"
                 alt="Updog Logo"
